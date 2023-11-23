@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="{{url_for('static', filename='healthcare.css')}}">
+    <link rel="icon" type="image/x-icon" href="{{url_for('static', filename='healthcareweb/healthcare.png')}}">
+    <!--google fonts-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;800&family=Oswald:wght@300&display=swap" rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VNHealth</title>
+</head>
+<body>
+    <nav>
+        <div class="navContainer">
+            <div class="logoContainer">
+                <img class="logoImage" src="{{url_for('static', filename='healthcareweb/healthcare.png')}}"><h1 id="logo">VNHealth</h1>
+            </div>
+            <div class="linksContainer">
+                <a class="link">Services</a>
+                <a class="link">Doctors</a>
+                <a class="link">Patients</a>
+                <a class="link">Pricing</a>
+                <a class="link">Support</a>
+                <div class="whiteButtonContainer"><button class="whiteButton">GET STARTED</button></div>
+            </div>
+        </div>
+    </nav>
+    <section class="heroContainer">
+        <div class="heroTexts">
+            <div class="heroText">
+                <h2 class="heroSubtitle">Stay strong. Live long.</h2>
+                <h1 class="heroTitle">We provide the <span class=emphasisText>best quality services</span> for you</h1>
+                <p class="heroParagraph">Welcome to VNHealth, where we are committed to delivering exceptional healthcare services to patients around the world.</p>
+                <button class="blueButton">MAKE AN APPOINTMENT</button>
+            </div>
+            <img class="heroDoctorImage" src="{{url_for('static', filename='healthcareweb/doctor.png')}}">
+        </div>
+    </section>
+    <section class="middleContainer">
+        <div class="middleText">
+            <h1 class="middleTitle">Top notch quality <span class="emphasisText2">care</span></h1>
+            <p class="middleParagraph">We are passionate about improving healthcare for everyone. So whether you are a patient or a healthcare professional, we invite you to join us on 
+                this journey and experience the future of healthcare today.</p>
+        </div>
+    </section>
+    <section class="qualityMainContainer">
+        <div class="qualityContainer">
+            <img class="qualityImage" src="{{url_for('static', filename='healthcareweb/hospital.png')}}">
+            <h1>Patient Safety</h1>
+            <p class="qualityParagraph">Streamline safety protocols and minimize risk with our comprehensive management tools.</p>
+        </div>
+        <div class="qualityContainer">
+            <img class="qualityImage" src="{{url_for('static', filename='healthcareweb/hospital2.png')}}">
+            <h1>Patient Care</h1>
+            <p class="qualityParagraph">Streamline safety protocols and minimize risk with our comprehensive management tools.</p>
+        </div>
+        <div class="qualityContainer">
+            <img class="qualityImage" src="{{url_for('static', filename='healthcareweb/hospital3.png')}}">
+            <h1>24/7 Services</h1>
+            <p class="qualityParagraph">Streamline safety protocols and minimize risk with our comprehensive management tools.</p>
+        </div>
+        <div class="qualityContainer">
+            <img class="qualityImage" src="{{url_for('static', filename='healthcareweb/hospital4.png')}}">
+            <h1>Online Support</h1>
+            <p class="qualityParagraph">Streamline safety protocols and minimize risk with our comprehensive management tools.</p>
+        </div>
+    </section>
+    <section class="doctorRatingContainer">
+        <div class="doctorImageContainer">
+            <img class="doctorImage" src="{{url_for('static', filename='healthcareweb/doctorImage.jpg')}}">
+            <img class="doctorRatingImage" src="{{url_for('static', filename='healthcareweb/doctorRating.png')}}">
+        </div>
+        <div class="doctorRatingTexts">
+            <h1 class="doctorRatingTitle">Quality healthcare starts with <span class="emphasisText2">quality doctors</span></h1>
+            <p class="doctorRatingParagraph">At WVHealth, we believe that everyone deserves access to high-quality healthcare, 
+                no matter where they are or what their circumstances may be.</p>
+
+            <p class="doctorRatingParagraph">That's why we've created a comprehensive platform that connects patients with the best healthcare 
+                providers in their area, and provides doctors and healthcare professionals with the resources 
+                they need to deliver the best possible care.</p>
+            <div class="whiteButtonContainer"><button class="whiteButton">Contact Us</button></div>
+        </div>
+    </section>
+    <section class="serviceMainContainer">
+        <div class="serviceOuterContainer">
+            <div class="serviceContainer">
+                <div class="serviceTitleandImage">
+                    <img class="serviceImage" src="{{url_for('static', filename='healthcareweb/medicalServices1.png')}}">
+                    <h1>Emergency</h1>
+                </div>
+                <div class="serviceTexts">
+                    <p class="serviceParagraph">Provide critical care to patients no matter your location.</p>
+                    <span class="rightArrow">&rarr;</span>
+                </div>
+            </div>
+            <div class="serviceBackgroundContainer">
+                <div id="service2" class="serviceContainer">
+                    <div class="serviceTitleandImage">
+                        <img class="serviceImage2" src="{{url_for('static', filename='healthcareweb/medicalServices3.png')}}">
+                        <h1>Appointment</h1>
+                    </div>
+                    <div class="serviceTexts">
+                        <p class="serviceParagraph">Provide critical care to patients no matter your location.</p>
+                        <span class="rightArrow">&rarr;</span>
+                    </div>
+                </div>
+            </div>
+            <div class="serviceContainer">
+                <div class="serviceTitleandImage">
+                    <img class="serviceImage3" src="{{url_for('static', filename='healthcareweb/medicalServices2.png')}}">
+                    <h1>Find Doctor</h1>
+                </div>
+                <div class="serviceTexts">
+                    <p class="serviceParagraph">Provide critical care to patients no matter your location.</p>
+                    <span class="rightArrow">&rarr;</span>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="appointmentContainer">
+        <div class="appointmentTexts">
+            <h1>Make a <span class=emphasisText2>free appointment</span> with one of our healthcare providers today.</h1>
+            <p><span class="curvedArrow">&#10551;</span>With our simple online app, you can schedule appointments with the best healthcare providers 
+                all from the comfort of your own home.</p>
+            <p>Our secure messaging and telemedicine capabilities can help you can connect with your doctor before and after your 
+                appointment ensuring that you get the best possible care every step of the way. So why wait? Book your appointment 
+                today and take the first step towards better health and wellbeing!</p>
+            <h2>Medical check-up features:</h2>
+            <div class="appointmentChecks">
+                <img class="checkMark" src="{{url_for('static', filename='digitalbrandweb/yellowCheckMark.png')}}"><p>Heartbeat Rate</p>
+                <img class="checkMark" src="{{url_for('static', filename='digitalbrandweb/yellowCheckMark.png')}}"><p>Glucose Tolerance Test</p>
+                <img class="checkMark" src="{{url_for('static', filename='digitalbrandweb/yellowCheckMark.png')}}"><p>Blood Pressure</p>
+                <img class="checkMark" src="{{url_for('static', filename='digitalbrandweb/yellowCheckMark.png')}}"><p>Blood Sugar Level</p>
+            </div>
+        </div>
+        <div class="doctorAppointmentImageContainer">
+            <img class="doctorImage2" src="{{url_for('static', filename='healthcareweb/doctorImage2.jpg')}}">
+            <img class="doctorAppointmentImage" src="{{url_for('static', filename='healthcareweb/doctorAppointmentImage.jpg')}}">
+        </div>
+    </section>
+    <div class="patientsReviewTitleContainer"><h1 class="patientsReviewTitle">Let's see what <span class="emphasisText2">patients</span> have said!</h1></div>
+    <section class="patientReviewMainContainer">
+        <div class="patientReviewContainer">
+            <div class="patientImages">
+                <img class="patientImage" src="{{url_for('static', filename='healthcareweb/patient1.png')}}">
+                <img class="patientImage" src="{{url_for('static', filename='healthcareweb/patient2.png')}}">
+                <img class="patientImage" src="{{url_for('static', filename='healthcareweb/patient3.png')}}">
+                <span class="curvedArrow2">&#10555;</span>
+            </div>
+            <div class="patientReviewTexts">
+                <p class="patientParagraph"><span class="quotes">"</span>Using <span class="emphasisText">VNHealth's website</span> was a game-changer for me! Booking appointments, accessing medical records, and receiving timely 
+                    updates has never been easier. Thank you for making healthcare so convenient and accessible.<span class="quotes">"</span></p>
+                <h1>John Doe</h1>
+                <p>Patient</p>
+            </div>
+        </div>
+    </section>
+    <h1 class="patientsReviewTitleContainer">Our Latest <span class="emphasisText2">News</span></h1>
+    <section class="newsContainer">
+        <div class="newsTexts">
+            <img class="newsImage" src="{{url_for('static', filename='healthcareweb/womanDoctor.jpg')}}">
+            <div class="authorMainContainer">
+                <div class="authorContainer">
+                    <img class="authorImage" src="{{url_for('static', filename='healthcareweb/patient3.png')}}">
+                    <p>By Josh Hart</p>
+                </div>
+                <div class="authorContainer">
+                    <img class="authorImage" src="{{url_for('static', filename='healthcareweb/medicalServices3.png')}}">
+                    <p>By Josh Hart</p>
+                </div>
+            </div>
+            <h1>Join Us for International Day of Women and Girls in Science</h1>
+            <p>International Day for Women and Girls in Science is celebrated every year on February 11th to raise awareness about the underrepresentation 
+                of women in science and to promote gender equality in the field of science. This day acknowledges the significant contributions that 
+                women and girls have made to science, while also highlighting the challenges they face in pursuing careers in STEM (science, technology, 
+                engineering, and math) fields.</p>
+
+            <p>Despite the progress made in recent years, women and girls continue to face various barriers to their participation in science, including 
+                gender stereotypes, discrimination, lack of representation, and insufficient access to resources and opportunities. It is essential to 
+                recognize the valuable contributions of women and girls in science and to promote and support their participation in STEM fields...</p>
+        </div>
+        <section class="latestNews">
+            <div class="latestNewsTitles">
+                <h1>Latest News</h1>
+                <h1 class="articleView">View All &rarr;</h1>
+            </div>
+            <div class="article">
+                <img class="articleImage" src="{{url_for('static', filename='healthcareweb/article1.jpg')}}">
+                <div>
+                    <h1 class="articleTitle">Burnout and Bias in the medical field...</h1>
+                    <h2 class="articleRead">Read More &#8250</h2>
+                </div>
+            </div>
+            <div class="article">
+                <img class="articleImage" src="{{url_for('static', filename='healthcareweb/article2.jpg')}}">
+                <div>
+                    <h1 class="articleTitle">Anti-aging Early Detection Research Study...</h1>
+                    <h2 class="articleRead">Read More &#8250</h2>
+                </div>
+            </div>
+            <div class="article">
+                <img class="articleImage" src="{{url_for('static', filename='healthcareweb/article3.jpg')}}">
+                <div>
+                    <h1 class="articleTitle">Healthy Living with Graves Disease...</h1>
+                    <h2 class="articleRead">Read More &#8250</h2>
+                </div>
+            </div>
+            <div>
+                <h1>Coming Soon:</h1>
+                <img class="articleImage" src="{{url_for('static', filename='healthcareweb/article4.jpg')}}">
+                <img class="articleImage" src="{{url_for('static', filename='healthcareweb/article5.jpg')}}">
+            </div>
+        </section>
+    </section>
+    <footer>
+        <div class="footer">
+            <section class="footerLinksContainer">
+                <div class="logoContainer">
+                    <img class="logoImage" src="{{url_for('static', filename='healthcareweb/healthcare.png')}}"><h1 id="logo">VNHealth</h1>
+                </div>
+                <p>123 New University Street, F123, Newtowne, USA</p>
+                <div class="footerLogoContainer">
+                    <img class="logoImage" src="{{url_for('static', filename='healthcareweb/call.png')}}">
+                    <p>+12 (345) 678-9101</p>
+                </div>
+                <div  class="footerLogoContainer">
+                    <img class="logoImage" src="{{url_for('static', filename='healthcareweb/mail.png')}}">
+                    <p>vnHealth@gmail.com</p>
+                </div>
+            </section>
+            <section class="footerLinkContainer">
+                <h1>Company</h1>
+                <a class="footerLink">About Us</a>
+                <a class="footerLink">Blog</a>
+                <a class="footerLink">Partnerships</a>
+                <a class="footerLink">Careers</a>
+            </section>
+            <section class="footerLinkContainer">
+                <h1>Resources</h1>
+                <a class="footerLink">Privacy Policy</a>
+                <a class="footerLink">Cookes Policy</a>
+                <a class="footerLink">Support</a>
+                <a class="footerLink">Documentation</a>
+                <a class="footerLink">Terms & Conditions</a>
+            </section>
+            <section class="footerLinkContainer2">
+                <h1>Newsletter</h1>
+                <p>Subscribe to our newsletter to get the latest information from us.</p>
+                <div class="footerInputContainer"><input type="search" class="footerInput" placeholder="Email Address"><button class="footerButton">&rarr;</button></div>
+            </section>
+        </div>
+    </footer>
+    <div class="footerLogosContainer">
+        <img class="logoImage" src="{{url_for('static', filename='digitalbrandweb/facebook.png')}}">
+        <img class="logoImage" src="{{url_for('static', filename='digitalbrandweb/instagram.png')}}">
+        <img class="logoImage" src="{{url_for('static', filename='digitalbrandweb/linkedin.png')}}">
+    </div>
+    <h2 class="footerCopyright">© Copyright 2023 WVHealth All Rights Reserved.</h2>
+</body>
+</html>

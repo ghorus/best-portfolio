@@ -1,0 +1,166 @@
+.aboutDescription{font-size:19px;margin:5px 0px 0px 0px;}
+.aboutDescriptionContainer{display:grid;grid-template-columns: 300px 300px;}
+.aboutMainContainer{align-items: center;display: flex;justify-content: space-around;margin:100px 0px;}
+.aboutPicture{height:620px;}
+.aboutTextsContainer{width:600px;}
+.aboutTitle{color:#4770FF;margin:30px 0px 0px 0px;}
+body {
+    cursor: url('image-path.png');
+    font-family: 'Roboto Flex', sans-serif;
+    height:100vh;
+    margin:0px;
+    max-width: 100%;
+    overflow: hidden;
+    width:100vw;}
+.catLoadingImage{height:300px;}
+.catLoadingContainer{align-items: center; background-color: rgb(40, 40, 40);display: flex; height:100vh;justify-content: center; position:fixed;max-width: 100%; width:100vw;z-index: 2;}
+.getInTouchContainer{align-items: center;background-color: #ffffff; display: flex;flex-direction: column;padding:100px 0px;}
+.heroMainContainer{align-items: center;;display: flex;height: 800px;justify-content: center;}
+.heroTextsContainer{animation:intro-in 1s;animation-delay: 2.8s;color:white;margin:0px 350px 0px 0px;}
+.heroSection{background-image: url('darkblue_wallpaper.jpg');height:950px;max-width:100%;width: 100vw;}
+.heroText{font-size:35px;}
+.heroTexts{font-size:70px;font-weight: bold;margin:0px 0px 20px 0px;}
+.heroTexts p{margin:0px;}
+.hireButton{
+    background-color:#4770FF;
+    border:none;
+    border-radius: 6px;
+    color:white;
+    font-size:23px;
+    font-weight: bold;
+    height:50px;
+    width:150px;
+    margin:20px 20px 0px 0px;
+}
+.hireButton:hover{background-color: #6888fc;cursor: pointer;}
+hr{width:80vw;}
+html{cursor: url('mouse.png'), auto;scrollbar-width:thin;}
+::-webkit-scrollbar {
+    height: 5px;
+    width: 10px;
+    background: #ffffff;
+}
+::-webkit-scrollbar-thumb {
+    background: #4770FF;
+    -webkit-border-radius: 1ex;
+}
+.languageLogos{height:100px;margin:0px 40px 0px 0px;}
+.languageLogosContainer{
+    align-items: center;
+    display: flex;
+    height:200px;
+    justify-content: center;
+    max-width: 100%;
+    width: 100vw;
+}
+.languageLogosText{text-align: center;}
+.lastNameText{color:#7694FF;}
+.meContainer{animation:intro-in 1s;animation-delay: 2.8s; display: flex;position:relative;}
+.mePerksContainer{position:absolute;top:125px;left:-200px;}
+.mePerksContainer p{
+    align-items: center;
+    animation: float 2s ease-in-out infinite;
+    background-color: white;
+    border-radius: 6px;
+    color:#4770FF;
+    display: flex;
+    font-size:22px;
+    font-weight: bold;
+    height:50px;
+    justify-content: center;
+    margin:0px 0px 10px 0px;
+    width:270px;
+}
+.messageGif{align-items: center; display: flex;}
+.messageInput{height:200px;width:620px;display: flex;padding:10px 0px 0px 10px;}
+.nameEmailInput{height:30px;width:300px;padding:0px 0px 0px 10px;}
+.nameEmailInput,.messageInput{border: 1px solid black; border-radius: 10px;font-family: 'Roboto Flex', sans-serif;font-size:16px;}
+.nameEmailInputContainer{display: grid;grid-template-columns: 320px 320px;}
+.navLinks{
+    background-color: #0028bb;
+    color: white;
+    display: flex;
+    font-size: 20px;
+    font-weight: bold;
+    justify-content: space-between; 
+    overflow: hidden;
+    padding:20px 20px;
+    position: fixed;
+    transition: 0.3s linear; 
+    width:100vw;
+    z-index: 1;}
+.navSectionLinks{margin:0px 60px 0px 0px}
+.navSectionLinks a{margin:0px 0px 0px 20px;transition:0.2s;}
+.navSectionLinks a:hover{color:#92a9ff;cursor: pointer;}
+.portfolioContainer{margin:150px 0px;text-align: center;}
+.professionalPicture{border-radius: 10px;height:400px;}
+.project{border:1px solid black;border-radius:10px;height:490px;opacity: 0;overflow: hidden; margin:0px 0px 30px 30px;width:490px;transition:1s;}
+
+.projectImage{height:100%;object-fit: cover; width:100%;}
+.projects{display:flex;flex-wrap: wrap;width: 100vw;max-width: 100%;justify-content: center; transition: 0.2s;}
+.scrolled{
+    opacity:1;
+}
+::selection{
+    background: white;
+    color:#4770FF;
+}
+.typingImage{height:40px;object-fit:cover;scale:0;transition: 0.3s;width:200px;}
+.viewPortfolioLink{color: #7694FF;font-size:20px;}
+.viewPortfolioLink:hover{cursor: pointer;text-decoration: underline;}
+@keyframes float{
+    0%{transform: translateY(0px);}
+    50%{transform: translateY(20px);}
+    100%{transform: translateY(0px);}
+}
+@keyframes intro-in{
+    0% {opacity:0;translate:0px -40px;}
+    100% {opacity:1;translate:0px;}
+}
+@keyframes scroll-in{
+    100% {opacity:1;}
+}
+@media screen and (max-width:1245px) {
+    .aboutDescription{font-size:17px;}
+    .aboutDescriptionContainer{grid-template-columns: 250px 250px;}
+    .aboutPicture{height:500px;}
+    .aboutTextsContainer{ width:500px;}
+    .heroText{font-size:25px;}
+    .heroTexts{font-size:50px;}
+    .heroTextsContainer{color:white;margin:0px 250px 0px 0px;}
+    .languageLogos{height:70px;}
+    .mePerksContainer{position:absolute;left:-200px;top:125px;}
+    .mePerksContainer p{font-size:18px;width:220px;}
+}
+@media screen and (max-width:960px) {
+    .aboutMainContainer{flex-direction: column;}
+    .aboutPicture{height:380px;}
+    .heroMainContainer{flex-direction: column;}
+    .heroTexts{text-align: center;}
+    .heroTextsContainer{margin:0px 0px 50px 0px;}
+    .languageLogos{height:50px;margin:0px 20px 0px 0px;}
+    .mePerksContainer{left:-10px;top:230px;}
+}
+@media screen and (max-width:660px) {
+    .messageContainer{text-align: center;}
+    .messageInput{width:80vw;}
+    .nameEmailInput{margin:0px 0px 12px 0px;width:80vw;}
+    .nameEmailInputContainer{display: flex;flex-direction: column;}
+}
+@media screen and (max-width:630px) {
+    .aboutDescription{font-size:15px;}
+    .aboutDescriptionContainer{grid-template-columns: 200px 200px;}
+    .aboutPicture{height:430px;}
+    .aboutTextsContainer{width:400px;}
+    .languageLogosContainer{align-content:space-evenly;display: grid;grid-template-columns: 1fr 1fr 1fr 1fr;justify-content: center;}
+    .navLinks{font-size: 15px;}
+    .navSectionLinks a{margin:0px 0px 0px 10px;}
+    .project{height:300px;margin:0px 0px 30px 0px;width:300px;}
+}
+@media screen and (max-width:430px) {
+    .aboutDescription{font-size:12px;}
+    .aboutDescriptionContainer{grid-template-columns: 170px 170px;}
+    .aboutPicture{height:350px;}
+    .aboutTextsContainer{width:340px;}
+    .navLinks{font-size: 12px;}
+}

@@ -1,0 +1,337 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="{{url_for('static', filename='podcast.css')}}">
+    <link rel="icon" type="image/x-icon" href="{{url_for('static', filename='podcastweb/podcast.png')}}">
+    <!--google font-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter&family=Playfair+Display&display=swap" rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Podcast</title>
+</head>
+<body id="sub">
+    <section class="heroContainer">
+        <nav class="navContainer">
+            <div class="podcastContainer">
+                <img class="podcastLogo" src="{{url_for('static', filename='podcastweb/podcast.png')}}">
+                <h1 id="titles" class="podcastLogoText">Podcast</h1>
+            </div>
+            <a class="link">Features</a>
+            <a class="link">How it Works</a>
+            <a class="link">Pricing</a>
+            <a class="link">Categories</a>
+            <a class="link">About</a>
+        </nav>
+        <section class="heroTexts">
+            <h2 id="titles" class="heroTitle">New Sessions Available</h2>
+            <h1 id="titles" class="heroSubtitle">The Best Place to Listen to your Favorite <span class="emphasisText">Podcasts.</span></h1>
+            <p class="heroParagraph">Looking for a new way to stay informed and entertained? Look no further! With high-quality audio and 
+                expert hosts, our podcasts will keep you engaged and up-to-date on the latest trends and news. So why wait? 
+                Check us out today and start listening now!</p>
+            <div class="heroButtonsContainer">
+                <button class="purpleButton" id="trialButton">Start your free trial</button>
+                <div class="playContainer">
+                    <img class="playImage" src="{{url_for('static', filename='podcastweb/play_button.png')}}">
+                    <h3 class="playText">See how it works</h3>
+                </div>
+            </div>
+            <div class="listenersContainer">
+                <img class="groupPicture" src="{{url_for('static', filename='podcastweb/group_picture.png')}}">
+                <div>
+                    <h3 class="listenersTitle">200M +</h3>
+                    <h5 class="listenersSubtitle">Worldwide Listeners</h5>
+                </div>
+            </div>
+        </section>
+        <div class="guyContainer"></div>
+        <img class="guyImage" src="{{url_for('static', filename='podcastweb/playlistGuy.png')}}">
+        <div class="womanContainer"></div>
+        <img class="womanImage" src="{{url_for('static', filename='podcastweb/womanListening.png')}}">
+        <img class="soundwaveImage" src="{{url_for('static', filename='podcastweb/soundwave.png')}}">
+    </section>
+    <section class="learnMainContainer">
+        <div class="learnContainer">
+            <h1 class="creatorTitle" id="titles"><span class=emphasisText>Learn</span> from the creators themselves!</h1>
+            <p class="creatorParagraph">Are you ready to share your voice with the world? Our platform is the perfect place for podcast creators to 
+                reach a vast and engaged audience. So don't wait any longer, sign up now and start creating your next hit podcast!"</p>
+            <button class="purpleButton">Click Here!</button>
+        </div>
+        <section class="creatorsBox">
+            <div class="creatorBox" id="creatorBox1">
+                <img class="creatorImage" src="{{url_for('static', filename='podcastweb/influencer3.png')}}">
+                <div class="creatorTexts">
+                    <h1 class="creatorPerkTitle" id="titles">Get to know about user research</h1>
+                    <p class="creatorPerkParagraph">Learn from the best who will make you forget the rest!</p>
+                    <button class="playButton"><img class="playImage" src="{{url_for('static', filename='podcastweb/play_button.png')}}"> Play Now</button>
+                </div>
+            </div>
+            <div class="creatorBox" id="creatorBox2">
+                <img class="creatorImage2" src="{{url_for('static', filename='podcastweb/influencer2.png')}}">
+                <div class="creatorTexts">
+                    <h1 class="creatorPerkTitle" id="titles">Get to know about user marketing</h1>
+                    <p class="creatorPerkParagraph">Learn the top-notch marketing strategies in no time.</p>
+                    <button class="playButton"><img class="playImage" src="{{url_for('static', filename='podcastweb/play_button.png')}}"> Play Now</button>
+                </div>
+            </div>
+            <div class="creatorBox" id="creatorBox3">
+                <img class="creatorImage3" src="{{url_for('static', filename='podcastweb/influencer.png')}}">
+                <div class="creatorTexts">
+                    <h1 class="creatorPerkTitle" id="titles">How to manage money well</h1>
+                    <p class="creatorPerkParagraph">Manage your finance with the strategic solutions.</p>
+                    <button class="playButton"><img class="playImage" src="{{url_for('static', filename='podcastweb/play_button.png')}}"> Play Now</button>
+                </div>
+            </div>
+        </section>
+    </section>
+    <section class="uniqueMainContainer">
+        <section class="uniqueContainer">
+            <h1 class="creatorTitle" id="titles">What makes us <span class=emphasisText>unique</span> from others?</h1>
+            <p>Here are the 4 reasons that make you understand why we are unique!</p>
+            <div class="uniquePoints">
+                <img class="checkMarkImage" src="{{url_for('static', filename='podcastweb/checked.png')}}">
+                <p><strong>Record your episodes on any occasion.</strong></p>
+                <img class="checkMarkImage" src="{{url_for('static', filename='podcastweb/checked.png')}}">
+                <p><strong>Talk to the people who inspire you.</strong></p>
+                <img class="checkMarkImage" src="{{url_for('static', filename='podcastweb/checked.png')}}">
+                <p><strong>Let other people know about your thoughts.</strong></p>
+                <img class="checkMarkImage" src="{{url_for('static', filename='podcastweb/checked.png')}}">
+                <p><strong>Available on all platforms.</strong></p>
+            </div>
+            <button class="purpleButton">Know more &rarr;</button>
+        </section>
+        <div class="podcastPersonContainer">
+            <img class="podcastPersonImage" src="{{url_for('static', filename='podcastweb/podcastPerson.jpg')}}">
+            <img class="purplePlaylistImage" src="{{url_for('static', filename='podcastweb/purplePlaylist.jpg')}}">
+            <img class="purplePlaylist2Image" src="{{url_for('static', filename='podcastweb/purplePlaylist2.jpg')}}">
+            <img class="soundwave2Image" src="{{url_for('static', filename='podcastweb/soundwave.png')}}">
+        </div>
+    </section>
+    <section class="easyPodcastMainContainer">
+        <img class="podcastMicrophoneImage" src="{{url_for('static', filename='podcastweb/podcastMicrophone.png')}}">
+        <div class="easyPodcastContainer">
+            <h1 class="creatorTitle" id="titles">We make your <span class="emphasisText">podcasting</span> easy!</h1>
+            <p style="font-size:15px;">Discover the ultimate podcasting experience with us. Say goodbye to cluttered interfaces and endless 
+                searching for your next favorite show. With us, you can easily find, subscribe, and listen to thousands of 
+                podcasts all in one place.</p>
+        </div>
+        <section class="easyPodcastContainer2">
+            <div class="easyPodcast">
+                <img id="easyPodcastImage1" class="easyPodcastImage" src="{{url_for('static', filename='podcastweb/microphone.png')}}">
+                <h1 class="easyPodcastTitle" id="titles">Record Your Podcast</h1>
+                <p>Record your podcast, you can mention everything about the topic first!</p>
+            </div>
+            <div class="easyPodcast">
+                <img id="easyPodcastImage2" class="easyPodcastImage" src="{{url_for('static', filename='digitalbrandweb/toolbox.png')}}">
+                <h1 class="easyPodcastTitle" id="titles">Edit Your Podcast</h1>
+                <p>Listen to the raw version first and then edit where required.</p>
+            </div>
+            <div class="easyPodcast">
+                <img id="easyPodcastImage3" class="easyPodcastImage" src="{{url_for('static', filename='podcastweb/upload.png')}}">
+                <h1 class="easyPodcastTitle" id="titles">Upload Your Podcast</h1>
+                <p>Listen to the raw version first and then edit where required.</p>
+            </div>
+            <div class="easyPodcast">
+                <img id="easyPodcastImage4" class="easyPodcastImage" src="{{url_for('static', filename='podcastweb/crown.png')}}">
+                <h1 class="easyPodcastTitle" id="titles">Go Premium Podcast</h1>
+                <p>Opt for the premium versions if you want to unlock the features that will make your work more easy!</p>
+            </div>
+        </section>
+    </section>
+    <section class="categoryContainer">
+        <div class="podcastCategoryTexts">
+            <h1 class="creatorTitle" id="titles">Select and learn about your preferred <span class="emphasisText">categories</span> of podcast</h1>
+            <p>Join us as we delve into the latest news, trends, and insights on the topics that matter most to you. 
+                Whether you're interested in technology, science, or personal growth, we have something for everyone.</p>
+        </div>
+        <div class="categoryButtons">
+            <button class="categoryButton">All</button>
+            <button class="categoryButton">Music</button>
+            <button class="categoryButton">Technology</button>
+            <button class="categoryButton">Business</button>
+            <button class="categoryButton">Motivational</button>
+            <button class="categoryButton">Health</button>
+        </div>
+    </section>
+    <section class="courseMainContainer">
+        <div class="courseContainer">
+            <img class="courseImage" src="{{url_for('static', filename='podcastweb/podcastCourseImage1.jpg')}}">
+            <div>
+                <h1 class="courseTitle" id="titles">Product Designer</h1>
+                <p class="courseText">12 episodes = 120 minutes</p>
+                <div class="coursePlayContainer">
+                    <img class="playImage2" src="{{url_for('static', filename='podcastweb/play_button.png')}}">
+                    <p class="courseText">Play Now</p>
+                </div>
+            </div>
+        </div>
+        <div class="courseContainer">
+            <img class="courseImage" src="{{url_for('static', filename='podcastweb/podcastCourseImage2.jpg')}}">
+            <div>
+                <h1 class="courseTitle" id="titles">Digital Marketing</h1>
+                <p class="courseText">10 episodes = 120 minutes</p>
+                <div class="coursePlayContainer">
+                    <img class="playImage2" src="{{url_for('static', filename='podcastweb/play_button.png')}}">
+                    <p class="courseText">Play Now</p>
+                </div>
+            </div>
+        </div>
+        <div class="courseContainer">
+            <img class="courseImage" src="{{url_for('static', filename='podcastweb/podcastCourseImage3.jpg')}}">
+            <div>
+                <h1 class="courseTitle" id="titles">Business Strategy</h1>
+                <p class="courseText">12 episodes = 120 minutes</p>
+                <div class="coursePlayContainer">
+                    <img class="playImage2" src="{{url_for('static', filename='podcastweb/play_button.png')}}">
+                    <p class="courseText">Play Now</p>
+                </div>
+            </div>
+        </div>
+        <div class="courseContainer">
+            <img class="courseImage" src="{{url_for('static', filename='podcastweb/podcastCourseImage4.jpg')}}">
+            <div>
+                <h1 class="courseTitle" id="titles">Success Stories</h1>
+                <p class="courseText">16 episodes = 180 minutes</p>
+                <div class="coursePlayContainer">
+                    <img class="playImage2" src="{{url_for('static', filename='podcastweb/play_button.png')}}">
+                    <p class="courseText">Play Now</p>
+                </div>
+            </div>
+        </div>
+        <div class="courseContainer">
+            <img class="courseImage" src="{{url_for('static', filename='podcastweb/podcastCourseImage5.jpg')}}">
+            <div>
+                <h1 class="courseTitle" id="titles">Self-Improvement</h1>
+                <p class="courseText">10 episodes = 100 minutes</p>
+                <div class="coursePlayContainer">
+                    <img class="playImage2" src="{{url_for('static', filename='podcastweb/play_button.png')}}">
+                    <p class="courseText">Play Now</p>
+                </div>
+            </div>
+        </div>
+        <div class="courseContainer">
+            <img class="courseImage" src="{{url_for('static', filename='podcastweb/podcastCourseImage6.jpg')}}">
+            <div>
+                <h1 class="courseTitle" id="titles">Startup Founder</h1>
+                <p class="courseText">16 episodes = 180 minutes</p>
+                <div class="coursePlayContainer">
+                    <img class="playImage2" src="{{url_for('static', filename='podcastweb/play_button.png')}}">
+                    <p class="courseText">Play Now</p>
+                </div>
+            </div>
+        </div>
+        <div class="courseContainer">
+            <img class="courseImage" src="{{url_for('static', filename='podcastweb/podcastCourseImage7.jpg')}}">
+            <div>
+                <h1 class="courseTitle" id="titles">Investment</h1>
+                <p class="courseText">12 episodes = 120 minutes</p>
+                <div class="coursePlayContainer">
+                    <img class="playImage2" src="{{url_for('static', filename='podcastweb/play_button.png')}}">
+                    <p class="courseText">Play Now</p>
+                </div>
+            </div>
+        </div>
+        <div class="courseContainer">
+            <img class="courseImage" src="{{url_for('static', filename='podcastweb/podcastCourseImage8.jpg')}}">
+            <div>
+                <h1 class="courseTitle" id="titles">Technology</h1>
+                <p class="courseText">10 episodes = 120 minutes</p>
+                <div class="coursePlayContainer">
+                    <img class="playImage2" src="{{url_for('static', filename='podcastweb/play_button.png')}}">
+                    <p class="courseText">Play Now</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="newPodcasterMainContainer">
+        <div class="newPodcasterContainer">
+            <div class="newPodcasterTexts">
+                <h1 class="newPodcasterTitle" id="titles">Are you excited to get started on the journey of becoming a new podcaster?</h1>
+                <p>Sign up to get monthly insights to help you succeed!</p>
+                <button class="signupButton">Sign up &nearr;</button>
+            </div>
+            <img class="newPodcasterImage" src="{{url_for('static', filename='podcastweb/headphoneMan.png')}}">
+        </div>
+    </section>
+    <section class="priceContainer">
+        <h1 class="priceTitle" id="titles">Share your views towards your favorite topic at <span class="emphasisText">affordable prices</span></h1>
+        <div class="priceCategories">
+            <p class="priceCategory1">Monthly</p>
+            <p class="priceCategory2">Yearly</p>
+        </div>
+    </section>
+    <section class="packageMainContainer">
+        <div class="packageContainer">
+            <h2 class="packageTitle" id="titles">Basic</h2>
+            <h1 class="packagePrice" >$30</h1>
+            <div class="packageChecks">
+                <img class="packageCheckImage"  src="{{url_for('static', filename='digitalbrandweb/yellowCheckmark.png')}}">
+                <p class="packageDescription">Up to 20 shows</p>
+                <img class="packageCheckImage"  src="{{url_for('static', filename='digitalbrandweb/yellowCheckmark.png')}}">
+                <p class="packageDescription">Unlimited episodes</p>
+                <img class="packageCheckImage"  src="{{url_for('static', filename='digitalbrandweb/yellowCheckmark.png')}}">
+                <p class="packageDescription">50,000 monthly downloads</p>
+                <img class="packageCheckImage"  src="{{url_for('static', filename='digitalbrandweb/yellowCheckmark.png')}}">
+                <p class="packageDescription">Price shown after 40% discount applied. Discount applicable for first 12 months.</p>
+            </div>
+            <button class="packageButton" >Get 7 Days Free Trial &rarr;</button>
+        </div>
+        <div class="packageContainer">
+            <h2 class="packageTitle" id="titles">Popular</h2>
+            <h1 class="packagePrice" >$60</h1>
+            <div class="packageChecks">
+                <img class="packageCheckImage"  src="{{url_for('static', filename='podcastweb/checked.png')}}">
+                <p class="packageDescription">Pre & Post Roll Ads</p>
+                <img class="packageCheckImage"  src="{{url_for('static', filename='podcastweb/checked.png')}}">
+                <p class="packageDescription">Transcription (10hr/month)</p>
+                <img class="packageCheckImage"  src="{{url_for('static', filename='podcastweb/checked.png')}}">
+                <p class="packageDescription">100,000 monthly downloads</p>
+                <img class="packageCheckImage"  src="{{url_for('static', filename='podcastweb/checked.png')}}">
+                <p class="packageDescription">Advanced podcast with Google Analytics, Integration, Custom Host Bio, Domains.</p>
+            </div>
+            <button class="packageButton" >Get 7 Days Free Trial &rarr;</button>
+        </div>
+    </section>
+    <section class="signupMainContainer">
+        <div class="signupContainer">
+            <h1 class="signupTitle" id="titles">Sign up to get notifications for every new podcast release</h1>
+            <input class="signupInput" placeholder="enter your email address here">
+            <img class="signupImage"  src="{{url_for('static', filename='podcastweb/womanSmiling.png')}}">
+            <img class="signupImage2"  src="{{url_for('static', filename='podcastweb/groupSmiling.png')}}">
+        </div>
+    </section>
+    <footer class="footerMainContainer">
+        <div class="footerContainer">
+            <div class="podcastTextsContainer">
+                <div class="podcastContainer">
+                    <img class="podcastLogo" src="{{url_for('static', filename='podcastweb/podcast.png')}}">
+                    <h1 id="titles" class="podcastLogoText">Podcast</h1>
+                </div>
+                <p class="footerParagraph">2023 Best Podcast Award winner and choice for setting the standard for excellence in the industry, offering innovative features, 
+                    intuitive design, and unparalleled support for creators. Whether you're a curious learner, a passionate enthusiast or just in 
+                    need of some entertaining distraction, this is the best platform for you. Don't miss out and join today!</p>
+            </div>
+            <div class="footerLinksContainer">
+                <h1 class="footerLinksTitle" id="titles">Quick Links</h1>
+                <a>Features</a>
+                <a>How It Works</a>
+                <a>Pricing</a>
+                <a>Categories</a>
+                <a>About</a>
+            </div>
+            <div class="footerLinksContainer">
+                <h1 class="footerLinksTitle" id="titles">Other Links</h1>
+                <a>Privacy</a>
+                <a>Terms and Conditions</a>
+                <a>Disclaimer</a>
+                <a>FAQs</a>
+            </div>
+            <div class="footerContactsContainer">
+                <img class="podcastLogo" src="{{url_for('static', filename='digitalbrandweb/facebook.png')}}">
+                <img class="podcastLogo" src="{{url_for('static', filename='digitalbrandweb/linkedin.png')}}">
+                <img class="podcastLogo" src="{{url_for('static', filename='digitalbrandweb/instagram.png')}}">
+            </div>
+        </div>
+    </footer>
+</html>

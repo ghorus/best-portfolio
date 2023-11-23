@@ -1,0 +1,214 @@
+/* font-family: 'Inter', sans-serif;
+font-family: 'Playfair Display', serif;
+*/
+:root{
+    --beige:rgb(255, 249, 240);
+    --purple:rgb(146, 61, 226);
+}
+body{margin:0;}
+a:hover, button:hover{cursor: pointer;}
+#creatorBox1{background-color: rgb(255, 255, 255);}
+#creatorBox2{background-color: rgb(205, 235, 255);}
+#creatorBox3{background-color: rgb(119, 223, 255);}
+#easyPodcastImage1{background-color: aquamarine;}
+#easyPodcastImage2{background-color: rgb(255, 189, 127);}
+#easyPodcastImage3{background-color: rgb(246, 255, 127);}
+#easyPodcastImage4{background-color: rgb(208, 127, 255);}
+#sub{font-family: 'Inter', sans-serif;}
+#titles{font-family: 'Playfair Display', serif;}
+#trialButton{margin:0px 20px 0px 0px;}
+.categoryButton{background-color: var(--beige); border:1px solid black; border-radius: 6px;box-shadow: 0px 0px 10px gray; font-weight: bold;margin:0px 20px 20px 0px; padding:8px 25px;transition:0.3s;}
+.categoryButton:last-child{margin:0;}
+.categoryButton:hover{background-color: var(--purple);color:white;}
+.categoryContainer{align-items: center;background-color: var(--beige); display: flex;justify-content: center;padding:50px 0px;}
+.checkMarkImage{height:30px;}
+.courseContainer{align-items: center;background-color: white; border-radius: 10px; box-shadow: 0px 0px 15px gray; display: flex;height:125px;justify-content: center; width:355px;}
+.courseImage{border-radius:10px; height:95px;object-fit: cover; margin:0px 20px 0px 0px;width:120px;}
+.courseMainContainer{background-color: var(--beige);display: grid;grid-template-columns: 385px 385px 385px 385px;grid-template-rows: 150px; justify-content: center;}
+.coursePlayContainer{align-items: center; display: flex;}
+.courseText{font-size:14px;margin:5px 0px;}
+.courseTitle{font-size:18px;margin:0px 0px 5px 0px;}
+.creatorBox{align-items: center; border:1px solid black;border-radius: 15px;display: flex;flex-direction: column;height:170px;margin:0px 20px 0px 0px; padding:20px 20px 0px 150px;position:relative;transition: 0.3s; width:250px;}
+.creatorBox:last-child{margin:0;}
+.creatorImage{bottom:0;height:200px;left:-20px; position:absolute;}
+.creatorImage2{bottom:0;height:200px;left:-3px; position:absolute;}
+.creatorImage3{bottom:0;height:200px;left:-70px; position:absolute;}
+.creatorParagraph{font-size:17px;margin:35px 0px;}
+.creatorPerkParagraph{font-size:15px;}
+.creatorPerkTitle{font-size:18px;margin:0;}
+.creatorsBox{display: flex; position:absolute;bottom:-100px;}
+.creatorTitle{font-size:42px; margin:0;}
+.easyPodcast{align-items: center; display: flex;flex-direction: column;margin:0px 40px 0px 0px; text-align: center; width:260px;}
+.easyPodcast:last-child{margin:0;}
+.easyPodcastContainer{margin:0px 0px 50px 0px; text-align: center; width:600px;}
+.easyPodcastContainer2{display: flex;}
+.easyPodcastImage{background-color: antiquewhite;border-radius: 35%; height:35px;padding:15px; width:35px;}
+.easyPodcastMainContainer{align-items: center; display: flex; flex-direction: column;padding:150px 0px;position:relative;}
+.easyPodcastTitle{margin:10px 0px 0px 0px;}
+.emphasisText{color:var(--purple);}
+.footerContainer{ background-color: var(--beige); display: flex;justify-content:space-between;width:1200px;}
+.footerLinksContainer{display: flex;flex-direction: column;}
+.footerLinksTitle{font-size:18px;}
+.footerMainContainer{background-color: var(--beige); display:flex;justify-content: center;padding:0px 0px 50px 0px;}
+.footerParagraph{font-size:14px;}
+.groupPicture{height:60px;margin:0px 20px 0px 0px;}
+.guyContainer{background-color: rgb(255, 114, 138);border-radius: 0px 0px 35px 35px; height:450px;width:300px; position:absolute;top:0;right:150px;}
+.guyImage{height:270px;position:absolute;top:180px;right:80px;}
+.heroButtonsContainer{display: flex;}
+.heroContainer{background-color: var(--beige);padding:0px 0px 60px 0px; position:relative;}
+.heroParagraph{font-size:15px;margin:30px 0px;}
+.heroSubtitle{font-size:50px;margin:0;}
+.heroTexts{margin:0px 80px; padding:20px 190px; width:600px;}
+.heroTitle{font-size:20px;color:var(--purple)}
+.learnContainer{align-items: center; display: flex;flex-direction: column;text-align: center; width:600px;}
+.learnMainContainer{align-items: center; background-color: rgb(255, 234, 255);display: flex;height:400px; justify-content: center; margin:-10px 0px 0px 0px;padding:0px 0px 80px 0px; position:relative;}
+.link{font-weight: bold;}
+.listenersContainer{align-items: center; display: flex;margin:30px 0px;}
+.listenersTitle,.listenersSubtitle{margin:0;}
+.listenersSubtitle{font-weight: lighter;}
+.navContainer{align-items: center;display: flex;font-size: 15px;justify-content: space-between; padding:10px 15px;width:610px;}
+.newPodcasterContainer{background-color: rgb(255, 183, 50);border: 1px solid black;border-radius: 15px; padding:30px;position: relative; width:1200px;}
+.newPodcasterImage{position:absolute;bottom:0;right:40px;transition: 0.2s;}
+.newPodcasterMainContainer{display: flex; background-color: var(--beige);justify-content: center; padding:120px 0px;}
+.newPodcasterTexts{width:650px;}
+.newPodcasterTitle{font-size:38px;margin:0;}
+.packageButton{background-color: rgb(37, 37, 37); border:none; border-radius: 8px;color:white; font-size:17px;font-weight: bold;padding:12px 20px;}
+.signupButton:hover,.packageButton:hover{background-color: gray;}
+.packageCheckImage{height:20px;}
+.packageChecks{align-items: center; display: grid;grid-template-columns: 30px 300px;margin:20px 0px;}
+.packageContainer{align-items: center;border:1px solid black;border-radius: 15px; display: flex;flex-direction: column;padding:20px 0px;width:380px;}
+.packageContainer:first-child{background-color: var(--purple);color:white; margin:0px 50px 0px 0px;}
+.packageContainer:last-child{background-color: white;}
+.packageDescription{margin:10px 0px;}
+.packageMainContainer{background-color: var(--beige); display: flex;justify-content: center;padding: 50px;}
+.packagePrice{font-size:45px;margin:0;}
+.packageTitle{font-size:27px;margin:0;}
+.playButton{align-items: center; background-color: rgb(255, 255, 255); border-radius: 6px; display: flex; font-weight: bold; padding:3px; width:120px;}
+.playContainer{display: flex;align-items: center;}
+.playImage{height:32px; margin:0px 10px 0px 0px;}
+.playImage2{height:25px; margin:0px 10px 0px 0px;}
+.playText{margin:0;}
+.podcastCategoryTexts{width:470px;margin:50px;}
+.podcastContainer{display: flex;}
+.podcastLogo{height:35px;margin:0px 10px 0px 0px;}
+.podcastLogoText{font-size:25px; margin:0;}
+.podcastMicrophoneImage{height:340px;left:200px; position: absolute;top:0;}
+.podcastPersonContainer{position:relative;transition: 0.2s;}
+.podcastPersonImage{border-radius: 15px; height:300px;margin:0px 0px 0px 50px;}
+.podcastTextsContainer{width:470px;}
+.podcastTextsContainer,.footerLinksContainer{margin:0px 30px 0px 0px;}
+.priceCategories{display: flex;font-size: 18px;font-weight: bold;}
+.priceCategory1,.priceCategory2{align-items: center; box-shadow: 0px 0px 15px gray; display:flex; height:50px;justify-content: center; width:110px;}
+.priceCategory1{background-color: var(--purple);color:white;}
+.priceCategory2{background-color: white; color:var(--purple)}
+.priceCategory1:hover{background-color: white;color:var(--purple);}
+.priceCategory2:hover{background-color:black;color:white;}
+.priceContainer{align-items: center;background-color: var(--beige); display: flex;flex-direction: column;}
+.priceTitle{font-size:38px;text-align: center; width:510px;}
+.purpleButton{background-color: var(--purple);border:none; border-radius: 5px; color:white;font-weight: bold; padding:10px 15px;}
+.purpleButton:hover{background-color: rgb(255, 167, 255);}
+.purplePlaylistImage{border-radius:10px;bottom:-30px; height:150px;position: absolute;right:-40px;}
+.purplePlaylist2Image{border-radius:10px;height:260px;position: absolute;right:-130px;top:-70px;}
+.signupButton{background-color: rgb(39, 39, 39);border: none;border-radius: 7px;box-shadow: 0px 0px 20px rgb(240, 240, 240); color:white;padding:10px 25px;}
+.signupContainer{align-items: center;background-color: rgb(46, 202, 181); border:1px solid black;border-radius: 15px;box-shadow: 0px 0px 10px gray; display: flex;flex-direction: column;padding:30px 0px;position: relative; width:1300px;}
+.signupImage{bottom:0;height:300px;left: 20px;position: absolute;}
+.signupImage2{bottom:0;height:210px;right: 20px;position: absolute;}
+.signupInput{border: none; border-radius: 10px;height:40px;padding:2px 0px 2px 10px; width:470px;}
+.signupMainContainer{background-color: var(--beige);display: flex;justify-content: center;padding:60px 0px;}
+.signupTitle{font-size:38px;width:660px;margin:0px 0px 30px 0px; text-align: center;}
+.soundwaveImage{height:230px; position:absolute;bottom:0;right:240px;z-index: 1;}
+.soundwave2Image{height:250px; position:absolute;bottom:-160px;right:0;}
+.uniqueContainer{width:495px;}
+.uniqueMainContainer{align-items: center; background-color: var(--beige);display: flex;justify-content: center; padding:200px 0px;}
+.uniquePoints{align-items: center; display: grid;grid-template-columns: 45px 350px;margin:0px 0px 40px 0px;}
+.womanContainer{background-color: rgb(255, 127, 127);border-radius: 35px 35px 0px 0px; height:450px;width:300px; position:absolute;bottom:0;right:500px;}
+.womanImage{height:370px;position:absolute;bottom:0;right:480px;}
+
+.guyContainer,.guyImage,.soundwaveImage,.womanContainer,.womanImage{transition:0.2s;}
+@media screen and (max-width:1670px){
+    .heroTexts{width:500px;padding:20px 100px;}
+}
+@media screen and (max-width:1485px){
+    .courseMainContainer{grid-template-columns: 385px 385px 355px;grid-template-rows: 150px 150px;}
+    .guyContainer{height:300px;width:260px;}
+    .guyImage{height:230px;top:70px;}
+    .podcastMicrophoneImage{left:60px;}
+    .soundwaveImage{right:100px;}
+    .womanContainer{height:300px;width:260px;right:200px;}
+    .womanImage{height:300px;right:180px;}
+}
+@media screen and (max-width:1330px){
+    .creatorBox{padding:20px; width:100%}
+    .creatorImage,.creatorImage2,.creatorImage3{display: none;}
+    .creatorsBox{bottom:-150px;}
+}
+@media screen and (max-width:1210px){
+    .podcastMicrophoneImage{height:265px;left:30px;}
+    .purplePlaylist2Image{display: none;}
+}
+@media screen and (max-width:1180px){
+    .courseMainContainer{grid-template-columns: 385px 385px;grid-template-rows: 150px 150px 150px;}
+    .newPodcasterContainer{width: 100%;margin:0px 10px;}
+}
+@media screen and (max-width:1145px){
+    .easyPodcast{width: 100%;}
+    .guyContainer{border-radius: 35px 0px 0px 35px;right:0;top:60px;width:320px;}
+    .guyImage{right:0px; top:130px;}
+    .newPodcasterImage{height:290px; right:10px;}
+    .soundwaveImage{height:170px;right:60px;}
+    .womanContainer{height:270px;right:80px;}
+    .womanImage{height:250px;right:60px;}
+}
+@media screen and (max-width:1025px){
+    .footerContainer{align-items: center; flex-direction: column;text-align: center;}
+    .heroTexts{margin:0px 20px 0px 0px;width:420px;}
+    .newPodcasterImage{height:240px; right:0px;}
+    .podcastMicrophoneImage{display: none;}
+    .podcastTextsContainer,.footerLinksContainer{margin:0px 0px 30px 0px;}
+    .podcastTextsContainer{align-items: center; display: flex;flex-direction: column;width:80%;}
+    .purplePlaylistImage{display: none;}
+    .signupContainer{width:100%;}
+    .signupImage,.signupImage2{display: none;}
+    .signupInput{width:80%;}
+    .signupTitle{width:90%;}
+}
+@media screen and (max-width:885px){
+    .categoryContainer{flex-direction: column;}
+    .easyPodcast{margin:0px 0px 40px 0px;}
+    .easyPodcastContainer2{flex-direction: column;}
+    .guyContainer,.guyImage,.soundwaveImage,.womanContainer,.womanImage{display: none;}
+    .heroTexts{align-items: center; display: flex;flex-direction: column; margin:0; padding:0px 0px 0px 0px;text-align: center; width:100%;}
+    .heroSubtitle{font-size:40px;}
+    .packageContainer:first-child{margin:0px 0px 30px 0px;}
+    .packageMainContainer{align-items: center; flex-direction: column;}
+    .podcastPersonImage{height:300px;object-fit: cover; width:200px;}
+    .soundwave2Image{display: none;}
+}
+@media screen and (max-width:730px){
+    .courseMainContainer{grid-template-columns: 365px;grid-template-rows: 150px 150px 150px 150px 150px 150px 150px;}
+    .newPodcasterTexts{width: 96%;}
+    .newPodcasterImage{display: none;}
+}
+@media screen and (max-width:645px){
+    .creatorBox{height:120px; margin:0px 0px 20px 0px;padding:20px;}
+    .creatorsBox{flex-direction: column;bottom:-80px;}
+    .easyPodcastContainer{width:100%;}
+    .learnMainContainer{height:750px;padding:0px 0px 280px 0px;}
+    .link{margin:5px 0px;}
+    .navContainer{flex-direction: column; width:100%;padding:0;}
+    .podcastCategoryTexts{width:90%;}
+    .podcastPersonImage{margin:0;}
+}
+@media screen and (max-width:630px){
+    .creatorBox{padding:20px; width:300px;}
+    .creatorTitle{font-size: 30px;}
+    .podcastPersonImage{display: none;}
+    .priceTitle{font-size: 30px; width:85%;}
+    .uniqueContainer{align-items: center; display: flex;flex-direction: column; text-align: center;width:100%;}
+    .uniquePoints{font-size:15px;grid-template-columns: 37px 310px;}
+}
+@media screen and (max-width:385px) {
+    .packageChecks{grid-template-columns: 30px 1fr;}
+    .packageContainer{width:100%;}
+    .packageMainContainer{padding: 10px;}
+}

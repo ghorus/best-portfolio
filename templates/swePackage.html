@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{{url_for('static', filename='swePackage.css')}}">
+    <link rel="icon" type="image/x-icon" href="{{url_for('static', filename='swePackageweb/package.png')}}">
+    <!--google fonts-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Just+Me+Again+Down+Here&family=Roboto&family=Roboto+Flex:opsz,wght@8..144,400;8..144,700&family=Roboto+Mono:wght@400;700&display=swap" rel="stylesheet">
+    <title>Become a SWE Package</title>
+</head>
+<body>
+    <header class="mainNav">
+        <h1 class="webName">Become a SWE Package</h1>
+        <nav>
+            <button class="signupButton">Signup</button>
+            <button class="loginButton">Login</button>
+        </nav>
+    </header>
+    <section class="packageIntroContainer">
+        <div class="packageIntroInnerContainer">
+            <h1 class="packageIntroTitle">The Complete Package to Become a SWE (Software Engineer)</h1>
+            <div class="coursePerksContainer">
+                <h3>Easy enrollment.</h3>
+                <h3>No experience required.</h3>
+                <h3>Zero cost.</h3>
+                <h3>1,200 People completed the roadmap as of today.</h3>
+                <h3>4.5 out of 5 rating ⭐ ⭐ ⭐ ⭐</h3>
+            </div>
+            <button class="roadmapButton" onclick="roadmapComeIn()">Just Follow This Roadmap</button>
+            <h3 class="scrollDownLearnMore">or scroll down to learn more</h3>
+            <img class="packageImage" src="{{url_for('static', filename='swePackageweb/package.png')}}">
+        </div>
+    </section>
+    <section class="learnSectionContainer">
+        <img class="learnSectionImage" src="{{url_for('static', filename='swePackageweb/mobile.png')}}">
+        <div class="learnSection">
+            <h1>What You'll Learn</h1>
+            <h3>✓ What is a SWE & How Much They Make</h3>
+            <h3>✓ Software Engineer Specializations</h3>
+            <h3>✓ Data Structures & Algorithms</h3>
+            <h3>✓ Full-stack Web Development</h3>
+            <h3>✓ Game Development</h3>
+            <h3>✓ Data Visualization</h3>
+        </div>
+    </section>
+    <section class="processSectionsContainer">
+        <div class="processSectionHighlights">
+            <h1>Easy to Start & Learn.</h1>
+            <h1>Learn At Your Own Pace.</h1>
+            <h1>Practice as You Learn.</h1>
+        </div>
+        <div class="processSections">
+            <section class="processSectionContainer">
+                <div class="processSectionImageContainer">
+                    <img class="processSectionImage" src="{{url_for('static', filename='swePackageweb/install icon.png')}}">
+                </div>
+                <div class="processSection">
+                    <h1>Easy-to-follow installations.</h1>
+                    <h3>All free, no-cost setup. You’ll only need to install when you dive deep into the course to start doing cool things.</h3>
+                </div>
+            </section>
+            <section class="processSectionContainer">
+                <div class="processSectionImageContainer">
+                    <img class="processSectionImage" src="{{url_for('static', filename='swePackageweb/stepbystep.png')}}">
+                </div>
+                <div class="processSection">
+                    <h1>Detailed step-by-step guidance.</h1>
+                    <h3>Ask a free tutor to help if you’re stuck. Join chat rooms as you learn to tackle exercise problems together. 
+                        Take notes that you can save & share.</h3>
+                </div>
+            </section>
+            <section class="processSectionContainer">
+                <div class="processSectionImageContainer">
+                    <img class="processSectionImage" src="{{url_for('static', filename='swePackageweb/code icon.png')}}" style="height:90px;width:90px;">
+                </div>
+                <div class="processSection">
+                    <h1>Practice problems & exercises.</h1>
+                    <h3>Get a deeper understanding of what you learn with exercises.</h3>
+                </div>
+            </section>
+        </div>
+    </section>
+    <section class="testSectionContainer">
+        <div class="testSectionImageContainer"><img src="{{url_for('static', filename='swePackageweb/coder.png')}}" style="height:350px;"></div>
+        <div class="placementTestsContainer">
+            <section class="placementTestContainer">
+                <h3>See what else there is to learn.</h3>
+                <h2>Already know some coding?</h2>
+                <button>TAKE THE PLACEMENT TEST</button>
+            </section>
+            <section class="placementTestContainer">
+                <h3>Cater your learning to your interest!</h3>
+                <h2>Don't know what to specialize in?</h2>
+                <button>TAKE THE SOFTWARE SPECIALTY TEST</button>
+            </section>
+        </div>
+        <div class="faqMainContainer">
+            <div class="faqContainer">
+                <h1 class="faqTitle">Common FAQ’s</h1>
+                <h2 class="faqQuestion question1" onclick="open1()">How long does it take to finish the course?</h2>
+                <p class="faqParagraph" id="1">If you consistently learn 1-2 hours a day, it would take about 3 months to finish if you’re starting new.</p>
+                <hr>
+                <h2 class="faqQuestion question2" onclick="open2()">What programming languages will I be learning?</h2>
+                <p class="faqParagraph" id="2">You'll be learning Python, JavaScript, HTML, CSS, React Native, and C++! </p>
+                <hr>
+                <h2 class="faqQuestion question3" onclick="open3()">What are some projects I’ll be making?</h2>
+                <p class="faqParagraph" id="3">You'll make a game, a website with a database, visualize data,and work on Leetcode!</p>
+                <hr>
+            </div>
+        </div>
+    </section>
+    <footer>
+        <p>Made by Victor, 2023. Love this site? Consider donating to support the site. </p>
+    </footer>
+    <div class="roadmapContainer">
+        <button class="escapeButton" onclick="escapeRoadmap()">esc</button>
+        <section>
+            <h1 class="roadmapHeader">Roadmap</h1>
+            <h3 class="step">1. Introduction to Software Engineering<progress  value="2" max="4">  </progress></h3>
+            <h3 class="step">2. Front-end<progress value="10" max="100"> 10% </progress></h3>
+            <h3 class="step">3. JavaScript<progress value="32" max="100"> 32% </progress></h3>
+            <h3 class="step">4. Python<progress value="32" max="100"> 32% </progress></h3>
+            <h1 class="roadmapHeader">Choose a specialty:</h1>
+            <h3 class="step">A.a. Full-stack Web Development<progress value="32" max="100"> 32% </progress></h3>
+            <h3 class="step">A.b. Website Deployment<progress value="12" max="100"> 12% </progress></h3>
+            <h3 class="step">B. Data Visualization<progress value="59" max="100"> 59% </progress></h3>
+            <h3 class="step">C. Game Development<progress value="26" max="100"> 26% </progress></h3>
+            <h3 class="step">D.a. Mobile App Development<progress value="5" max="100"> 5% </progress></h3>
+            <h3 class="step">D.b. Mobile App Deployment<progress value="10" max="100"> 10% </progress></h3>
+        </section>
+    </div>
+    <script>
+        function escapeRoadmap(){
+            const roadMap = document.querySelector(".roadmapContainer")
+            roadMap.style.right = "100%"
+        }
+        function roadmapComeIn(){
+            const roadMap = document.querySelector(".roadmapContainer")
+            roadMap.style.right = "0"
+        }
+        //faqs//
+        const faqAnswer1 = document.getElementById("1")
+        const faqAnswer2 = document.getElementById("2")
+        const faqAnswer3 = document.getElementById("3")
+        function open1(){
+            console.log(faqAnswer1.style.display)
+            if(faqAnswer1.style.display == "none" | faqAnswer1.style.display == ""){
+                faqAnswer1.style.display = "initial"
+            }
+            else{faqAnswer1.style.display="none"}
+        }
+        function open2(){
+            if(faqAnswer2.style.display == "none" | faqAnswer2.style.display == ""){
+                faqAnswer2.style.display = "initial"
+            }
+            else{faqAnswer2.style.display="none"}
+
+        }
+        function open3(){
+            if(faqAnswer3.style.display == "none" | faqAnswer3.style.display == ""){
+                faqAnswer3.style.display = "initial"
+            }
+            else{faqAnswer3.style.display="none"}
+
+        }
+    </script>
+</body>
+</html>

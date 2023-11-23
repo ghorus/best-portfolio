@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="{{url_for('static', filename='index.css')}}">
+    <link rel="icon" type="image/x-icon" href="{{url_for('static', filename='vnLogo.jpg')}}">
+    <!--google font-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Flex:opsz,wght@8..144,400;8..144,900&display=swap" rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Victor Nguyen</title>
+</head>
+<body>
+    <div class="catLoadingContainer"><img class="catLoadingImage" src="{{url_for('static', filename='catLoading.gif')}}"></div>
+    <div class="heroSection">
+        <nav class="navLinks">
+            <a>Victor Nguyen</a>
+            <span class="navSectionLinks">
+                <a onClick="document.querySelector('.heroSection').scrollIntoView({ behavior: 'smooth'});">Home</a>
+                <a onClick="document.querySelector('.portfolioContainer').scrollIntoView({ behavior: 'smooth'});">Portfolio</a>
+                <a onClick="document.querySelector('.aboutMainContainer').scrollIntoView({ behavior: 'smooth'});">About</a>
+                <a onClick="document.querySelector('.getInTouchContainer').scrollIntoView({ behavior: 'smooth'});">Contact</a>
+        </span>
+       </nav>
+       <div class="heroMainContainer">
+           <section class="heroTextsContainer">
+               <div class="heroTexts">
+                   <p class="heroText">Hi, I'm</p>
+                   <p class="heroTextEmphasize">Victor <span class="lastNameText">Nguyen</span></p>
+                   <p class="heroText">a web developer.</p>
+               </div>
+               <button class="hireButton" onClick="document.querySelector('.getInTouchContainer').scrollIntoView({ behavior: 'smooth'});">Hire Me</button>
+               <a class="viewPortfolioLink" onClick="document.querySelector('.portfolioContainer').scrollIntoView({ behavior: 'smooth'});">View My Portfolio</a>
+           </section>
+           <section class="meContainer">
+                <div class="mePerksContainer">
+                    <p>DETAIL-ORIENTED</p>
+                    <p>RESPONSIVE DESIGNS</p>
+                    <p>TEAM PLAYER</p>
+                </div>
+                <img class="professionalPicture" src="{{url_for('static', filename='me.jpg')}}">
+           </section>
+       </div>
+    </div>
+    <section class="languageLogosContainer">
+        <img class="languageLogos" src="{{url_for('static', filename='flask_logo.png')}}">
+        <img class="languageLogos" src="{{url_for('static', filename='css_logo.png')}}">
+        <img class="languageLogos" src="{{url_for('static', filename='git_logo.png')}}">
+        <img class="languageLogos" src="{{url_for('static', filename='html_logo.png')}}">
+        <img class="languageLogos" src="{{url_for('static', filename='js_logo.png')}}">
+        <img class="languageLogos" src="{{url_for('static', filename='postgresql.png')}}">
+        <img class="languageLogos" src="{{url_for('static', filename='python_logo.png')}}">
+        <img class="languageLogos" src="{{url_for('static', filename='react_logo.png')}}">
+    </section>
+    <section class="portfolioContainer">
+        <h1>Portfolio</h1>
+        <div class="projects">
+            <a href="{{url_for('digitalbrand')}}"><div class="project hide"><img class="projectImage" src="{{url_for('static', filename='website_digital.png')}}"></div></a>
+            <a href="{{url_for('podcast')}}"><div class="project"><img class="projectImage" src="{{url_for('static', filename='website_podcast.png')}}"></div></a>
+            <a href="{{url_for('healthcare')}}"><div class="project"><img class="projectImage" src="{{url_for('static', filename='website_healthcare.png')}}"></div></a>
+            <a href="{{url_for('swePackage')}}"><div class="project"><img class="projectImage" src="{{url_for('static', filename='website_swePackage.png')}}"></div></a>
+            <!-- <div class="project"></div>
+            <div class="project"></div>
+            <div class="project"></div>
+            <div class="project"></div>
+            <div class="project"></div>
+            <div class="project"></div> -->
+        </div>
+    </section>
+    <section class="aboutMainContainer">
+        <img class="aboutPicture" src="{{url_for('static', filename='me_temples.jpg')}}">
+        <div class="aboutTextsContainer">
+            <h1 class="aboutTitle">About Me</h1>
+            <p class="aboutDescription">
+                I’m a web developer and love that it not only requires technical knowledge 
+                but also creativity. I make website designs come alive, fully-functional, and 
+                responsive with my development skills. Making websites user-friendly, visually appetizing, and smooth is my craft. 
+
+            </p>
+            <p class="aboutDescription">I also love food, travel, badminton, and movies!</p>
+            <section class="aboutDescriptionContainer">
+                <div>
+                    <h3 class="aboutTitle">Name</h3>
+                    <p class="aboutDescription">Victor Nguyen</p>
+                </div>
+                <div>
+                    <h3 class="aboutTitle">Education</h3>
+                    <p class="aboutDescription">Self-taught</p>
+                </div>
+                <div>
+                    <h3 class="aboutTitle">Email</h3>
+                    <p class="aboutDescription">nguyen.victor4@gmail.com</p>
+                </div>
+                <div>
+                    <h3 class="aboutTitle">Employment</h3>
+                    <p class="aboutDescription">Open for work</p>
+                </div>
+            </section>
+        </div>
+    </section>
+    <hr>
+    <section class="getInTouchContainer">
+        <form onsubmit="sendEmail();reset();return false" class="email_form">
+            <h1>Get in Touch</h1>
+            <div class="nameEmailInputContainer">
+                <input class="nameEmailInput" id="name" placeholder="Name*">
+                <input class="nameEmailInput" id="email" placeholder="Email">
+            </div>
+            <div class="messageContainer">
+                <div class="messageGif">
+                    <h3>Message</h3>
+                    <img class="typingImage" src="{{url_for('static', filename='typing.gif')}}">
+                </div>
+                <textarea class="messageInput" id="message" placeholder="Type your message here*"></textarea>
+            </div>
+            <button class="hireButton" type="submit">Send</button>
+        </form>
+    </section>
+    <script src="https://smtpjs.com/v3/smtp.js"></script>
+    <script src="{{url_for('static', filename='index.js')}}"></script>
+</body>
+</html>

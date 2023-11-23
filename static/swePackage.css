@@ -1,0 +1,173 @@
+/* font-family: 'Just Me Again Down Here', cursive;
+font-family: 'Roboto', sans-serif;
+font-family: 'Roboto Flex', sans-serif;
+font-family: 'Roboto Mono', monospace; */
+:root {
+    --blue:#141233;
+    --buttonBorder:none;
+    --buttonBorderRadius: 8px;
+    --buttonFontSize: 16px;
+    --buttonHeight: 40px;
+    --roboto: 'Roboto', sans-serif;
+    --rMono: 'Roboto Mono', monospace;
+    --rFlex: 'Roboto Flex', sans-serif;
+    --tan: #FFF9C1;
+    --writingFont:'Just Me Again Down Here', cursive;
+    --yellow: #FBFF23;
+}
+body {background-color: var(--blue);color:white;margin: 0;position:relative;}
+.coursePerksContainer {background-color: #495A72;border-radius: 15px;display: grid;font-family: var(--rMono);justify-content: center;padding:20px 0px;width: 600px;}
+.coursePerksContainer h3 {font-weight: lighter;margin: 0px;}
+.coursePerksContainer h3:nth-child(4) {margin: 20px 0px 0px 0px;}
+.escapeButton{background-color: red;border:none; border-radius: 10px; color:white;margin:20px 0px 0px 0px;padding:10px 20px;}
+.escapeButton:hover{background-color: rgb(255, 96, 96);}
+.faqContainer{color:black;font-family: var(--rFlex);width:80vw;}
+.faqMainContainer{display: flex;justify-content: center;padding:40px 0px 0px 0px;}
+.faqParagraph{display: none; font-family: var(--rMono);}
+.faqQuestion{margin:0;}
+.faqQuestion:hover{cursor: pointer;color:rgb(70, 70, 70);transform: translateX(30px);transition: 0.2s;}
+.faqTitle{font-size:35px;}
+footer{display: flex;font-family: var(--roboto);font-size: 22px;justify-content: center;max-width: 100%; padding:20px 0px;width: 100vw;}
+hr{border-color:  black;}
+.learnSection {margin:0px 0px 0px 150px;}
+.learnSection h1 {font-family: var(--rFlex);font-size:50px;margin:0px;}
+.learnSection h3 {font-family: var(--rMono);font-weight: 300;}
+.learnSectionContainer {align-items: center;background-color: var(--tan);color:black;display: flex;justify-content: center;max-width: 100%; padding:80px 0px;width: 100vw;}
+.learnSectionImage {height:320px;}
+.loginButton {background-color: var(--yellow);margin:0px 0px 0px 10px;}
+.loginButton,.signupButton {font-weight: bold;width: 85px;}
+.loginButton:hover,.signupButton:hover{scale:1.1;transition: 0.2s ease-in-out;}
+.loginButton,.signupButton,.roadmapButton {border:var(--buttonBorder);border-radius: var(--buttonBorderRadius);font-family: var(--rMono);font-size: var(--buttonFontSize);height: var(--buttonHeight);}
+.mainNav {align-items: center;display: flex;height:60px;justify-content: space-between;padding:0px 15px;}
+.packageImage {position: absolute;right: -180px;top:100px;}
+.packageIntroContainer {display: flex;justify-content: center;margin:80px 0px;}
+.packageIntroInnerContainer {align-items: center;display: flex;flex-direction: column;position: relative;width:680px;}
+.packageIntroTitle, .webName{font-family: var(--rFlex);font-size: 40px;text-align: center;}
+.placementTestContainer{align-items: center;background-color: var(--blue);border:solid 1px;border-radius: 15px;display: flex;flex-direction: column;padding: 40px 0px;width: 430px;}
+.placementTestContainer:nth-child(2){margin:0px 0px 0px 30px;padding:40px 40px;}
+.placementTestContainer h3{font-family: var(--writingFont);font-size: 30px;font-weight: lighter;margin:0;}
+.placementTestContainer h2{font-family: var(--rFlex);margin:20px 0px;}
+.placementTestContainer button{
+    align-items: center;
+    border: var(--buttonBorder);
+    border-radius: var(--buttonBorderRadius);
+    background-color: var(--yellow);
+    display: flex;
+    font-size: 18px;
+    font-weight: bold;
+    height:var(--buttonHeight);
+    justify-content: center;
+    padding:0px 20px;
+}
+.placementTestContainer button:hover{background-color: rgb(255, 255, 255);}
+.placementTestContainer button:nth-child(1){width: 310px;}
+.placementTestContainer button:nth-child(2){width:410px;}
+.placementTestsContainer{display: flex;justify-content: center;}
+.processSection{display: flex;flex-direction: column;height: 200px;justify-content: center;width:500px;}
+.processSectionContainer{align-items: center;display: grid;grid-template-columns: 130px 1fr;justify-content: center;}
+.processSection h1{font-family: var(--rFlex);font-size: 25px;margin:10px 0px 0px 0px;}
+.processSection h3{font-family: var(--roboto);font-weight: lighter;margin: 0px;}
+.processSectionHighlights{font-size: 30px;font-family: var(--rFlex);}
+.processSectionHighlights h1{margin: 0px;}
+.processSectionImage{width: 60px;height: 60px;}
+.processSectionImageContainer{align-items: center;background-color: white;border-radius: 50%;display: flex;height: 100px;justify-content: center;width: 100px;}
+.processSections{margin:0px 0px 0px 180px;width: 500px;}
+.processSectionsContainer{align-items: center;display: flex;justify-content: center;padding: 100px;}
+.roadmapButton{background-color: var(--yellow);height:50px;margin:20px 0px;padding:0px 15px;transition: 0.2s ease-in-out;width: 280px;}
+.roadmapButton:hover{background-color: var(--blue);border:solid 2px;border-color: var(--yellow);color: white;}
+.scrollDownLearnMore {font-size: 15px;font-family: var(--rMono);font-weight: lighter;margin: 0;}
+.testSectionContainer{background-color: var(--tan);padding: 80px 0px;}
+.testSectionImageContainer{display: flex;justify-content: center;max-width: 100%; width: 100vw;}
+.webName {font-size: 25px;font-weight: bold;}
+/*roadmap*/
+.roadmapHeader:nth-child(1){font-size:50px;}
+.step{border-left: solid 5px rgb(175, 175, 175);margin:0; padding:10px 80px 10px 80px;transition: 0.2s ease-in-out;}
+.step:hover{background-color: rgb(78, 78, 78);border-left: solid 5px rgb(66, 228, 161)}
+.step{font-weight: lighter;}
+.roadmapContainer{
+    align-items: center; 
+    background-color: black;
+    display: flex;
+    flex-direction: column;
+    font-family: var(--rFlex); 
+    justify-content: center;
+    max-width: 100%;
+    opacity:0.9;
+    padding:0px 0px 40px 0px;
+    position:absolute; 
+    right:100%;
+    top:0;
+    transition: 0.5s;
+    width: 100vw;}
+progress{accent-color:rgb(66, 228, 161); display: block;margin:5px 0px 0px 0px; width:100%;}
+
+@media screen and (max-width:1400px) {
+    .processSection{width:100%;}
+    .processSections{margin:0px 0px 0px 80px;width: 500px;}
+    .processSectionsContainer{padding: 40px;}
+}
+@media screen and (max-width:1180px) {
+    .processSectionHighlights{font-size: 22px;}
+}
+@media screen and (max-width:1100px) {
+    .processSection{ width:300px;}
+    .processSection h1{font-family: var(--rFlex);font-size: 20px;margin: 20px 0px 0px 0px;}
+
+}
+@media screen and (max-width: 1065px){
+    .learnSection {font-size: 0.8em;}
+    .learnSection h1 {font-size: 30px;}
+    .learnSectionImage {height: 280px;}
+    .packageImage {height: 200px;right: -70px;}
+    .placementTestContainer{margin:20px 0px;}
+    .placementTestContainer:nth-child(2){margin:0;}
+    .placementTestsContainer{align-items: center;flex-direction: column;}
+    .processSectionsContainer{flex-direction: column;}
+}
+@media screen and (max-width: 915px){
+    .learnSection {margin:0px 0px 0px 80px;}
+    .learnSectionImage {height: 250px;}
+}
+@media screen and (max-width: 840px){
+    .packageImage {height: 170px;right: -20px;}
+}
+@media screen and (max-width:800px){
+    footer{font-size: 16px;}
+    .learnSection {margin:100px 0px 0px 0px;}
+    .learnSectionContainer {flex-direction: column;}
+}
+@media screen and (max-width:740px){
+    .packageImage {display: none;}
+    .packageIntroTitle {font-size:30px;}
+}
+@media screen and (max-width:640px){
+    .coursePerksContainer{width: 500px;}
+    .coursePerksContainer h3{font-size: 15px;}
+    footer{font-size: 13px;}
+    .processSectionContainer{grid-template-columns: 130px 250px;padding:0;margin:0;}
+    .processSections{margin: 0;}
+    .processSectionsContainer{margin:0;}
+}
+@media screen and (max-width:570px){
+    .placementTestContainer{width:300px;}
+    .placementTestContainer:nth-child(2){margin:0px 0px 0px 0px;padding:40px 10px; width: 300px;}
+    .placementTestContainer h2{font-size: 20px;}
+    .placementTestContainer h2:nth-child(2){font-size: 17px;}
+    .placementTestContainer h3{font-size: 22px;}
+    .placementTestContainer button{font-size:14px;width:260px;}
+    .placementTestContainer button:nth-child(2){width: 300px;}
+}
+@media screen and (max-width:530px) {
+    .coursePerksContainer {width: 400px;}
+    .coursePerksContainer h3{font-size: 12px;}
+    footer{text-align: center;}
+    .mainNav{flex-direction: column;padding:0;}
+    .processSectionContainer{display: flex;flex-direction: column-reverse;}
+    .processSectionHighlights{font-size: 15px;}
+    .processSections{width:100%;}
+}
+@media screen and (max-width:425px) {
+    .coursePerksContainer {width: 320px;}
+    .coursePerksContainer h3 {font-size: 10px;}
+    .learnSectionImage {height: 200px;}
+}

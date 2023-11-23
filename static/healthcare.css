@@ -1,0 +1,236 @@
+/* font-family: 'Inter', sans-serif;
+font-family: 'Oswald', sans-serif; */
+:root{
+    --blue:rgb(0, 159, 187);
+}
+body{background-color: rgb(232, 250, 255); margin:0;}
+body,button{font-family: 'Inter', sans-serif;}
+.link:hover{border-bottom: 2px solid var(--blue);padding:0px 0px 8px 0px;}
+a:hover,button:hover,.rightArrow:hover{cursor: pointer;}
+footer{background-color: black;color:white;display: flex;justify-content: center;margin:90px 0px 0px 0px;}
+nav{display: flex;justify-content: center;padding:20px 0px;}
+#logo{font-family: 'Oswald', sans-serif;}
+.appointmentChecks{align-items: center; display: grid;grid-template-columns: 35px 180px 35px 180px;}
+.appointmentContainer{display: flex;justify-content: center;padding:70px 0px;}
+.appointmentTexts{margin:0px 50px 0px 0px; width:630px;}
+.article{align-items: center; display: flex;}
+.articleImage{border-radius:12px; height:100%;margin:0px 40px 0px 0px; width:170px;}
+.articleImage:hover,.articleRead:hover,.articleTitle,.articleView{cursor: pointer;}
+.articleRead{color:rgb(230, 104, 0); font-size:17px;}
+.articleTitle{font-size:23px;}
+.authorContainer{align-items: center; display: grid;grid-template-columns:80px 100px;}
+.authorImage{height:65px;}
+.authorMainContainer{display: flex;justify-content: space-between;margin:20px 0px 0px 0px;}
+.blueButton{
+    background-color:var(--blue); 
+    border:none; 
+    border-radius: 15px;
+    color:white; 
+    font-size: 15px; 
+    font-weight: bold;
+    height:60px;
+    margin:20px 0px; 
+    transition: 0.2s linear;
+    width:250px;}
+.blueButton:hover{background-color: white; border:2px solid var(--blue); color:var(--blue)}
+.checkMark{height:25px;}
+.curvedArrow{font-size: 35px;padding:0px 10px 0px 0px;}
+.curvedArrow2{font-size: 145px;left:200px;position: absolute; top:190px;}
+.doctorAppointmentImage{border-radius: 10px;bottom:-50px; height:300px;position: absolute;right:30px;}
+.doctorAppointmentImageContainer{position: relative;}
+.doctorImage{border-radius: 15px; height:450px;}
+.doctorImage2{border-radius: 15px; height:450px;}
+.doctorImageContainer{position: relative;width:675px;}
+.doctorRatingContainer{align-items: center; display: flex; justify-content: center;padding:80px 0px;}
+.doctorRatingImage{border-radius: 15px;bottom:-40px; height:215px;left:160px;position: absolute;}
+.doctorRatingParagraph{font-size:15px;}
+.doctorRatingTexts{margin:0px 0px 0px 50px; width:600px;}
+.doctorRatingTitle{font-size:30px;}
+.emphasisText{color:rgb(176, 223, 255); text-decoration: underline;}
+.emphasisText2{color:var(--blue); text-decoration: underline;}
+.footer{display: flex;justify-content: space-between;width:1200px;}
+.footerButton{border:none; border-radius: 0px 10px 10px 0px; height:40px;width:60px;}
+.footerCopyright{background-color: black;color:white;margin:0; padding:30px 20px;}
+.footerInput{border:none; border-radius: 10px 0px 0px 10px; height:40px;padding:0px 0px 0px 10px;width:300px;}
+.footerInputContainer{align-items: center; display: flex;}
+.footerLink{margin:0px 0px 10px 0px;}
+.footerLinkContainer{display: flex;flex-direction: column;}
+.footerLinkContainer2{display: flex;flex-direction: column;width:365px;}
+.footerLinksContainer{ width:270px;}
+.footerLogoContainer{align-items: center; display: grid;grid-template-columns: 50px 160px;}
+.footerLogosContainer{background-color: black; padding:20px 0px 0px 20px;}
+.heroContainer{background-image: url('healthcareweb/blueBackground.jpg');}
+.heroDoctorImage{height:500px;}
+.heroParagraph{font-size: 18px;}
+.heroSubtitle{font-size: 35px;}
+.heroText{width:700px;}
+.heroTexts{display: flex;justify-content: center; padding:90px 20px 0px 0px;}
+.heroTitle{font-size:43px;}
+.latestNews{margin:0px 0px 0px 60px; width:500px;}
+.latestNewsTitles{display: flex;justify-content: space-between;}
+.link{font-size: 15px;margin:10px 40px 0px 0px;padding:0px 0px 10px 0px}
+.linksContainer{align-items: center; display: flex;padding:0px 15px 0px 0px;}
+.logoContainer{align-items: center; display: flex;}
+.logoImage{height:40px;margin:0px 10px 0px 0px;}
+.middleContainer{display: flex;justify-content: center;padding:80px 0px;}
+.middleParagraph{font-size:15px;}
+.middleText{width:890px;text-align: center;}
+.middleTitle{font-size:30px;}
+.navContainer{display: flex;justify-content: space-between;width:1200px;}
+.newsContainer{display: flex;justify-content: center;}
+.newsImage{border-radius: 20px;width:100%;}
+.newsTexts{display: flex;flex-direction: column; width:710px;}
+.patientImage{height:160px;}
+.patientImage:nth-child(1){left:-70px; position: absolute;top:0;}
+.patientImage:nth-child(2){left:60px; position: absolute;top:150px;}
+.patientImage:nth-child(3){left:200px; position: absolute;top:300px;}
+.patientImages{height:450px;margin:0px 30px 0px 0px;position: relative; width:450px;}
+.patientParagraph{line-height: 45px;}
+.patientReviewContainer{align-items: center; background-image: url('healthcareweb/blueWallpaper.jpg');border-radius: 20px;display: flex; height:500px;justify-content: center; width:1300px;}
+.patientReviewMainContainer{display: flex;justify-content: center;}
+.patientReviewTexts{width:500px;}
+.patientsReviewTitleContainer{text-align: center; padding:70px 15px;}
+.qualityContainer{
+    align-items: center;
+    border-radius: 15px; 
+    box-shadow: 0px 0px 10px gray; 
+    display: flex;
+    flex-direction: column;
+    height:310px;
+    justify-content: center;
+    margin:0px 20px 0px 0px;
+    padding:25px 25px;
+    text-align: center;
+    width:290px;}
+.qualityContainer:nth-child(1){background-color: rgb(255, 226, 231);}
+.qualityContainer:nth-child(2){background-color: rgb(255, 255, 226);}
+.qualityContainer:nth-child(3){background-color: rgb(226, 255, 228);}
+.qualityContainer:nth-child(4){background-color: rgb(226, 255, 254);}
+.qualityContainer:last-child{margin:0;}
+.qualityImage{height:90px;width:90px;}
+.qualityMainContainer{display: flex;justify-content: center;}
+.qualityParagraph{margin:0;}
+.quotes{font-size:40px;}
+.rightArrow{font-size:20px;}
+.rightArrow:hover{color: var(--blue);}
+.rightCaret{color:orange;}
+.serviceBackgroundContainer{
+    background-color: var(--blue);
+    border-radius: 15px;
+    height:210px;
+    margin:0px 30px 0px 0px;
+    position:relative;
+    rotate:3deg;
+    width:440px;
+}
+.serviceContainer{
+    background-color: white;
+    border-radius: 15px;
+    box-shadow: 0px 0px 13px gray;
+    display: flex;
+    flex-direction: column;
+    height:200px;
+    justify-content: center;
+    margin:0px 30px 0px 0px;
+    padding:0px 0px 0px 30px;
+    width:400px;}
+.serviceContainer:nth-child(3){margin:0;}
+#service2{position:absolute;rotate: -3deg;}
+.serviceImage{background-color: rgb(0, 180, 180); border-radius: 7px; height:50px;padding:10px;}
+.serviceImage2{background-color: rgb(255, 209, 156); border-radius: 7px; height:50px;padding:10px;}
+.serviceImage3{background-color: rgb(255, 232, 100); border-radius: 7px; height:50px;padding:10px;}
+.serviceMainContainer{display: flex;justify-content: center;padding:20px 0px 40px 0px;}
+.serviceOuterContainer{display: flex;justify-content: center; width:1390px;}
+.serviceParagraph{padding:0px 50px 0px 0px;}
+.serviceTexts{align-items: center; display: grid;grid-template-columns: 350px 30px;}
+.serviceTitleandImage{display: grid;grid-template-columns: 90px 200px;}
+.whiteButton{
+    background-color: white; 
+    border:none; 
+    border-radius: 15px;
+    color:rgb(90, 189, 255); 
+    font-size: 17px; 
+    font-weight: bold;
+    height:60px;
+    position:absolute;
+    rotate: 5deg; 
+    width:190px;}
+.whiteButton:hover{background-color: var(--blue);color:white;rotate: 0deg; transition: 0.2s linear;}
+.whiteButtonContainer{background-color:var(--blue);border-radius: 15px; height:60px;position:relative;rotate: -5deg; width:195px;}
+.whiteButtonContainer:hover{rotate: 0deg;}
+@media screen and (max-width:1377px){
+    .serviceContainer,.serviceBackgroundContainer{margin:0px 0px 30px 0px;}
+    .serviceOuterContainer{align-items: center; flex-direction: column;width: 100%;}
+}
+@media screen and (max-width:1175px){
+    .appointmentContainer{align-items: center; flex-direction: column;}
+    .appointmentTexts{margin:0px 0px 40px 0px;}
+    .doctorAppointmentImageContainer{width:675px;}
+}
+@media screen and (max-width:1115px){
+    .doctorRatingContainer{flex-direction: column;}
+    .doctorRatingTexts{margin:60px 0px 0px 0px;width:70%;}
+}
+@media screen and (max-width:1000px){
+    .authorImage{height:45px;}
+    .curvedArrow2{display: none;}
+    .footer{display: grid;grid-template-columns: 1fr 1fr;padding:0px 0px 20px 20px;}
+    .newsContainer{align-items: center; flex-direction: column;}
+    .newsTexts{width:90%;}
+    .patientReviewTexts{padding:0px 30px; width:100%;}
+    .patientImage:nth-child(2){padding:0px 0px 0px 30px; position:initial;}
+    .patientImage:nth-child(1),.patientImage:nth-child(3){display: none;}
+    .patientImages{align-items: center; display: flex;justify-content: center;margin:0; width:50%;}
+    .qualityMainContainer{flex-wrap: wrap;}
+    .qualityContainer:nth-child(2n+1){margin:0px 20px 20px 0px;}
+    .qualityContainer:nth-child(2n){margin:0px 0px 20px 0px;}
+}
+@media screen and (max-width:850px){
+    .heroDoctorImage{height:500px;width:450px;}
+    .heroText{width:85%;margin:0px 0px 50px 0px;}
+    .heroTexts{align-items: center; flex-direction: column;}
+    .linksContainer{padding:0;}
+    .middleText{width:80%;}
+    .navContainer{align-items: center; flex-direction: column;}
+}
+@media screen and (max-width:790px){
+    .appointmentTexts{width:90%;}
+    .doctorAppointmentImageContainer,.doctorImage2{height:100%;width:90%;}
+    .doctorAppointmentImage{height:50%;width:26%; right:20%;}
+}
+@media screen and (max-width:716px){
+    .qualityContainer:nth-child(2n+1){margin:0px 0px 20px 0px;}
+    .qualityContainer:nth-child(2n){margin:0px 0px 20px 0px;}
+
+}
+@media screen and (max-width:695px){
+    .doctorImageContainer{width: 100%;}
+    .doctorImage{height:100%;width:100%;}
+    .doctorRatingImage{height:50%;width:50%;left:25%;}
+    .footer{align-items: center; display: flex;flex-direction: column;padding:0;text-align: center;}
+    .footerLinksContainer{align-items: center; display: flex;flex-direction: column;}
+    .link{margin:10px 0px 0px 0px; padding:0px 0px 10px 0px;}
+    .linksContainer{flex-direction: column;}
+    .whiteButtonContainer{margin:10px 0px 0px 0px;}
+}
+@media screen and (max-width:600px){
+    .doctorRatingTitle{font-size: 25px;}
+    .doctorRatingTexts{width:90%;}
+    .heroDoctorImage{height:350px;width:300px;}
+    .heroSubtitle{font-size: 26px;}
+    .heroTitle{font-size:35px;}
+    .heroParagraph{font-size: 16px;}
+    .latestNews{margin:0;width:90%;}
+    .patientImages{height:50%;}
+    .patientReviewContainer{flex-direction: column;height:100%;padding:30px;width:90%;}
+}
+@media screen and (max-width:470px){
+    .appointmentChecks{grid-template-columns: 35px 1fr 35px 1fr;}
+    .articleTitle{font-size: 17px;}
+    .footerInput{width:280px;}
+    .footerLinkContainer2{width:320px;}
+    .serviceBackgroundContainer{width:330px;margin:0px 0px 20px 0px;}
+    .serviceContainer{width: 300px;}
+    .serviceTexts{grid-template-columns: 250px 30px;}
+    .serviceTitleandImage{grid-template-columns: 90px 200px;}
+}
