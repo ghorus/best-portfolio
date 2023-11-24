@@ -19,6 +19,10 @@ def healthcare():
 def podcast():
     return render_template('podcast.html')
 
+@app.route("/restaurant")
+def restaurant():
+    return render_template('restaurant.html')
+
 @app.route("/swePackage")
 def swePackage():
     return render_template('swePackage.html')

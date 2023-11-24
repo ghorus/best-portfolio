@@ -1,0 +1,163 @@
+:root{
+    --bookBtnTime:3s;
+    --navWidth:300px;
+    --yellow:rgb(214, 210, 174);
+    --yellow2:rgb(248, 248, 214);
+}
+.address{text-align: center;font-size:13px;width:250px;}
+body{
+    font-family: 'Inter', sans-serif;}
+/* font-family: 'Playfair Display', serif; */
+.bookOnlineBtn{
+    background-color: var(--yellow2);
+    border: none;
+    bottom: 0;
+    font-size:12px;
+    height:80px;
+    position: absolute;
+    letter-spacing: 4px;
+    width:var(--navWidth);
+}
+
+.bookBorder1{
+    left:10px;
+}
+.bookBorder1::after{animation:bookOnlineTop var(--bookBtnTime) infinite}
+.bookBorder1::after,.bookBorder3::after{
+    width:100%;
+    background-color:black;
+    content:'';
+    display: block;
+    position:absolute;
+    height:100%;
+}
+.bookBorder1,.bookBorder2,.bookBorder3,.bookBorder4{
+    background-color: rgb(214, 210, 181);
+    overflow: hidden;
+    transition:0.3s linear;
+}
+.bookBorder1,.bookBorder3{
+    height:60px;
+    position: absolute;
+    top:10px;
+    width:1px;
+}
+.bookBorder2{
+    top:10px;
+}
+.bookBorder2::after,.bookBorder4::after{
+    background-color:black;
+    content:'';
+    display: block;
+    height:100%;
+    position:absolute;
+    width:100%;
+}
+.bookBorder2::after{animation:bookOnlineLeft var(--bookBtnTime) infinite;}
+.bookBorder2,.bookBorder4{
+    height:1px;
+    left:10px;
+    position: absolute;
+    width:280px;
+}
+.bookBorder3{
+    right:10px;
+}
+.bookBorder3::after{animation:bookOnlineBottom var(--bookBtnTime) infinite;}
+.bookBorder4{
+    bottom:10px;
+}
+.bookBorder4::after{animation:bookOnlineRight var(--bookBtnTime) infinite;}
+button:hover{opacity:0.9;}
+.link{
+    margin:0px 0px 30px 0px;
+    position: relative;
+}
+.link::after{
+    width:0px;
+    background-color:var(--yellow);
+    bottom:0;
+    content:'';
+    display: block;
+    height:1px;
+    margin:6px 0px -6px 0px;
+    position:absolute;
+    right:0;
+    transition: 0.3s ease-in-out;
+}
+.link::before{
+    width:0px;
+    background-color:var(--yellow);
+    content:'';
+    display: block;
+    height:1px;
+    margin:-6px 0px 5px 0px;
+    transition: 0.3s ease-in-out;
+}
+.link:hover::after{
+    width:100%;
+}
+.link:hover::before{
+    width:100%;
+}
+.link:nth-child(1),.link:nth-child(2),.link:nth-child(3),.link:nth-child(4),.link:nth-child(5){
+    animation: navRoll 0.7s;
+}
+.link:nth-child(2){
+    animation-delay: 0.2s;
+}
+.link:nth-child(3){
+    animation-delay: 0.3s;
+}
+.link:nth-child(4){
+    animation-delay: 0.4s;
+}
+.link:nth-child(5){
+    animation-delay: 0.5s;
+}
+.links{
+    display:grid;
+    text-align: center;
+    font-size: 14px;
+    font-weight: lighter;
+}
+.logoImage{
+    margin:50px 0px 80px 0px;
+    height:140px;
+    width:140px;}
+nav{
+    align-items: center;
+    background-color: rgb(47, 47, 47);
+    color:var(--yellow);
+    display: flex;
+    flex-direction: column;
+    height:100vh;
+    position:fixed;
+    width:var(--navWidth);
+    top:0;
+    left:0;
+}
+.phone{color:rgb(196, 150, 0);margin:0;}
+.socialContainer{margin:50px 0px 0px 0px;}
+.socialImage{height:33px;}
+.socialImage:nth-child(1){margin:0px 10px 0px 0px;}
+@keyframes navRoll {
+    0%{opacity: 0.1;transform: translateY(-25px);}
+    100%{opacity: 1;transform: translateY(0px);}
+}
+@keyframes bookOnlineBottom {
+    0%{top:-70px}
+    100%{top:60px;}
+}
+@keyframes bookOnlineLeft {
+    0%{left:-270px}
+    100%{left:280px;}
+}
+@keyframes bookOnlineRight {
+    0%{left:280px}
+    100%{left:-290px;}
+}
+@keyframes bookOnlineTop {
+    0%{top:60px}
+    100%{top:-70px;}
+}
