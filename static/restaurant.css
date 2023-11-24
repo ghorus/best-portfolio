@@ -83,35 +83,32 @@ body{
 button:hover{opacity:0.93;}
 .foodHero{
     height:100vh;
-    overflow-y: auto;
-    overflow-x: hidden;
-    perspective: 10px;
-
-}
-.foodImage,.foodText{
-    object-fit: cover;
-    position: absolute;
-    z-index: -1;
+    max-width: 100%;
+    overflow: hidden;
+    overscroll-behavior-y: contain;
+    position: relative;
+    width:100vw;
 }
 .foodImage{
-    height:500px;
-    scale:2;
-    transform: translateZ(-10px);
-}
-.foodImageContainer{
-    align-items: center;
-    display: flex;
+    filter: brightness(65%);
     height:100%;
-    justify-content: center;
-    position:relative;
-    transform-style: preserve-3d;
-    z-index: -1;
+    object-fit: cover;
+    position: absolute;
+    width:100%;
+
 }
 .foodText{
-    font-size: 90px;
+    bottom:280px;
+    font-size: 50px;
     color:white;
-    scale:1.5;
-    transform: translateZ(-5px);
+    position:absolute;
+    left:360px;
+
+}
+.foodTitle{margin:0;}
+.foodSubtitle{
+    font-size:40px;
+    margin:0px 30px;
 }
 .food2{
     background-color: aquamarine;
@@ -187,8 +184,37 @@ nav{
     z-index:100;
 }
 .phone{color:rgb(196, 150, 0);margin:0;}
+.square{
+    border:1px solid white;
+    height:30px;
+    margin:0px 30px 0px 0px;
+    width:30px;
+    rotate: 45deg;
+}
+.square::after{
+    background-color: white;
+    content:'';
+    display: block;
+    height:20px;
+    position: absolute;
+    left:5px;
+    scale:0;
+    top:5px;
+    transition: 0.1s ease-in-out;
+    width:20px;
+}
+.square:hover::after{
+    scale:1;
+}
+.squares{
+    bottom:100px;
+    display: flex;
+    left:400px;
+    position:absolute;
+    width:300px;}
 .socialContainer{margin:100px 0px 0px 0px;}
 .socialImage{height:33px;}
+.socialImage:hover{filter: brightness(40%);}
 .socialImage:nth-child(1){margin:0px 10px 0px 0px;}
 @keyframes navRoll {
     0%{opacity: 0.1;transform: translateY(-25px);}
