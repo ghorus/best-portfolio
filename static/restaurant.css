@@ -90,19 +90,22 @@ button:hover{opacity:0.93;}
     width:100vw;
 }
 .foodImage{
+    animation: zoomOut 5s;
     filter: brightness(65%);
     height:100%;
     object-fit: cover;
     position: absolute;
+    transition: 0.2s;
     width:100%;
-
 }
 .foodText{
+    animation: topDown 1.3s;
     bottom:280px;
     font-size: 50px;
     color:white;
     position:absolute;
     left:360px;
+    z-index: 2;
 
 }
 .foodTitle{margin:0;}
@@ -114,6 +117,14 @@ button:hover{opacity:0.93;}
     background-color: aquamarine;
     height:100vh;
 }
+.innerSquare1,.innerSquare2,.innerSquare3,.innerSquare4{
+    background-color: white;
+    height:20px;
+    scale:0;
+    transition: 0.1s ease-in-out;
+    width:20px;
+}
+
 .link{
     margin:0px 0px 30px 0px;
     position: relative;
@@ -185,23 +196,14 @@ nav{
 }
 .phone{color:rgb(196, 150, 0);margin:0;}
 .square{
+    align-items: center;
     border:1px solid white;
+    display: flex;
     height:30px;
+    justify-content: center;
     margin:0px 30px 0px 0px;
     width:30px;
     rotate: 45deg;
-}
-.square::after{
-    background-color: white;
-    content:'';
-    display: block;
-    height:20px;
-    position: absolute;
-    left:5px;
-    scale:0;
-    top:5px;
-    transition: 0.1s ease-in-out;
-    width:20px;
 }
 .square:hover::after{
     scale:1;
@@ -211,7 +213,8 @@ nav{
     display: flex;
     left:400px;
     position:absolute;
-    width:300px;}
+    width:300px;
+    z-index: 90;}
 .socialContainer{margin:100px 0px 0px 0px;}
 .socialImage{height:33px;}
 .socialImage:hover{filter: brightness(40%);}
@@ -235,4 +238,24 @@ nav{
 @keyframes bookOnlineTop {
     0%{top:60px}
     100%{top:-70px;}
+}
+/*food pics*/
+@keyframes comeFromLeft {
+    0%{left:105vw;scale:1.1}
+    27%{left:0;scale:1.1}
+    100%{scale:1}
+}
+@keyframes topDown {
+    0%{
+        opacity: 0;
+        transform: translateY(-30px);
+    }
+    100%{
+        opacity: 1;
+        transform: translateY(0px);
+    }
+}
+@keyframes zoomOut {
+    0%{scale:1.1}
+    100%{scale:1}
 }

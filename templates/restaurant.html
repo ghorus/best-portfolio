@@ -37,48 +37,152 @@
         </button>
     </nav>
     <section class="foodHero">
-        <img class="foodImage" src="{{url_for('static', filename='restaurantweb/food1.jpg')}}">
+        <img class="foodImage food1" src="{{url_for('static', filename='restaurantweb/food1.jpg')}}">
         <div class="foodText">
             <h1 class="foodTitle">Vallier Bistro</h1>
             <h1 class="foodSubtitle">Open from Tuesday to Saturday</h1>
         </div>
         <div class="squares">
-            <div class="square sqr1" onclick="sqr1()">
-                <div class="innerSquare"></div>
+            <div class="square sqr1" id="1">
+                <div class="inrSqr innerSquare1" id="1"></div>
             </div>
-            <div class="square"></div>
-            <div class="square"></div>
-            <div class="square"></div>
+            <div class="square sqr2" id="2">
+                <div class="inrSqr innerSquare2" id="2"></div>
+            </div>
+            <div class="square sqr3" id="3">
+                <div class="inrSqr innerSquare3" id="3"></div>
+            </div>
+            <div class="square sqr4" id="4">
+                <div class="inrSqr innerSquare4" id="4"></div>
+            </div>
         </div>
     </section>
-    <!-- <section class="food2"></section> -->
-   
-   
-
-
+    <section class="food2"></section>
     <!-- <div id="google_translate_element" style="height:50px;"></div>
-
     <script type="text/javascript">
         function googleTranslateElementInit() {
           new google.translate.TranslateElement({pageLanguage: 'en'}, 'google_translate_element');
         }
         </script>
-        
         <script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script> -->
+    <script src="{{url_for('static', filename='restaurantweb/restaurant.js')}}"></script>
     <script>
-        //hero parallax//
-        window.addEventListener("scroll",function(){
-            var target = document.querySelector(".foodImage")
-            var scrolled = window.pageYOffset
-            var rate = scrolled * 0.5;
-            target.style.transform = 'translate3d(0px,'+rate+'px,0px)';
-
+        //squares//
+        const squares = document.getElementsByClassName("square")
+        const foodHero = document.querySelector(".foodHero")
+        const foodImages = document.getElementsByClassName("foodImage")
+        const innerSquares = document.getElementsByClassName("inrSqr")
+        var currentInnerSquare = ""
+        Array.from(squares).forEach(square => {
+            square.addEventListener('click',(e)=>{
+                console.log(e.target.id)
+                if(square.className =="square sqr1" && currentInnerSquare != square.className){
+                    const img1 = document.createElement("img")
+                    foodHero.appendChild(img1)
+                    img1.src = "{{url_for('static', filename='restaurantweb/food2.jpg')}}"
+                    img1.classList.add("foodImage")
+                    img1.style.animation = "comeFromLeft 5s"
+                    currentInnerSquare = e.target.className
+                    //add text//
+                    const ogFoodText = document.querySelector(".foodText")
+                    ogFoodText.remove()
+                    const newFoodText = document.createElement("div")
+                    newFoodText.classList.add("foodText")
+                    const newFoodTitle = document.createElement("h1")
+                    newFoodTitle.classList.add("foodTitle")
+                    newFoodTitle.innerHTML += "Dinners that mean business"
+                    newFoodText.appendChild(newFoodTitle)
+                    foodHero.appendChild(newFoodText)
+                    //end text add//
+                    if(foodImages.length>3){
+                        foodImages[2].style.height = foodImages[2].getBoundingClientRect().height
+                        foodImages[2].style.width = foodImages[2].getBoundingClientRect().width
+                        foodImages[0].remove()
+                    } 
+                }
+                else if(square.className =="square sqr2" && currentInnerSquare != square.className){
+                    const img1 = document.createElement("img")
+                    foodHero.appendChild(img1)
+                    img1.src = "{{url_for('static', filename='restaurantweb/food3.jpg')}}"
+                    img1.classList.add("foodImage")
+                    img1.style.animation = "comeFromLeft 5s"
+                    currentInnerSquare = e.target.className
+                    //add text//
+                    const ogFoodText = document.querySelector(".foodText")
+                    ogFoodText.remove()
+                    const newFoodText = document.createElement("div")
+                    newFoodText.classList.add("foodText")
+                    const newFoodTitle = document.createElement("h1")
+                    newFoodTitle.classList.add("foodTitle")
+                    newFoodTitle.innerHTML += "Out with the old"
+                    newFoodText.appendChild(newFoodTitle)
+                    foodHero.appendChild(newFoodText)
+                    //end text add//
+                    if(foodImages.length>3){
+                        foodImages[2].style.height = foodImages[2].getBoundingClientRect().height
+                        foodImages[2].style.width = foodImages[2].getBoundingClientRect().width
+                        foodImages[0].remove()
+                    } 
+                }
+                else if(square.className =="square sqr3" && currentInnerSquare != square.className){
+                    const img1 = document.createElement("img")
+                    foodHero.appendChild(img1)
+                    img1.src = "{{url_for('static', filename='restaurantweb/food4.jpg')}}"
+                    img1.classList.add("foodImage")
+                    img1.style.animation = "comeFromLeft 5s"
+                    currentInnerSquare = e.target.className
+                    //add text//
+                    const ogFoodText = document.querySelector(".foodText")
+                    ogFoodText.remove()
+                    const newFoodText = document.createElement("div")
+                    newFoodText.classList.add("foodText")
+                    const newFoodTitle = document.createElement("h1")
+                    newFoodTitle.classList.add("foodTitle")
+                    newFoodText.appendChild(newFoodTitle)
+                    foodHero.appendChild(newFoodText)
+                    //end text add//
+                    if(foodImages.length>3){
+                        foodImages[2].style.height = foodImages[2].getBoundingClientRect().height
+                        foodImages[2].style.width = foodImages[2].getBoundingClientRect().width
+                        foodImages[0].remove()
+                    } 
+                }
+                else if(square.className =="square sqr4" && currentInnerSquare != square.className){
+                    const img1 = document.createElement("img")
+                    foodHero.appendChild(img1)
+                    img1.src = "{{url_for('static', filename='restaurantweb/food1.jpg')}}"
+                    img1.classList.add("foodImage")
+                    img1.style.animation = "comeFromLeft 5s"
+                    currentInnerSquare = e.target.className
+                    //add text//
+                    const ogFoodText = document.querySelector(".foodText")
+                    ogFoodText.remove()
+                    const newFoodText = document.createElement("div")
+                    newFoodText.classList.add("foodText")
+                    const newFoodTitle = document.createElement("h1")
+                    newFoodTitle.classList.add("foodTitle")
+                    newFoodTitle.innerHTML += "Vallier Bistro"
+                    const newSubtitle = document.createElement("h1")
+                    newSubtitle.classList.add("foodSubtitle")
+                    newSubtitle.innerHTML += "Open from Tuesday to Saturday"
+                    newFoodText.appendChild(newFoodTitle)
+                    newFoodText.appendChild(newSubtitle)
+                    foodHero.appendChild(newFoodText)
+                    //end text add//
+                    if(foodImages.length>3){
+                        foodImages[2].style.height = foodImages[2].getBoundingClientRect().height
+                        foodImages[2].style.width = foodImages[2].getBoundingClientRect().width
+                        foodImages[0].remove()
+                    } 
+                }
+                for(innerSquare in innerSquares){
+                    if(innerSquares[innerSquare].id==e.target.id){
+                        innerSquares[innerSquare].style.scale = "1"
+                    }
+                    else{innerSquares[innerSquare].style.scale="0"}
+                }
+            })
         })
-        const square1 = document.querySelector(".sqr1")
-        function sqr1(){
-         
-        }
-        
     </script>
 </body>
 </html>
