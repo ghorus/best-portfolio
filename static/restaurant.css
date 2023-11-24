@@ -24,7 +24,6 @@ body{
 }
 .bookBorder1::after{
     animation:bookOnlineTop var(--bookBtnTime) infinite;
-    animation-delay:0.2s;
 }
 .bookBorder1::after,.bookBorder3::after{
     width:100%;
@@ -57,7 +56,9 @@ body{
     width:100%;
 }
 .bookBorder2::after{
-    animation:bookOnlineLeft var(--bookBtnTime) infinite;}
+    animation:bookOnlineLeft var(--bookBtnTime) infinite;
+    animation-delay:0.8s;
+    left:-290px;}
 .bookBorder2,.bookBorder4{
     height:1px;
     left:10px;
@@ -68,12 +69,17 @@ body{
     right:10px;
 }
 .bookBorder3::after{
-    animation:bookOnlineBottom var(--bookBtnTime) infinite;}
+    animation:bookOnlineBottom var(--bookBtnTime) infinite;
+    animation-delay: 2.5s;
+    top:-60px;}
 .bookBorder4{
     bottom:10px;
 }
-.bookBorder4::after{animation:bookOnlineRight var(--bookBtnTime) infinite;}
-button:hover{opacity:0.9;}
+.bookBorder4::after{
+    animation:bookOnlineRight var(--bookBtnTime) infinite;
+    animation-delay: 3.3s;
+    left:280px;}
+button:hover{opacity:0.93;}
 .link{
     margin:0px 0px 30px 0px;
     position: relative;
