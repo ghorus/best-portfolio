@@ -22,7 +22,10 @@ body{
 .bookBorder1{
     left:10px;
 }
-.bookBorder1::after{animation:bookOnlineTop var(--bookBtnTime) infinite}
+.bookBorder1::after{
+    animation:bookOnlineTop var(--bookBtnTime) infinite;
+    animation-delay:0.2s;
+}
 .bookBorder1::after,.bookBorder3::after{
     width:100%;
     background-color:black;
@@ -53,7 +56,8 @@ body{
     position:absolute;
     width:100%;
 }
-.bookBorder2::after{animation:bookOnlineLeft var(--bookBtnTime) infinite;}
+.bookBorder2::after{
+    animation:bookOnlineLeft var(--bookBtnTime) infinite;}
 .bookBorder2,.bookBorder4{
     height:1px;
     left:10px;
@@ -63,7 +67,8 @@ body{
 .bookBorder3{
     right:10px;
 }
-.bookBorder3::after{animation:bookOnlineBottom var(--bookBtnTime) infinite;}
+.bookBorder3::after{
+    animation:bookOnlineBottom var(--bookBtnTime) infinite;}
 .bookBorder4{
     bottom:10px;
 }
@@ -138,7 +143,7 @@ nav{
     left:0;
 }
 .phone{color:rgb(196, 150, 0);margin:0;}
-.socialContainer{margin:50px 0px 0px 0px;}
+.socialContainer{margin:100px 0px 0px 0px;}
 .socialImage{height:33px;}
 .socialImage:nth-child(1){margin:0px 10px 0px 0px;}
 @keyframes navRoll {
