@@ -161,7 +161,7 @@ button:hover{opacity:0.93;}
     letter-spacing: 4px;
     margin:30px 0px 100px 0px;
 }
-nav{
+.navig{
     align-items: center;
     background-color: rgb(47, 47, 47);
     color:var(--yellow);
@@ -171,6 +171,7 @@ nav{
     position:fixed;
     width:var(--navWidth);
     top:0;
+    transition:0.3s;
     left:0;
     z-index:100;
 }
@@ -215,7 +216,7 @@ nav{
 @media screen and (max-width:1025px) {
     .bookOnlineBtn{margin:20px 0px 0px 0px;}
     .logoImage{margin:0px 0px 30px 0px;height:70px;width:70px;}
-    nav{
+    .navig{
         height:70px;
         max-width: 100%;
         overflow: hidden;

@@ -1,18 +1,11 @@
-//Parallax - Hero//
+//Hero-Parallax//
 window.addEventListener("scroll",function(){
     Array.from(foodImages).forEach(foodImage => {
     var scrolled = window.pageYOffset
     var rate = scrolled * 0.7;
     foodImage.style.transform = 'translate3d(0px,'+rate+'px,0px)';})
 })
-//nav close//
-const navImage = document.querySelector(".logoImage")
-const navig = document.querySelector("nav")
-navImage.addEventListener("click",function(){
-    console.log(navImage.height)
-
-})
-//menu intersection observer
+//Menu-intersection observer
 const options = {
     root:null,
     threshold:1,
@@ -39,3 +32,14 @@ const obs2 = new IntersectionObserver((e) =>{
     })
 })
 obs2.observe(menuContainer)
+//nav-close anim//
+const navImage = document.querySelector(".logoImage")
+const navig = document.querySelector(".navig")
+navImage.addEventListener("click",function(){
+    if(navig.offsetHeight==70 && window.innerWidth<1025){navig.style.height="585px"}
+    else if(navig.offsetHeight!=70 && window.innerWidth<1025){navig.style.height="70px"}
+
+})
+window.addEventListener("resize",function(){
+    console.log(window.innerWidth)
+})
