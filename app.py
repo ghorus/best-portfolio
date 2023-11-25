@@ -26,3 +26,6 @@ def restaurant():
 @app.route("/swePackage")
 def swePackage():
     return render_template('swePackage.html')
+
+if __name__ == "__main__":
+    app.run(debug=True)

@@ -5,7 +5,7 @@
     --yellow2:rgb(248, 243, 214);
 }
 .address{text-align: center;font-size:13px;width:250px;}
-body{background-color: var(--yellow2); font-family: 'Inter', sans-serif;margin:0;}
+body{background-color: green; font-family: 'Inter', sans-serif;margin:0;}
 /* font-family: 'Playfair Display', serif; */
 .bookBorder1{left:10px;}
 .bookBorder1::after{animation:bookOnlineTop var(--bookBtnTime) infinite;}
@@ -49,7 +49,7 @@ button:hover{opacity:0.93;}
     top:20px;
     transition: 1s;
     width: 70px;
-    z-index: 2;
+    z-index: 6;
 }
 .followContainer:hover{height:230px;width:350px;}
 .followImage{height:70px;rotate:45deg;transition: 1s;}
@@ -78,7 +78,6 @@ button:hover{opacity:0.93;}
     left:360px;
     position:absolute;
     z-index: 5;
-
 }
 .foodTitle{margin:0;}
 .foodSubtitle{font-size:40px;margin:0px 30px;}
@@ -118,8 +117,7 @@ button:hover{opacity:0.93;}
 .logoImage{margin:50px 0px 80px 0px;height:140px;width:140px;}
 .menuContainer{
     background-color: var(--yellow2);
-    height:1100px;
-    margin:110px 0px 0px 300px;
+    margin:70px 0px 0px 300px;
     padding:80px;
 }
 .menuDescription{font-size:14px;}
@@ -128,28 +126,29 @@ button:hover{opacity:0.93;}
 .menuItemContainer{font-size:14px;opacity:0;transform: translateY(-25px);transition: 0.3s;}
 .menuItemPrice{display: flex;justify-content: space-between;width:100%;}
 .menuItemPrice p {margin:0;}
-.menuItems{display: grid;gap:7%;grid-template-columns: 1fr 1fr 1fr;}
+.menuItems{display: grid;gap:25px 50px;grid-template-columns: 1fr 1fr 1fr;}
 .menuNav{
     background-color: white;
-    bottom:420px;
+    /* top:450px; */
     color:black;
     display: flex;
     font-size:15px;
-    left:-210px;
+    /* left:-210px; */
+    bottom:0;
+    left:355px;
     justify-content: center;
     position: fixed;
     rotate:-90deg;
+    transform-origin: bottom left;
     transition: 0.9s;
-    width:960px;
+    width:100vh;
     z-index: 1;
 }
 .menuNavItem{
     letter-spacing: 3px; 
     margin:0;
     padding:20px 40px;
-    transition: 0.2s;
 }
-.menuNavItem:hover{border-bottom:3px solid orange;padding:20px 40px 17px 40px;}
 .menuSubtitle{
     border-bottom: 2px solid black;
     font-weight: 100;
@@ -171,7 +170,7 @@ button:hover{opacity:0.93;}
     position:fixed;
     width:var(--navWidth);
     top:0;
-    transition:0.3s;
+    transition:0.2s;
     left:0;
     z-index:100;
 }
@@ -210,18 +209,34 @@ button:hover{opacity:0.93;}
 @keyframes zoomOut {0%{scale:1.1}100%{scale:1}}
 
 @media screen and (max-width:1280px) {
-    .menuContainer{height:1500px;}
     .menuItems{grid-template-columns: 1fr 1fr;}
+    .squares{bottom:20px;justify-content: center; left:20px;max-width: 100%; width:100vw;}
 }
 @media screen and (max-width:1025px) {
-    .bookOnlineBtn{margin:20px 0px 0px 0px;}
-    .logoImage{margin:0px 0px 30px 0px;height:70px;width:70px;}
-    .navig{
-        height:70px;
-        max-width: 100%;
-        overflow: hidden;
-        width:100vw;
+    .followContainer{
+        right:5px;
+        top:75px;
     }
-    .socialContainer{margin:0px;}
-    .socialImage{height:25px;}
+    .foodText{
+        bottom:35%;
+        font-size: 34px;
+        left:13%;
+    }
+    .menuContainer{margin:70px 0px 0px 0px;padding: 20px;}
+    /* .menuNav{
+        flex:1;
+        height:60px;
+        left:0px;
+        rotate:0deg;
+        top:70px;
+        width:100vw;
+    } */
+}
+@media screen and (max-width:560px) {
+    .menuItems{gap:30px 30px; grid-template-columns: 1fr;}
+    .menuNavItem{
+        letter-spacing: normal;
+        padding:20px 20px;
+    }
+    .menuNavItem:hover{border-bottom:3px solid orange;padding:20px 20px 17px 20px;}
 }
