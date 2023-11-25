@@ -15,49 +15,119 @@
     <nav>
         <img class="logoImage" src="{{url_for('static', filename='restaurantweb/logo.png')}}">
         <div class="links">
-            <a class="link">MENUS</a>
-            <a class="link">ABOUT US</a>
-            <a class="link">GALLERY</a>
-            <a class="link">BOOK ONLINE</a>
-            <a class="link">CONTACT</a>
+            <a class="link">MENUS</a><a class="link">ABOUT US</a><a class="link">GALLERY</a><a class="link">BOOK ONLINE</a><a class="link">CONTACT</a>
         </div>
         <div class="socialContainer">
             <img class="socialImage" src="{{url_for('static', filename='restaurantweb/socialMedia1.png')}}">
             <img class="socialImage" src="{{url_for('static', filename='restaurantweb/socialMedia2.png')}}">
         </div>
-        <p class="address">425, rue McGill, Vieux-Montréal,
-            Québec, H2Y 2H1</p>
+        <p class="address">425, rue McGill, Vieux-Montréal, Québec, H2Y 2H1</p>
         <p class="phone">514.842.2905</p>
         <button class="bookOnlineBtn">
             BOOK ONLINE
-            <span class="bookBorder1"></span>
-            <span class="bookBorder2"></span>
-            <span class="bookBorder3"></span>
-            <span class="bookBorder4"></span>
+            <span class="bookBorder1"></span><span class="bookBorder2"></span><span class="bookBorder3"></span><span class="bookBorder4"></span>
         </button>
     </nav>
     <section class="foodHero">
         <img class="foodImage food1" src="{{url_for('static', filename='restaurantweb/food1.jpg')}}">
         <div class="foodText">
-            <h1 class="foodTitle">Vallier Bistro</h1>
-            <h1 class="foodSubtitle">Open from Tuesday to Saturday</h1>
-        </div>
+            <h1 class="foodTitle">Vallier Bistro</h1><h1 class="foodSubtitle">Open from Tuesday to Saturday</h1></div>
         <div class="squares">
-            <div class="square sqr1" id="1">
-                <div class="inrSqr innerSquare1" id="1"></div>
-            </div>
-            <div class="square sqr2" id="2">
-                <div class="inrSqr innerSquare2" id="2"></div>
-            </div>
-            <div class="square sqr3" id="3">
-                <div class="inrSqr innerSquare3" id="3"></div>
-            </div>
-            <div class="square sqr4" id="4">
-                <div class="inrSqr innerSquare4" id="4"></div>
+            <div class="square sqr1" id="1"><div class="inrSqr innerSquare1" id="1"></div></div>
+            <div class="square sqr2" id="2"><div class="inrSqr innerSquare2" id="2"></div></div>
+            <div class="square sqr3" id="3"><div class="inrSqr innerSquare3" id="3"></div></div>
+            <div class="square sqr4" id="4"><div class="inrSqr innerSquare4" id="4"></div></div>
+        </div>
+        <div class="followContainer">
+            <div class="followImageContainer"><img class="followImage" src="{{url_for('static', filename='restaurantweb/x.png')}}"></div>
+            <div class="followTexts">
+                <h3 class="followText">FOLLOW US ON SOCIAL MEDIA</h3><h3 class="followRightArrow">&rarr;</h3>
             </div>
         </div>
     </section>
-    <section class="food2"></section>
+    <section class="menuContainer">
+        <section class="menuNav">
+        <p class="menuNavItem">TO DRINK</p>
+        <p  class="menuNavItem">DESSERT</p>
+        <p  class="menuNavItem">BISTRO MENU</p>
+        </section>
+        <h1 class="menuTitle">BISTRO MENU</h1>
+        <h3 class="menuSubtitle">AT TABLE</h3>
+        <section class="menuItems">
+            <div class="menuItemContainer">
+                <div class="menuItemPrice"><p class="menuItem">SOUP OF THE DAY</p><p class="menuPrice">9</p></div>
+            </div>
+            <div class="menuItemContainer">
+                <div class="menuItemPrice"><p class="menuItem">ONION SOUP</p><p class="menuPrice">16</p></div>
+                <p class="menuDescription">Chicken broth and white wine, gruyere</p>
+            </div>
+            <div class="menuItemContainer">
+                <div class="menuItemPrice"><p class="menuItem">BRUSSELS CESAR</p><p class="menuPrice">16</p></div>
+                <p class="menuDescription">Roasted Brussels sprouts, romaine, parmesan, croutons, bacon, marinated shallots 
+                    extra pulled duck +6</p>
+            </div>
+            <div class="menuItemContainer">
+                <div class="menuItemPrice"><p class="menuItem">FRIED SQUID</p><p class="menuPrice">21 (EVENING MENU)</p></div>
+                <p class="menuDescription">Napa cabbage & Gochujang stir-fry with hoisin sauce</p>
+            </div>
+            <div class="menuItemContainer">
+                <div class="menuItemPrice"><p class="menuItem">POUTINE</p><p class="menuPrice">18</p></div>
+                <p class="menuDescription">+ extra pulled duck $6</p>
+            </div>
+            <div class="menuItemContainer">
+                <div class="menuItemPrice"><p class="menuItem">MUSHROOM CANOPY</p><p class="menuPrice">23 (EVENING MENU)</p></div>
+                <p class="menuDescription">Country bread, mushrooms sautéed in white wine, cream and marinated osions</p>
+            </div>
+            <div class="menuItemContainer">
+                <div class="menuItemPrice"><p class="menuItem">HALOUMI ST-VALLIER</p><p class="menuPrice">24 (EVENING MENU)</p></div>
+                <p class="menuDescription">Green salad, barley, radicchio, clementine, green apple, pumpkin seeds, honey and carmine vinegar</p>
+            </div>
+            <div class="menuItemContainer">
+                <div class="menuItemPrice"><p class="menuItem">MAC & CHEESE</p><p class="menuPrice">24</p></div>
+                <p class="menuDescription">Three cheese sauce, chili crumble + extra bacon $4</p>
+            </div>
+            <div class="menuItemContainer">
+                <div class="menuItemPrice"><p class="menuItem">BEEF BURGER</p><p class="menuPrice">26 (VEGETABLE OPTION 24)</p></div>
+                <p class="menuDescription">Cheddar, tomatoes, arugula, pickle and dijonnaise</p>
+            </div>
+            <div class="menuItemContainer">
+                <div class="menuItemPrice"><p class="menuItem">MUSSELS AND FRIES</p><p class="menuPrice">28</p></div>
+                <p class="menuDescription">Seasonal sauce and fresh herbs</p>
+            </div>
+            <div class="menuItemContainer">
+                <div class="menuItemPrice"><p class="menuItem">MUSHROOM RISOTTO</p><p class="menuPrice">28</p></div>
+                <p class="menuDescription">Wild mushroom base & white wine, sautéed mushrooms, truffle oil, extra shredded duck parmesan +6</p>
+            </div>
+            <div class="menuItemContainer">
+                <div class="menuItemPrice"><p class="menuItem">WARM SALAD</p><p class="menuPrice">29</p></div>
+                <p class="menuDescription">Seasonal vegetables, quinoa, parmesan, bacon, poached egg</p>
+            </div>
+            <div class="menuItemContainer">
+                <div class="menuItemPrice"><p class="menuItem">SALMON TARTAR 60G/120G</p><p class="menuPrice">18/32</p></div>
+                <p class="menuDescription">Dill emulsion, cucumbers, shallots</p>
+            </div>
+            <div class="menuItemContainer">
+                <div class="menuItemPrice"><p class="menuItem">CLASSIC BEEF TARTAR 60G/120GD</p><p class="menuPrice">18/32</p></div>
+                <p class="menuDescription">Classic sauce, shallots, chives and mustard caviar</p>
+            </div>
+            <div class="menuItemContainer">
+                <div class="menuItemPrice"><p class="menuItem">FISH OF THE MOMENT</p><p class="menuPrice">ASK</p></div>
+            </div>
+            <div class="menuItemContainer">
+                <div class="menuItemPrice"><p class="menuItem">BEEF FLAVOR 200G</p><p class="menuPrice">18/32</p></div>
+                <p class="menuDescription">Classic sauce, shallots, chives and mustard caviar</p>
+            </div>
+            <div class="menuItemContainer">
+                <div class="menuItemPrice"><p class="menuItem">CLASSIC BEEF TARTAR 60G/120GD</p><p class="menuPrice">35</p></div>
+                <p class="menuDescription">Compound butter, fries, extra sautéed vegetables +5</p>
+            </div>
+            <div class="menuItemContainer">
+                <div class="menuItemPrice"><p class="menuItem">BRAISED BEEF CHEEK</p><p class="menuPrice">39 (EVENING MENU)</p></div>
+                <p class="menuDescription">Red wine sauce, mashed potatoes and Nantes carrots</p>
+            </div>
+        </section>
+    </section>
+    <section style="height:100vh;width:100vw;margin:0;max-width:100%;padding:300px 0px;border-top:3px solid black"></section>
     <!-- <div id="google_translate_element" style="height:50px;"></div>
     <script type="text/javascript">
         function googleTranslateElementInit() {

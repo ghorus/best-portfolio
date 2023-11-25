@@ -2,30 +2,13 @@
     --bookBtnTime:3s;
     --navWidth:300px;
     --yellow:rgb(214, 210, 174);
-    --yellow2:rgb(248, 248, 214);
+    --yellow2:rgb(248, 243, 214);
 }
 .address{text-align: center;font-size:13px;width:250px;}
-body{
-    font-family: 'Inter', sans-serif;
-    margin:0;}
+body{background-color: var(--yellow2); font-family: 'Inter', sans-serif;margin:0;}
 /* font-family: 'Playfair Display', serif; */
-.bookOnlineBtn{
-    background-color: var(--yellow2);
-    border: none;
-    bottom: 0;
-    font-size:12px;
-    height:80px;
-    position: absolute;
-    letter-spacing: 4px;
-    width:var(--navWidth);
-}
-
-.bookBorder1{
-    left:10px;
-}
-.bookBorder1::after{
-    animation:bookOnlineTop var(--bookBtnTime) infinite;
-}
+.bookBorder1{left:10px;}
+.bookBorder1::after{animation:bookOnlineTop var(--bookBtnTime) infinite;}
 .bookBorder1::after,.bookBorder3::after{
     width:100%;
     background-color:black;
@@ -34,53 +17,49 @@ body{
     position:absolute;
     height:100%;
 }
-.bookBorder1,.bookBorder2,.bookBorder3,.bookBorder4{
-    background-color: rgb(214, 210, 181);
-    overflow: hidden;
-    transition:0.3s linear;
+.bookBorder1,.bookBorder2,.bookBorder3,.bookBorder4{background-color: rgb(214, 210, 181);overflow: hidden;transition:0.3s linear;}
+.bookBorder1,.bookBorder3{height:60px;position: absolute;top:10px;width:1px;}
+.bookBorder2{top:10px;}
+.bookBorder2::after,.bookBorder4::after{background-color:black;content:'';display: block;height:100%;position:absolute;width:100%;}
+.bookBorder2::after{animation:bookOnlineLeft var(--bookBtnTime) infinite;animation-delay:0.8s;left:-290px;}
+.bookBorder2,.bookBorder4{height:1px;left:10px;position: absolute;width:280px;}
+.bookBorder3{right:10px;}
+.bookBorder3::after{animation:bookOnlineBottom var(--bookBtnTime) infinite;animation-delay: 2.5s;top:-60px;}
+.bookBorder4{bottom:10px;}
+.bookBorder4::after{animation:bookOnlineRight var(--bookBtnTime) infinite;animation-delay: 3.3s;left:280px;}
+.bookOnlineBtn{
+    background-color: var(--yellow2);
+    border: none;
+    font-size:12px;
+    height:80px;
+    letter-spacing: 4px;
+    margin:60px 0px 0px 0px;
+    position:relative;
+    width:var(--navWidth);
 }
-.bookBorder1,.bookBorder3{
-    height:60px;
-    position: absolute;
-    top:10px;
-    width:1px;
-}
-.bookBorder2{
-    top:10px;
-}
-.bookBorder2::after,.bookBorder4::after{
-    background-color:black;
-    content:'';
-    display: block;
-    height:100%;
-    position:absolute;
-    width:100%;
-}
-.bookBorder2::after{
-    animation:bookOnlineLeft var(--bookBtnTime) infinite;
-    animation-delay:0.8s;
-    left:-290px;}
-.bookBorder2,.bookBorder4{
-    height:1px;
-    left:10px;
-    position: absolute;
-    width:280px;
-}
-.bookBorder3{
-    right:10px;
-}
-.bookBorder3::after{
-    animation:bookOnlineBottom var(--bookBtnTime) infinite;
-    animation-delay: 2.5s;
-    top:-60px;}
-.bookBorder4{
-    bottom:10px;
-}
-.bookBorder4::after{
-    animation:bookOnlineRight var(--bookBtnTime) infinite;
-    animation-delay: 3.3s;
-    left:280px;}
 button:hover{opacity:0.93;}
+.followContainer{
+    align-items: end;
+    display: flex;
+    flex-direction: column;
+    height:70px;
+    overflow: hidden;
+    position: absolute;
+    right:20px;
+    top:20px;
+    transition: 1s;
+    width: 70px;
+    z-index: 2;
+}
+.followContainer:hover{height:230px;width:350px;}
+.followImage{height:70px;rotate:45deg;transition: 1s;}
+.followImageContainer{background-color: rgb(190, 139, 0); height:70px;opacity:0.5;transition: 0.3s; width:70px;}
+.followImageContainer:hover{opacity:1;}
+.followImage:hover{rotate: 270deg;}
+.followRightArrow{font-size:30px;margin:0px;transition: 0.4s;}
+.followRightArrow:hover{transform: translateX(5px);}
+.followTexts{background-color: var(--yellow);font-size: 14px;margin:30px 0px 0px 0px;padding:20px;text-align: center;width:300px;}
+.followTexts h3{margin:0;}
 .foodHero{
     height:100vh;
     max-width: 100%;
@@ -88,47 +67,24 @@ button:hover{opacity:0.93;}
     overscroll-behavior-y: contain;
     position: relative;
     width:100vw;
+    z-index: 4;
 }
-.foodImage{
-    animation: zoomOut 5s;
-    filter: brightness(65%);
-    height:100%;
-    object-fit: cover;
-    position: absolute;
-    transition: 0.2s;
-    width:100%;
-}
+.foodImage{animation: zoomOut 5s;filter: brightness(65%);height:100%;object-fit: cover; position: absolute;width:100%;}
 .foodText{
     animation: topDown 1.3s;
     bottom:280px;
     font-size: 50px;
     color:white;
-    position:absolute;
     left:360px;
-    z-index: 2;
+    position:absolute;
+    z-index: 5;
 
 }
 .foodTitle{margin:0;}
-.foodSubtitle{
-    font-size:40px;
-    margin:0px 30px;
-}
-.food2{
-    background-color: aquamarine;
-    height:100vh;
-}
-.innerSquare1,.innerSquare2,.innerSquare3,.innerSquare4{
-    background-color: white;
-    height:20px;
-    scale:0;
-    transition: 0.1s ease-in-out;
-    width:20px;
-}
+.foodSubtitle{font-size:40px;margin:0px 30px;}
+.innerSquare1,.innerSquare2,.innerSquare3,.innerSquare4{background-color: white;height:20px;scale:0;transition: 0.3s ease-in-out;width:20px;}
 
-.link{
-    margin:0px 0px 30px 0px;
-    position: relative;
-}
+.link{margin:0px 0px 30px 0px;position: relative;}
 .link::after{
     width:0px;
     background-color:var(--yellow);
@@ -150,37 +106,61 @@ button:hover{opacity:0.93;}
     margin:-6px 0px 5px 0px;
     transition: 0.3s ease-in-out;
 }
-.link:hover::after{
-    width:100%;
+.link:hover::after{width:100%;}
+.link:hover::before{width:100%;}
+.link:nth-child(1),.link:nth-child(2),.link:nth-child(3),.link:nth-child(4),.link:nth-child(5){animation: navRoll 0.7s;}
+.link:nth-child(2){animation-delay: 0.2s;}
+.link:nth-child(3){animation-delay: 0.3s;}
+.link:nth-child(4){animation-delay: 0.4s;}
+.link:nth-child(5){animation-delay: 0.5s;}
+.links{display:grid;text-align: center;font-size: 14px;font-weight: lighter;
 }
-.link:hover::before{
-    width:100%;
+.logoImage{margin:50px 0px 80px 0px;height:140px;width:140px;}
+.menuContainer{
+    background-color: var(--yellow2);
+    height:1100px;
+    margin:110px 0px 0px 300px;
+    padding:80px;
 }
-.link:nth-child(1),.link:nth-child(2),.link:nth-child(3),.link:nth-child(4),.link:nth-child(5){
-    animation: navRoll 0.7s;
+.menuDescription{font-size:14px;}
+.menuItem{padding:0px 25px 0px 0px;}
+.menuItem,.menuPrice{letter-spacing: 2px;}
+.menuItemContainer{font-size:14px;opacity:0;transform: translateY(-25px);transition: 0.3s;}
+.menuItemPrice{display: flex;justify-content: space-between;width:100%;}
+.menuItemPrice p {margin:0;}
+.menuItems{display: grid;gap:7%;grid-template-columns: 1fr 1fr 1fr;}
+.menuNav{
+    background-color: white;
+    bottom:420px;
+    color:black;
+    display: flex;
+    font-size:15px;
+    left:-210px;
+    justify-content: center;
+    position: fixed;
+    rotate:-90deg;
+    transition: 0.9s;
+    width:960px;
+    z-index: 1;
 }
-.link:nth-child(2){
-    animation-delay: 0.2s;
+.menuNavItem{
+    letter-spacing: 3px; 
+    margin:0;
+    padding:20px 40px;
+    transition: 0.2s;
 }
-.link:nth-child(3){
-    animation-delay: 0.3s;
+.menuNavItem:hover{border-bottom:3px solid orange;padding:20px 40px 17px 40px;}
+.menuSubtitle{
+    border-bottom: 2px solid black;
+    font-weight: 100;
+    margin:60px 0px 20px 0px;
+    padding:0px 0px 10px 0px;
 }
-.link:nth-child(4){
-    animation-delay: 0.4s;
+.menuTitle{
+    font-size:33px;
+    letter-spacing: 4px;
+    margin:30px 0px 100px 0px;
 }
-.link:nth-child(5){
-    animation-delay: 0.5s;
-}
-.links{
-    display:grid;
-    text-align: center;
-    font-size: 14px;
-    font-weight: lighter;
-}
-.logoImage{
-    margin:50px 0px 80px 0px;
-    height:140px;
-    width:140px;}
 nav{
     align-items: center;
     background-color: rgb(47, 47, 47);
@@ -195,6 +175,10 @@ nav{
     z-index:100;
 }
 .phone{color:rgb(196, 150, 0);margin:0;}
+.scrolledThrough{
+    transform: translateY(0px);
+    opacity: 1;
+}
 .square{
     align-items: center;
     border:1px solid white;
@@ -205,57 +189,38 @@ nav{
     width:30px;
     rotate: 45deg;
 }
-.square:hover::after{
-    scale:1;
-}
-.squares{
-    bottom:100px;
-    display: flex;
-    left:400px;
-    position:absolute;
-    width:300px;
-    z-index: 90;}
+.square:hover::after{scale:1;}
+.squares{bottom:100px;display: flex;left:400px;position:absolute;width:300px;z-index: 90;}
 .socialContainer{margin:100px 0px 0px 0px;}
 .socialImage{height:33px;}
 .socialImage:hover{filter: brightness(40%);}
 .socialImage:nth-child(1){margin:0px 10px 0px 0px;}
-@keyframes navRoll {
-    0%{opacity: 0.1;transform: translateY(-25px);}
-    100%{opacity: 1;transform: translateY(0px);}
-}
-@keyframes bookOnlineBottom {
-    0%{top:-70px}
-    100%{top:60px;}
-}
-@keyframes bookOnlineLeft {
-    0%{left:-270px}
-    100%{left:280px;}
-}
-@keyframes bookOnlineRight {
-    0%{left:280px}
-    100%{left:-290px;}
-}
-@keyframes bookOnlineTop {
-    0%{top:60px}
-    100%{top:-70px;}
-}
+
+@keyframes navRoll {0%{opacity: 0.1;transform: translateY(-25px);}100%{opacity: 1;transform: translateY(0px);}}
+@keyframes bookOnlineBottom {0%{top:-70px}100%{top:60px;}}
+@keyframes bookOnlineLeft {0%{left:-270px}100%{left:280px;}}
+@keyframes bookOnlineRight {0%{left:280px}100%{left:-290px;}}
+@keyframes bookOnlineTop {0%{top:60px}100%{top:-70px;}}
 /*food pics*/
-@keyframes comeFromLeft {
-    0%{left:105vw;scale:1.1}
-    27%{left:0;scale:1.1}
-    100%{scale:1}
-}
+@keyframes comeFromLeft {0%{left:105vw;scale:1.1}27%{left:0;scale:1.1}100%{scale:1}}
 @keyframes topDown {
-    0%{
-        opacity: 0;
-        transform: translateY(-30px);
-    }
-    100%{
-        opacity: 1;
-        transform: translateY(0px);
-    }
+    0%{opacity: 0;transform: translateY(-30px);}
+    100%{opacity: 1;transform: translateY(0px);}}
+@keyframes zoomOut {0%{scale:1.1}100%{scale:1}}
+
+@media screen and (max-width:1280px) {
+    .menuContainer{height:1500px;}
+    .menuItems{grid-template-columns: 1fr 1fr;}
 }
-@keyframes zoomOut {
-    0%{scale:1.1}
-    100%{scale:1}
+@media screen and (max-width:1025px) {
+    .bookOnlineBtn{margin:20px 0px 0px 0px;}
+    .logoImage{margin:0px 0px 30px 0px;height:70px;width:70px;}
+    nav{
+        height:70px;
+        max-width: 100%;
+        overflow: hidden;
+        width:100vw;
+    }
+    .socialContainer{margin:0px;}
+    .socialImage{height:25px;}
 }
