@@ -2,10 +2,10 @@
     --bookBtnTime:3s;
     --navWidth:300px;
     --yellow:rgb(214, 210, 174);
-    --yellow2:rgb(248, 243, 214);
+    --yellow2:rgb(255, 252, 235);
 }
 .address{text-align: center;font-size:13px;width:250px;}
-body{background-color: green; font-family: 'Inter', sans-serif;margin:0;}
+body{background-color:var(--yellow2); font-family: 'Inter', sans-serif;margin:0;}
 /* font-family: 'Playfair Display', serif; */
 .bookBorder1{left:10px;}
 .bookBorder1::after{animation:bookOnlineTop var(--bookBtnTime) infinite;}
@@ -81,8 +81,57 @@ button:hover{opacity:0.93;}
 }
 .foodTitle{margin:0;}
 .foodSubtitle{font-size:40px;margin:0px 30px;}
+.fud1{
+    align-items: center;
+    background-color: white;
+    display: flex;
+    height:600px;
+    justify-content: center;
+    margin:0px 0px 0px 300px;
+    padding:30px;}
+.fud2{
+    align-items: center;
+    background-color: white;
+    display: flex;
+    height:820px;
+    justify-content: center;
+    margin:0px 0px 0px 300px;
+    padding:90px;}
+.fud3{
+    background-color: white;
+    display: flex;
+    height:1220px;
+    justify-content: end;
+    margin:0px 0px 0px 300px;
+    padding:300px 0px 100px 30px;}
+.fud3Pic{height:970px;}
+.fud3Pic2{height:900px;}
+.fud3PicContainer{line-height: 30px;margin:100px -90px 0px 0px; width:650px;z-index: 2;}
+.fud3Pic2Container{height:650px;overflow: hidden; width:650px;}
+.fud4{
+    align-items: center;
+    background-color: white;
+    display: flex;
+    height:800px;
+    justify-content: center;
+    margin:0px 0px 0px 300px;
+    padding:30px;}
+.fud4Pic{height:540px;}
+.fud4Pic2{ width:100px;}
+.fud4Pic2Container{font-size: 14px;font-style: italic;margin:0px 0px 0px 100px; text-align: center; width:100px;}
+.fud4Pics{display: grid;}
+.fudParagraph1{line-height: 30px;}
+.fudParagraph1Pic{height:40px;}
+.fudPic1{height:310px;object-fit: cover;left:0; position:absolute;top:0;transition: 0.7s; width:405px;}
+.fudPic1bgPic{height:80px;}
+.fudPic1Container{align-items: center; 
+    display: flex; 
+    height:310px;
+    justify-content: center; 
+    position:relative; 
+    width:450px;}
+.fudTexts{margin:0px 0px 0px 50px; width:280px;}
 .innerSquare1,.innerSquare2,.innerSquare3,.innerSquare4{background-color: white;height:20px;scale:0;transition: 0.3s ease-in-out;width:20px;}
-
 .link{margin:0px 0px 30px 0px;position: relative;}
 .link::after{
     width:0px;
@@ -115,14 +164,10 @@ button:hover{opacity:0.93;}
 .links{display:grid;text-align: center;font-size: 14px;font-weight: lighter;
 }
 .logoImage{margin:50px 0px 80px 0px;height:140px;width:140px;}
-.menuContainer{
-    background-color: var(--yellow2);
-    margin:70px 0px 0px 300px;
-    padding:80px;
-}
-.menuDescription{font-size:14px;}
+.menuContainer{background-color: var(--yellow2);margin:70px 0px 0px 300px;padding:80px;}
+.menuDescription{font-size:13px;}
 .menuItem{padding:0px 25px 0px 0px;}
-.menuItem,.menuPrice{letter-spacing: 2px;}
+.menuItem,.menuPrice{letter-spacing: 1px;}
 .menuItemContainer{font-size:14px;opacity:0;transform: translateY(-25px);transition: 0.3s;}
 .menuItemPrice{display: flex;justify-content: space-between;width:100%;}
 .menuItemPrice p {margin:0;}
@@ -140,26 +185,18 @@ button:hover{opacity:0.93;}
     position: fixed;
     rotate:-90deg;
     transform-origin: bottom left;
-    transition: 0.9s;
+    transition: 0.2s;
     width:100vh;
-    z-index: 1;
+    z-index: 2;
 }
-.menuNavItem{
-    letter-spacing: 3px; 
-    margin:0;
-    padding:20px 40px;
-}
+.menuNavItem{letter-spacing: 3px; margin:0;padding:20px 40px;}
 .menuSubtitle{
     border-bottom: 2px solid black;
     font-weight: 100;
     margin:60px 0px 20px 0px;
     padding:0px 0px 10px 0px;
 }
-.menuTitle{
-    font-size:33px;
-    letter-spacing: 4px;
-    margin:30px 0px 100px 0px;
-}
+.menuTitle{font-size:33px;letter-spacing: 4px;margin:30px 0px 100px 0px;}
 .navig{
     align-items: center;
     background-color: rgb(47, 47, 47);
@@ -175,10 +212,7 @@ button:hover{opacity:0.93;}
     z-index:100;
 }
 .phone{color:rgb(196, 150, 0);margin:0;}
-.scrolledThrough{
-    transform: translateY(0px);
-    opacity: 1;
-}
+.scrolledThrough{transform: translateY(0px);opacity: 1;}
 .square{
     align-items: center;
     border:1px solid white;
@@ -195,48 +229,72 @@ button:hover{opacity:0.93;}
 .socialImage{height:33px;}
 .socialImage:hover{filter: brightness(40%);}
 .socialImage:nth-child(1){margin:0px 10px 0px 0px;}
-
-@keyframes navRoll {0%{opacity: 0.1;transform: translateY(-25px);}100%{opacity: 1;transform: translateY(0px);}}
+.traditionPic{width:300px}
+.traditionPicContainer{font-size: 13px;font-style: italic;margin:0px 120px 0px 0px;  text-align: center; width:300px;}
+.traditionPic2{height:780px;object-fit: cover;transition: 0.6s; width:590px;}
+.traditionPic2Container{line-height: 30px; text-align: center; width:590px;}
 @keyframes bookOnlineBottom {0%{top:-70px}100%{top:60px;}}
 @keyframes bookOnlineLeft {0%{left:-270px}100%{left:280px;}}
 @keyframes bookOnlineRight {0%{left:280px}100%{left:-290px;}}
 @keyframes bookOnlineTop {0%{top:60px}100%{top:-70px;}}
 /*food pics*/
 @keyframes comeFromLeft {0%{left:105vw;scale:1.1}27%{left:0;scale:1.1}100%{scale:1}}
+@keyframes navRoll {0%{opacity: 0.1;transform: translateY(-25px);}100%{opacity: 1;transform: translateY(0px);}}
 @keyframes topDown {
     0%{opacity: 0;transform: translateY(-30px);}
     100%{opacity: 1;transform: translateY(0px);}}
 @keyframes zoomOut {0%{scale:1.1}100%{scale:1}}
-
+@media screen and (max-width:1425px) {
+    .fud3{padding:300px 0px 100px 30px;}
+    .fud3Pic{height:620px;}
+    .fud3Pic2{height:600px;}
+    .fud3PicContainer{line-height: 30px;margin:100px -90px 0px 0px; width:500px;z-index: 2;}
+    .fud3Pic2Container{height:500px;overflow: hidden; width:500px;}}
+@media screen and (max-width:1330px) {
+    .traditionPic{width:200px;}
+    .traditionPic2{height:580px;object-fit: cover;transition: 0.6s; width:390px;}
+    .traditionPicContainer{margin:0px 50px 0px 0px; width:200px;}}
 @media screen and (max-width:1280px) {
     .menuItems{grid-template-columns: 1fr 1fr;}
-    .squares{bottom:20px;justify-content: center; left:20px;max-width: 100%; width:100vw;}
-}
+    .squares{bottom:20px;justify-content: center; left:20px;max-width: 100%; width:100vw;}}
 @media screen and (max-width:1025px) {
-    .followContainer{
-        right:5px;
-        top:75px;
-    }
-    .foodText{
-        bottom:35%;
-        font-size: 34px;
-        left:13%;
-    }
-    .menuContainer{margin:70px 0px 0px 0px;padding: 20px;}
-    /* .menuNav{
-        flex:1;
-        height:60px;
-        left:0px;
-        rotate:0deg;
-        top:70px;
-        width:100vw;
-    } */
+    .followContainer{right:5px;top:75px;}
+    .foodText{bottom:35%;font-size: 34px;left:13%;}
+    .fud1{padding:0;}
+    .fud1,.fud2,.fud3,.fud4{margin:0;}
+    .fudPic1Container{z-index: 2;}
+    .fudTexts{ margin:0px;text-align: center; width:280px;}
+    .menuContainer{margin:70px 0px 0px 0px;padding: 20px;}}
+@media screen and (max-width:775px) {
+    .fud3Pic{height:570px;}
+    .fud3Pic2{height:600px;}
+    .fud3PicContainer{line-height: 30px;margin:100px 0px 0px 0px; width:380px;z-index: 2;}
+    .fud3Pic2Container{height:380px;overflow: hidden; width:380px;}
+    .fud1,.fud2,.fud3,.fud4{flex-direction: column;}
+    .fud4Pic{margin:0px 0px 100px 0px;}
+    .traditionPicContainer{margin:0;}
+    .traditionPic2{width:340px;}
+    .traditionPic2Container{width:340px;}
 }
 @media screen and (max-width:560px) {
     .menuItems{gap:30px 30px; grid-template-columns: 1fr;}
-    .menuNavItem{
-        letter-spacing: normal;
-        padding:20px 20px;
-    }
-    .menuNavItem:hover{border-bottom:3px solid orange;padding:20px 20px 17px 20px;}
+    .menuNavItem{letter-spacing: normal;padding:20px 20px;}
+    .menuNavItem:hover{border-bottom:3px solid orange;padding:20px 20px 17px 20px;}}
+@media screen and (max-width:470px) {
+    .fud3{padding:300px 10px 100px 10px;}
+    .fud3Pic{height:470px;}
+    .fud3Pic2{height:500px;}
+    .fud3PicContainer{line-height: 30px;margin:100px 0px 0px 0px; width:300px;z-index: 2;}
+    .fud3Pic2Container{height:350px;overflow: hidden; width:350px;}
+    .fud4Pic{height:450px;margin:0px 0px 200px 0px;}
+    .fudPic1{height:210px;width:365px;}
+    .fudPic1Container{align-items: center; 
+    display: flex; 
+    height:210px;
+    justify-content: center; 
+    position:relative; 
+    width:365px;}
+    .traditionPicContainer{margin:0;}
+    .traditionPic2{width:320px;}
+    .traditionPic2Container{width:320px;}
 }

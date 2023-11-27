@@ -14,29 +14,23 @@
 <body>
     <div class="navig">
         <img class="logoImage" src="{{url_for('static', filename='restaurantweb/logo.png')}}">
-        <div class="links">
-            <a class="link">MENUS</a><a class="link">ABOUT US</a><a class="link">GALLERY</a><a class="link">BOOK ONLINE</a><a class="link">CONTACT</a>
-        </div>
+        <div class="links"><a class="link">MENUS</a><a class="link">ABOUT US</a><a class="link">GALLERY</a><a class="link">BOOK ONLINE</a><a class="link">CONTACT</a></div>
         <div class="socialContainer">
             <img class="socialImage" src="{{url_for('static', filename='restaurantweb/socialMedia1.png')}}">
             <img class="socialImage" src="{{url_for('static', filename='restaurantweb/socialMedia2.png')}}">
         </div>
         <p class="address">425, rue McGill, Vieux-Montréal, Québec, H2Y 2H1</p>
         <p class="phone">514.842.2905</p>
-        <button class="bookOnlineBtn">
-            BOOK ONLINE
-            <span class="bookBorder1"></span><span class="bookBorder2"></span><span class="bookBorder3"></span><span class="bookBorder4"></span>
-        </button>
+        <button class="bookOnlineBtn">BOOK ONLINE<span class="bookBorder1"></span><span class="bookBorder2"></span><span class="bookBorder3"></span><span class="bookBorder4"></span></button>
     </div>
     <section class="menuNav">
-        <p class="menuNavItem drink">TO DRINK</p>
-        <p  class="menuNavItem dessert">DESSERT</p>
-        <p  class="menuNavItem bistroMenu">BISTRO MENU</p>
+        <p class="menuNavItem drink" id="TO DRINK">TO DRINK</p>
+        <p  class="menuNavItem dessert" id="DESSERT">DESSERT</p>
+        <p  class="menuNavItem bistroMenu" id="BISTRO MENU">BISTRO MENU</p>
     </section>
     <section class="foodHero">
         <img class="foodImage food1" src="{{url_for('static', filename='restaurantweb/food1.jpg')}}">
-        <div class="foodText">
-            <h1 class="foodTitle">Vallier Bistro</h1><h1 class="foodSubtitle">Open from Tuesday to Saturday</h1></div>
+        <div class="foodText"><h1 class="foodTitle">Vallier Bistro</h1><h1 class="foodSubtitle">Open from Tuesday to Saturday</h1></div>
         <div class="squares">
             <div class="square sqr1" id="1"><div class="inrSqr innerSquare1" id="1"></div></div>
             <div class="square sqr2" id="2"><div class="inrSqr innerSquare2" id="2"></div></div>
@@ -45,9 +39,7 @@
         </div>
         <div class="followContainer">
             <div class="followImageContainer"><img class="followImage" src="{{url_for('static', filename='restaurantweb/x.png')}}"></div>
-            <div class="followTexts">
-                <h3 class="followText">FOLLOW US ON SOCIAL MEDIA</h3><h3 class="followRightArrow">&rarr;</h3>
-            </div>
+            <div class="followTexts"><h3 class="followText">FOLLOW US ON SOCIAL MEDIA</h3><h3 class="followRightArrow">&rarr;</h3></div>
         </div>
     </section>
     <section class="menuContainer">
@@ -56,6 +48,7 @@
         <section class="menuItems">
             <div class="menuItemContainer">
                 <div class="menuItemPrice"><p class="menuItem">SOUP OF THE DAY</p><p class="menuPrice">9</p></div>
+                <p class="menuDescription"></p>
             </div>
             <div class="menuItemContainer">
                 <div class="menuItemPrice"><p class="menuItem">ONION SOUP</p><p class="menuPrice">16</p></div>
@@ -112,6 +105,7 @@
             </div>
             <div class="menuItemContainer">
                 <div class="menuItemPrice"><p class="menuItem">FISH OF THE MOMENT</p><p class="menuPrice">ASK</p></div>
+                <p class="menuDescription"></p>
             </div>
             <div class="menuItemContainer">
                 <div class="menuItemPrice"><p class="menuItem">BEEF FLAVOR 200G</p><p class="menuPrice">18/32</p></div>
@@ -127,7 +121,55 @@
             </div>
         </section>
     </section>
-    <section style="height:100vh;width:100vw;margin:0;max-width:100%;padding:300px 0px;"></section>
+    <section class="fud1">
+        <div class="fudPic1Container">
+            <img class="fudPic1bgPic" src="{{url_for('static', filename='restaurantweb/logo2.png')}}">
+            <img class="fudPic1" src="{{url_for('static', filename='restaurantweb/food5.jpg')}}">
+        </div>
+        <div class="fudTexts">
+            <p class="fudParagraph1">Want a generous salad or a “reasonable” poutine, a good glass of wine or a real coffee… when it’s good, there’s 
+                no need to justify it.</p>
+            <img class="fudParagraph1Pic" src="{{url_for('static', filename='restaurantweb/logo2.png')}}">
+        </div>
+    </section>
+    <section class="fud2">
+        <div class="traditionPicContainer">
+            <img class="traditionPic" src="{{url_for('static', filename='restaurantweb/wishboneGif.gif')}}">
+            <p class="tradition">Our best traditions bring luck,
+                but also pleasure and good taste!</p>
+        </div>
+        <div class="traditionPic2Container">
+            <img class="traditionPic2" src="{{url_for('static', filename='restaurantweb/restaurant1.jpg')}}">
+            <p class="tradition">Inspired by local cuisine and Montrealers' favorite dishes, Vallier's chefs 
+                know how to evoke good memories with comforting and seasonal dishes.</p>
+        </div>
+    </section>
+    <section class="fud3">
+        <div class="fud3PicContainer">
+            <img class="fud3Pic" src="{{url_for('static', filename='restaurantweb/restaurant3.jpg')}}">
+            <p>“Vallier? Like the restaurant on McGill?"" This is the question of the hour for Vallier Dufour. 
+                Fun fact: the bistro takes its name from the Montreal restaurateur who, with his partners, 
+                imagined a dynamic and warm space where he could entertain like at home.</p>
+        </div>
+        <div class="fud3Pic2Container">
+            <img class="fud3Pic2" src="{{url_for('static', filename='restaurantweb/restaurant4.jpg')}}">
+        </div>
+    </section>
+    <section class="fud4">
+        <img class="fud4Pic" src="{{url_for('static', filename='restaurantweb/restaurant5.jpeg')}}">
+        <div class="fud4Pic2Container">
+            <div class="fud4Pics">
+                <img class="fud4Pic2" src="{{url_for('static', filename='restaurantweb/burger1.png')}}" style="z-index:5;">
+                <img class="fud4Pic2" src="{{url_for('static', filename='restaurantweb/burger2.png')}}">
+                <img class="fud4Pic2" src="{{url_for('static', filename='restaurantweb/burger3.png')}}">
+                <img class="fud4Pic2" src="{{url_for('static', filename='restaurantweb/burger4.png')}}">
+                <img class="fud4Pic2" src="{{url_for('static', filename='restaurantweb/burger5.png')}}">
+                <img class="fud4Pic2" src="{{url_for('static', filename='restaurantweb/burger6.png')}}">
+                <img class="fud4Pic2" src="{{url_for('static', filename='restaurantweb/burger7.png')}}">
+            </div>
+        </div>
+    </section>
+    <section class="fud1"></section>
     <!-- <div id="google_translate_element" style="height:50px;"></div>
     <script type="text/javascript">
         function googleTranslateElementInit() {
@@ -135,8 +177,36 @@
         }
         </script>
         <script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script> -->
+        <!-- <iframe style="margin:300px;" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d13227.011982929269!2d-117.79597095!3d34.02455069999999!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x80c32d9e633c4231%3A0x84ad7ad2067ccc6!2sBasil%20And%20Co!5e0!3m2!1sen!2sus!4v1701120423617!5m2!1sen!2sus" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe> -->
     <script src="{{url_for('static', filename='restaurantweb/restaurant.js')}}"></script>
     <script>
+        //fudPic click image change//
+var fudPic1 = document.querySelector(".fudPic1")
+var fudPic1Container = document.querySelector(".fudPic1Container")
+fudPic1Container.addEventListener("click",function(){
+    fudPic1.style.opacity = "0"
+    setTimeout(()=>{
+        fudPic1.style.opacity="1";
+        if(fudPic1.src.substring(fudPic1.src.length-9,fudPic1.src.length)=="food5.jpg")
+            {fudPic1.src="{{url_for('static', filename='restaurantweb/food6.jpg')}}"}
+        else if(fudPic1.src.substring(fudPic1.src.length-9,fudPic1.src.length)=="food6.jpg")
+            {fudPic1.src="{{url_for('static', filename='restaurantweb/food7.jpg')}}"}
+        else if(fudPic1.src.substring(fudPic1.src.length-9,fudPic1.src.length)=="food7.jpg")
+            {fudPic1.src="{{url_for('static', filename='restaurantweb/food5.jpg')}}"}
+    },700)
+})
+var traditionPic2 = document.querySelector(".traditionPic2")
+traditionPic2.addEventListener("click",function(){
+    traditionPic2.style.opacity = "0"
+    setTimeout(function(){
+        traditionPic2.style.opacity="1"
+        if(traditionPic2.src.substring(traditionPic2.src.length-15,traditionPic2.src.length)=="restaurant1.jpg"){
+            traditionPic2.src = "{{url_for('static', filename='restaurantweb/restaurant2.jpg')}}"}
+        else{traditionPic2.src = "{{url_for('static', filename='restaurantweb/restaurant1.jpg')}}"}
+    },600)
+    
+})
+
         //squares//
         const squares = document.getElementsByClassName("square")
         const foodHero = document.querySelector(".foodHero")
@@ -145,7 +215,6 @@
         var currentInnerSquare = ""
         Array.from(squares).forEach(square => {
             square.addEventListener('click',(e)=>{
-                console.log(e.target.id)
                 if(square.className =="square sqr1" && currentInnerSquare != square.className){
                     const img1 = document.createElement("img")
                     foodHero.appendChild(img1)
@@ -167,9 +236,7 @@
                     if(foodImages.length>3){
                         foodImages[2].style.height = foodImages[2].getBoundingClientRect().height
                         foodImages[2].style.width = foodImages[2].getBoundingClientRect().width
-                        foodImages[0].remove()
-                    } 
-                }
+                        foodImages[0].remove()}}
                 else if(square.className =="square sqr2" && currentInnerSquare != square.className){
                     const img1 = document.createElement("img")
                     foodHero.appendChild(img1)
@@ -191,9 +258,7 @@
                     if(foodImages.length>3){
                         foodImages[2].style.height = foodImages[2].getBoundingClientRect().height
                         foodImages[2].style.width = foodImages[2].getBoundingClientRect().width
-                        foodImages[0].remove()
-                    } 
-                }
+                        foodImages[0].remove()}}
                 else if(square.className =="square sqr3" && currentInnerSquare != square.className){
                     const img1 = document.createElement("img")
                     foodHero.appendChild(img1)
@@ -214,9 +279,7 @@
                     if(foodImages.length>3){
                         foodImages[2].style.height = foodImages[2].getBoundingClientRect().height
                         foodImages[2].style.width = foodImages[2].getBoundingClientRect().width
-                        foodImages[0].remove()
-                    } 
-                }
+                        foodImages[0].remove()}}
                 else if(square.className =="square sqr4" && currentInnerSquare != square.className){
                     const img1 = document.createElement("img")
                     foodHero.appendChild(img1)
@@ -242,17 +305,10 @@
                     if(foodImages.length>3){
                         foodImages[2].style.height = foodImages[2].getBoundingClientRect().height
                         foodImages[2].style.width = foodImages[2].getBoundingClientRect().width
-                        foodImages[0].remove()
-                    } 
-                }
+                        foodImages[0].remove()} }
                 for(innerSquare in innerSquares){
-                    if(innerSquares[innerSquare].id==e.target.id){
-                        innerSquares[innerSquare].style.scale = "1"
-                    }
-                    else{innerSquares[innerSquare].style.scale="0"}
-                }
-            })
-        })
+                    if(innerSquares[innerSquare].id==e.target.id){innerSquares[innerSquare].style.scale = "1"}
+                    else{innerSquares[innerSquare].style.scale="0"}}})})
     </script>
 </body>
 </html>
