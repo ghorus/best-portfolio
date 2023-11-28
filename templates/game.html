@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="{{url_for('static', filename='game.css')}}">
+    <link rel="icon" type="image/x-icon" href="{{url_for('static', filename='gameweb/boss1.gif')}}">
+    <!--google font-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lexend&family=Lobster&display=swap" rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Only Downhill From Here</title>
+</head>
+<body>
+    <section class="gameTitleContainer">
+        <span style="overflow:hidden"><h1 class="gameTitle">Only Downhill From Here</h1></span>
+        <span style="overflow:hidden"><h2 class="gameSubtitle">2D Shooter Game solely developed by Victor Nguyen</h2></span>
+    </section>
+    <section class="synopsisContainer">
+        <div class="synopsisInsideContainer">
+            <h1 class="synopsisTitle" >STORY SYNOPSIS</h1>
+            <p class="synopsisParagraph">A young man doesn't want to be responsible. No matter if his credit card, his trash bags, IRS agents, his mom, 
+                or the cleaner tells him to get his life together, he still doesn't want to. 
+            </p>
+        </div>
+    </section>
+    <section class="explainContainer">
+        <div class="explainNumContainer"><h2 class="explainNum"><span class="eNum"></span></h2></div>
+        <div class="explainTexts">
+            <h1 class="explainTitle"><span class="eTitle"></span></h1>
+            <h2 class="explainSubtitle"><span class="eSubtitle"></span></h2>
+            <p class="explainParagraph"><span class="eParagraph"></span></p>
+        </div>
+    </section>
+    <section class="imagesContainer iCont1">
+        <img class="image1" src="{{url_for('static', filename='gameweb/boss1.png')}}">
+        <img class="image1" src="{{url_for('static', filename='gameweb/trash1.png')}}">
+        <img class="image1" src="{{url_for('static', filename='gameweb/trash2.png')}}">
+        <img class="image1" src="{{url_for('static', filename='gameweb/mainChar.png')}}">
+        <img class="image1" src="{{url_for('static', filename='gameweb/card.png')}}">
+        <img class="image1" src="{{url_for('static', filename='gameweb/mom.png')}}">
+    </section>
+    <section style="height:42vh"></section>
+    <section class="imagesContainer iCont2">
+        <img class="image1" src="{{url_for('static', filename='gameweb/boss1.gif')}}">
+        <img class="image1" src="{{url_for('static', filename='gameweb/trash.gif')}}">
+        <img class="image1" src="{{url_for('static', filename='gameweb/mainChar.gif')}}">
+        <img class="image1" src="{{url_for('static', filename='gameweb/card.gif')}}">
+        <img class="image1" src="{{url_for('static', filename='gameweb/mom.gif')}}">
+    </section>
+    <section style="height:42vh"></section>
+    <section class="imagesContainer iCont3">
+        <video class="image2" muted loop autoplay>
+            <source src="{{url_for('static', filename='gameweb/clip1.mp4')}}">
+            </video>
+    </section>
+    <section style="height:42vh"></section>
+    <section class="imagesContainer iCont4">
+        <video class="image2" muted loop autoplay>
+        <source src="{{url_for('static', filename='gameweb/clip3.mp4')}}">
+        </video>
+        <video class="image2" muted loop autoplay>
+        <source src="{{url_for('static', filename='gameweb/clip4.mp4')}}">
+        </video>
+        <video class="image2" muted loop autoplay>
+        <source src="{{url_for('static', filename='gameweb/clip5.mp4')}}">
+        </video>
+        <video class="image2" muted loop autoplay>
+        <source src="{{url_for('static', filename='gameweb/clip6.mp4')}}">
+        </video>
+        <video class="image2" muted loop autoplay>
+        <source src="{{url_for('static', filename='gameweb/clip7.mp4')}}">
+        </video>
+        <video class="image2" muted loop autoplay>
+        <source src="{{url_for('static', filename='gameweb/clip8.mp4')}}">
+        </video>
+    </section>
+    <section style="height:152vh"></section>
+    <section class="development">
+        <h1>Development</h1>
+        <p>Game made with Python's Pygame</p>
+        <p>Webite made with Flask</p>
+    </section>
+    <script src="{{url_for('static', filename='gameweb/game.js')}}"></script>
+</body>
+</html>

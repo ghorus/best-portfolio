@@ -1,0 +1,167 @@
+/* font-family: 'Lexend', sans-serif;
+font-family: 'Lobster', sans-serif; */
+:root{
+    --synopsisContainer:60vw;
+    --widthSep:39vw;
+}
+body{font-family: 'Lexend', sans-serif;margin:0;}
+.development{
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+
+    max-width: 100%;
+    width:100%;
+}
+.explainContainer{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height:100vh;
+    left:0;
+    padding:0px 0px 0px 30px;
+    position:fixed;
+    top:0;
+    width:35vw;
+}
+.explainNum{
+    font-size:30px;
+}
+.explainParagraph{font-size:24px;}
+.explainSubtitle{
+    font-size:30px;
+    overflow: hidden;
+    position:relative;
+    transition:0.9s ease-in-out;
+}
+.explainTexts{
+    margin:0px 0px 0px 50px;
+}
+.explainTitle{
+    font-size:65px;
+    margin:0;
+}
+.explainNum, .explainParagraph,.explainTitle{
+    display: inline-block;
+    overflow: hidden;
+    position:relative;
+    transition:0.9s ease-in-out;
+}
+.eNum, .eParagraph, .eSubtitle,.eTitle{
+    animation:leftRight 1s;
+    background-color: black;
+    height:100%;
+    left:100%;
+    position:absolute;
+    top:0;
+    transition:0.9s ease-in-out;
+    width: 100%;
+}
+.gameTitleContainer{
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    height:100vh;
+    justify-content: center;
+    max-width: 100%;
+    text-align: center;
+    width:100vw;
+}
+.gameTitle{
+    animation:downUp 1s;
+    font-family: 'Lobster', sans-serif;
+    font-size:65px;
+    margin:0px 0px 20px 0px;
+}
+.gameSubtitle{
+    animation: upDown 1s;
+    font-size:23px;
+    font-weight: lighter;
+    margin:0;
+}
+html{scroll-behavior: smooth;}
+.image1{width:370px;}
+.image2{height:440px;width:440px;}
+.image2:first-child{height:440px;margin:0px 0px 0px 100px;width:440px;}
+.imagesContainer{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    height: 100vh;
+    margin:0px 0px 0px 41vw;
+    max-width: 100%;
+    width:58vw;
+}
+.synopsisContainer{
+    align-items: center;
+    display: flex;
+    height: 100vh;
+    justify-content: center;
+    max-width: 100%;
+    overflow: hidden;
+    width: 100vw;
+}
+.synopsisInsideContainer{height:120px;position: relative;width: var(--synopsisContainer);
+}
+.synopsisParagraph{
+    font-size:35px;
+    margin:0;
+    position: absolute;
+    top:0;
+    width:var(--synopsisContainer)
+}
+.synopsisTitle{
+    color:rgb(236, 236, 236);
+    font-size:180px;
+    margin: 0;
+    width:1580px;
+}
+@keyframes leftRight {
+    0%{left:0;}
+    100%{left:100%}
+}
+@keyframes downUp {
+    0%{transform: translateY(100px);}
+    100%{transform: translateY(0px);}
+}
+@keyframes upDown {
+    0%{transform: translateY(-100px);}
+    100%{transform: translateY(0px);}
+}
+@media screen and (max-width:1660px) {
+    .imagesContainer{width:50vw;}
+}
+@media screen and (max-width:1520px) {
+    .image1{width:300px;}
+    .imagesContainer{width:60vw;margin:0px 0px 0px 33vw;}
+    .explainContainer{width:30vw;}
+    .explainParagraph{font-size:20px;}
+    .explainSubtitle{
+        font-size:20px;
+    }
+    .explainTitle{
+        font-size:55px;
+        margin:0;
+    }
+}
+@media screen and (max-width:1350px) {
+    .image1{width:200px;}
+    .imagesContainer{width:68vw;margin:0px 0px 0px 30vw;}
+    .explainContainer{ width:80vw;}
+    .explainParagraph{font-size:17px;}
+    .explainSubtitle{font-size:18px;}
+    .explainTitle{font-size:30px;margin:0;}}
+@media screen and (max-width:1285px) {
+    .imagesContainer{margin:0;max-width: 100%; width:100vw;}}
+@media screen and (max-width:1285px) {
+    .iCont4{align-items: center;display: flex;flex-direction: column;}}
+@media screen and (max-width:670px) {
+    .gameTitle{font-size: 50px;}
+    .gameSubtitle{font-size: 20px;}
+    .synopsisParagraph{font-size: 20px;}
+}
+@media screen and (max-width:560px) {
+    .image1{width:120px;}
+    .image2,.image2:first-child{height:380px;margin:0;width:380px;}
+    .explainParagraph{font-size:15px;}
+    .explainSubtitle{font-size:15px;}
+    .explainTitle{font-size:25px;}}

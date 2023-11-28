@@ -11,6 +11,10 @@ def home():
 def digitalbrand():
     return render_template('digitalbrand.html')
 
+@app.route("/game")
+def game():
+    return render_template('game.html')
+
 @app.route("/healthcare")
 def healthcare():
     return render_template('healthcare.html')
