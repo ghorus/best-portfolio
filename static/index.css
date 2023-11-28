@@ -5,7 +5,6 @@
 .aboutTextsContainer{width:600px;}
 .aboutTitle{color:#4770FF;margin:30px 0px 0px 0px;}
 body {
-    cursor: url('image-path.png');
     font-family: 'Roboto Flex', sans-serif;
     height:100vh;
     margin:0px;

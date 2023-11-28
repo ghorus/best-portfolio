@@ -14,7 +14,12 @@
 <body>
     <div class="navig">
         <img class="logoImage" src="{{url_for('static', filename='restaurantweb/logo.png')}}">
-        <div class="links"><a class="link">MENUS</a><a class="link">ABOUT US</a><a class="link">GALLERY</a><a class="link">BOOK ONLINE</a><a class="link">CONTACT</a></div>
+        <div class="links">
+            <a class="link" onClick="document.querySelector('.menuContainer').scrollIntoView({ behavior: 'smooth'});">MENUS</a>
+            <a class="link" onClick="document.querySelector('.fud1').scrollIntoView({ behavior: 'smooth'});">ABOUT US</a>
+            <a class="link" onClick="document.querySelector('.fud2').scrollIntoView({ behavior: 'smooth'});">GALLERY</a>
+            <a class="link">BOOK ONLINE</a>
+            <a class="link" onClick="document.querySelector('footer').scrollIntoView({ behavior: 'smooth'});">CONTACT</a></div>
         <div class="socialContainer">
             <img class="socialImage" src="{{url_for('static', filename='restaurantweb/socialMedia1.png')}}">
             <img class="socialImage" src="{{url_for('static', filename='restaurantweb/socialMedia2.png')}}">
@@ -159,7 +164,7 @@
         <img class="fud4Pic" src="{{url_for('static', filename='restaurantweb/restaurant5.jpeg')}}">
         <div class="fud4Pic2Container">
             <div class="fud4Pics">
-                <img class="fud4Pic2" src="{{url_for('static', filename='restaurantweb/burger1.png')}}" style="z-index:5;">
+                <img class="fud4Pic2" src="{{url_for('static', filename='restaurantweb/burger1.png')}}">
                 <img class="fud4Pic2" src="{{url_for('static', filename='restaurantweb/burger2.png')}}">
                 <img class="fud4Pic2" src="{{url_for('static', filename='restaurantweb/burger3.png')}}">
                 <img class="fud4Pic2" src="{{url_for('static', filename='restaurantweb/burger4.png')}}">
@@ -169,7 +174,32 @@
             </div>
         </div>
     </section>
-    <section class="fud1"></section>
+    <footer>
+        <div class="footerTextsContainer">
+            <div class="footerTexts">
+                <p>FIND US</p>
+                <p>425, rue McGill, Old Montreal, Quebec, H2Y 2H1</p>
+                <button class="footerButton">OPEN IN GOOGLE MAP<img class="footerButtonImage" src="{{url_for('static', filename='restaurantweb/logo2.png')}}"></button>
+                <hr>
+            </div>
+            <div class="footerTexts">
+                <p>OUR OPENING HOURS</p>
+                <p>Monday from 11:30 a.m. to 3 p.m.</p>
+                <p>Tuesday & Wednesday from 11:30 a.m. to 9 p.m.</p>
+                <p>Thursday Friday Saturday from 11:30 a.m. to 10 p.m</p>
+                <hr>
+            </div>
+            <div class="footerTexts">
+                <p>RESERVATIONS</p>
+                <p>514.842.2905 or Reserve online here</p>
+                <p>For any other information info@vallierbistro.com</p>
+            </div>
+        </div>
+        <div class="footerMap">
+            <iframe class="footerMapiframe" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2796.4669125147307!2d-73.56047922333428!3d45.50067873100357!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4cc91a593d9b3d09%3A0xdb03f869002bc67a!2s425%20McGill%20St%2C%20Montreal%2C%20QC%20H2Y%202H1%2C%20Canada!5e0!3m2!1sen!2sus!4v1701128654480!5m2!1sen!2sus" 
+         style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+    </footer>
     <!-- <div id="google_translate_element" style="height:50px;"></div>
     <script type="text/javascript">
         function googleTranslateElementInit() {
@@ -181,31 +211,31 @@
     <script src="{{url_for('static', filename='restaurantweb/restaurant.js')}}"></script>
     <script>
         //fudPic click image change//
-var fudPic1 = document.querySelector(".fudPic1")
-var fudPic1Container = document.querySelector(".fudPic1Container")
-fudPic1Container.addEventListener("click",function(){
-    fudPic1.style.opacity = "0"
-    setTimeout(()=>{
-        fudPic1.style.opacity="1";
-        if(fudPic1.src.substring(fudPic1.src.length-9,fudPic1.src.length)=="food5.jpg")
-            {fudPic1.src="{{url_for('static', filename='restaurantweb/food6.jpg')}}"}
-        else if(fudPic1.src.substring(fudPic1.src.length-9,fudPic1.src.length)=="food6.jpg")
-            {fudPic1.src="{{url_for('static', filename='restaurantweb/food7.jpg')}}"}
-        else if(fudPic1.src.substring(fudPic1.src.length-9,fudPic1.src.length)=="food7.jpg")
-            {fudPic1.src="{{url_for('static', filename='restaurantweb/food5.jpg')}}"}
-    },700)
-})
-var traditionPic2 = document.querySelector(".traditionPic2")
-traditionPic2.addEventListener("click",function(){
-    traditionPic2.style.opacity = "0"
-    setTimeout(function(){
-        traditionPic2.style.opacity="1"
-        if(traditionPic2.src.substring(traditionPic2.src.length-15,traditionPic2.src.length)=="restaurant1.jpg"){
-            traditionPic2.src = "{{url_for('static', filename='restaurantweb/restaurant2.jpg')}}"}
-        else{traditionPic2.src = "{{url_for('static', filename='restaurantweb/restaurant1.jpg')}}"}
-    },600)
-    
-})
+        var fudPic1 = document.querySelector(".fudPic1")
+        var fudPic1Container = document.querySelector(".fudPic1Container")
+        fudPic1Container.addEventListener("click",function(){
+            fudPic1.style.opacity = "0"
+            setTimeout(()=>{
+                fudPic1.style.opacity="1";
+                if(fudPic1.src.substring(fudPic1.src.length-9,fudPic1.src.length)=="food5.jpg")
+                    {fudPic1.src="{{url_for('static', filename='restaurantweb/food6.jpg')}}"}
+                else if(fudPic1.src.substring(fudPic1.src.length-9,fudPic1.src.length)=="food6.jpg")
+                    {fudPic1.src="{{url_for('static', filename='restaurantweb/food7.jpg')}}"}
+                else if(fudPic1.src.substring(fudPic1.src.length-9,fudPic1.src.length)=="food7.jpg")
+                    {fudPic1.src="{{url_for('static', filename='restaurantweb/food5.jpg')}}"}
+            },700)
+        })
+        var traditionPic2 = document.querySelector(".traditionPic2")
+        traditionPic2.addEventListener("click",function(){
+            traditionPic2.style.opacity = "0"
+            setTimeout(function(){
+                traditionPic2.style.opacity="1"
+                if(traditionPic2.src.substring(traditionPic2.src.length-15,traditionPic2.src.length)=="restaurant1.jpg"){
+                    traditionPic2.src = "{{url_for('static', filename='restaurantweb/restaurant2.jpg')}}"}
+                else{traditionPic2.src = "{{url_for('static', filename='restaurantweb/restaurant1.jpg')}}"}
+            },600)
+            
+        })
 
         //squares//
         const squares = document.getElementsByClassName("square")

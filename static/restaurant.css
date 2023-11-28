@@ -81,6 +81,32 @@ button:hover{opacity:0.93;}
 }
 .foodTitle{margin:0;}
 .foodSubtitle{font-size:40px;margin:0px 30px;}
+footer{
+    align-items: center;
+    display: flex;
+    justify-content:center;
+    margin:0px 0px 0px 300px;padding:30px;}
+.footerButton{
+    background-color: var(--yellow2); 
+    border:1px solid black;
+    height:80px;
+    letter-spacing: 2px;
+    position:relative;
+    transform: scale(1,0.93);
+    transition: 0.3s; 
+    width:330px;}
+.footerButtonImage{ height:30px;left:45%; padding: 5px;position: absolute; top:-23px}
+.footerButton:hover{box-shadow: 0px 0px 15px gray;}
+.footerMap{
+    height:400px;
+    overflow: hidden; 
+    position:relative; 
+    rotate:45deg;
+    width:400px;
+}
+.footerMapiframe{height:640px; position: absolute;left:-160px;rotate:-45deg;top:-150px;width: 640px;}
+.footerTexts{margin:30px 0px; width:365px;}
+.footerTextsContainer{margin:0px 200px 0px 0px;}
 .fud1{
     align-items: center;
     background-color: white;
@@ -123,6 +149,7 @@ button:hover{opacity:0.93;}
 .fudParagraph1{line-height: 30px;}
 .fudParagraph1Pic{height:40px;}
 .fudPic1{height:310px;object-fit: cover;left:0; position:absolute;top:0;transition: 0.7s; width:405px;}
+.fudPic1:hover,.traditionPic2:hover{cursor: url('restaurantweb/mouse2.png'),auto;}
 .fudPic1bgPic{height:80px;}
 .fudPic1Container{align-items: center; 
     display: flex; 
@@ -131,6 +158,10 @@ button:hover{opacity:0.93;}
     position:relative; 
     width:450px;}
 .fudTexts{margin:0px 0px 0px 50px; width:280px;}
+hr{display: block;
+  height: 1px;
+  border: 0;
+  border-top: 1px solid #000000;}
 .innerSquare1,.innerSquare2,.innerSquare3,.innerSquare4{background-color: white;height:20px;scale:0;transition: 0.3s ease-in-out;width:20px;}
 .link{margin:0px 0px 30px 0px;position: relative;}
 .link::after{
@@ -245,6 +276,8 @@ button:hover{opacity:0.93;}
     100%{opacity: 1;transform: translateY(0px);}}
 @keyframes zoomOut {0%{scale:1.1}100%{scale:1}}
 @media screen and (max-width:1425px) {
+    footer{flex-direction: column;text-align: center;}
+    .footerTextsContainer{margin:0px 0px 140px 0px;padding:20px;}
     .fud3{padding:300px 0px 100px 30px;}
     .fud3Pic{height:620px;}
     .fud3Pic2{height:600px;}
@@ -261,11 +294,12 @@ button:hover{opacity:0.93;}
     .followContainer{right:5px;top:75px;}
     .foodText{bottom:35%;font-size: 34px;left:13%;}
     .fud1{padding:0;}
-    .fud1,.fud2,.fud3,.fud4{margin:0;}
+    footer,.fud1,.fud2,.fud3,.fud4{margin:0;}
     .fudPic1Container{z-index: 2;}
     .fudTexts{ margin:0px;text-align: center; width:280px;}
     .menuContainer{margin:70px 0px 0px 0px;padding: 20px;}}
 @media screen and (max-width:775px) {
+    .footerMap{height:300px;width:300px;}
     .fud3Pic{height:570px;}
     .fud3Pic2{height:600px;}
     .fud3PicContainer{line-height: 30px;margin:100px 0px 0px 0px; width:380px;z-index: 2;}
@@ -281,6 +315,10 @@ button:hover{opacity:0.93;}
     .menuNavItem{letter-spacing: normal;padding:20px 20px;}
     .menuNavItem:hover{border-bottom:3px solid orange;padding:20px 20px 17px 20px;}}
 @media screen and (max-width:470px) {
+    .footerMap{height:200px;width:200px;}
+    .footerMapiframe{height:500px;left:-140px; width:400px;}
+    .footerTexts{width:350px;}
+    .footerTextsContainer{margin:0px 0px 70px 0px;padding:5px;}
     .fud3{padding:300px 10px 100px 10px;}
     .fud3Pic{height:470px;}
     .fud3Pic2{height:500px;}
