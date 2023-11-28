@@ -216,24 +216,24 @@
         fudPic1Container.addEventListener("click",function(){
             fudPic1.style.opacity = "0"
             setTimeout(()=>{
-                fudPic1.style.opacity="1";
                 if(fudPic1.src.substring(fudPic1.src.length-9,fudPic1.src.length)=="food5.jpg")
-                    {fudPic1.src="{{url_for('static', filename='restaurantweb/food6.jpg')}}"}
+                {fudPic1.src="{{url_for('static', filename='restaurantweb/food6.jpg')}}"}
                 else if(fudPic1.src.substring(fudPic1.src.length-9,fudPic1.src.length)=="food6.jpg")
-                    {fudPic1.src="{{url_for('static', filename='restaurantweb/food7.jpg')}}"}
+                {fudPic1.src="{{url_for('static', filename='restaurantweb/food7.jpg')}}"}
                 else if(fudPic1.src.substring(fudPic1.src.length-9,fudPic1.src.length)=="food7.jpg")
-                    {fudPic1.src="{{url_for('static', filename='restaurantweb/food5.jpg')}}"}
+                {fudPic1.src="{{url_for('static', filename='restaurantweb/food5.jpg')}}"}
+                fudPic1.style.opacity="1";
             },700)
         })
         var traditionPic2 = document.querySelector(".traditionPic2")
         traditionPic2.addEventListener("click",function(){
             traditionPic2.style.opacity = "0"
             setTimeout(function(){
-                traditionPic2.style.opacity="1"
                 if(traditionPic2.src.substring(traditionPic2.src.length-15,traditionPic2.src.length)=="restaurant1.jpg"){
                     traditionPic2.src = "{{url_for('static', filename='restaurantweb/restaurant2.jpg')}}"}
-                else{traditionPic2.src = "{{url_for('static', filename='restaurantweb/restaurant1.jpg')}}"}
-            },600)
+                    else{traditionPic2.src = "{{url_for('static', filename='restaurantweb/restaurant1.jpg')}}"}
+                    traditionPic2.style.opacity="1"
+                },700)
             
         })
 
