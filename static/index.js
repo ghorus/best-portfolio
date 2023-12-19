@@ -49,7 +49,7 @@ projs.forEach(proj => {
 const cat = document.querySelector(".catLoadingContainer")
 const body = document.querySelector("body")
 window.addEventListener("load",function(){
-    setTimeout(unloadCat,2800)
+    setTimeout(unloadCat,100)
 })
 function unloadCat(){
     cat.style.display = "none";

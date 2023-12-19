@@ -19,6 +19,10 @@ def game():
 def healthcare():
     return render_template('healthcare.html')
 
+@app.route("/photographer")
+def photographer():
+    return render_template('photographer.html')
+
 @app.route("/podcast")
 def podcast():
     return render_template('podcast.html')
@@ -33,3 +37,4 @@ def swePackage():
 
 if __name__ == "__main__":
     app.run(debug=True)
+    print('yeah')
