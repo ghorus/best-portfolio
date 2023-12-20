@@ -169,6 +169,7 @@ html{cursor: url('mouse.png'), auto;scrollbar-width:thin;}
     .navLinks{font-size: 15px;}
     .navSectionLinks a{margin:0px 0px 0px 10px;}
     .project{height:300px;margin:0px 0px 30px 0px;width:300px;}
+    .projectInfo{height:300px;width:300px;}
 }
 @media screen and (max-width:430px) {
     .aboutDescription{font-size:12px;}
