@@ -93,7 +93,7 @@ html{cursor: url('mouse.png'), auto;scrollbar-width:thin;}
 .navSectionLinks a:hover{color:#92a9ff;cursor: pointer;}
 .portfolioContainer{margin:150px 0px;text-align: center;}
 .professionalPicture{border-radius: 10px;height:400px;}
-.project{border:1px solid black;border-radius:10px;height:490px;opacity: 0;overflow: hidden; margin:0px 0px 30px 30px;position: relative; width:490px;transition:1s;}
+.project{border-radius:10px;height:490px;opacity: 0;overflow: hidden; margin:0px 0px 30px 30px;position: relative; width:490px;transition:1s;}
 .projectInfo{
     background-color: rgb(24, 24, 156);
     color:white;
@@ -109,7 +109,7 @@ html{cursor: url('mouse.png'), auto;scrollbar-width:thin;}
     width:490px;
 }
 .projectInfo:hover{opacity: 0.9;}
-.projectImage{height:100%;object-fit: cover; width:100%;}
+.projectImage{height:100%;object-fit: contain; width:100%;}
 .projects{display:flex;flex-wrap: wrap;width: 100vw;max-width: 100%;justify-content: center; transition: 0.2s;}
 .scrolled{
     opacity:1;
