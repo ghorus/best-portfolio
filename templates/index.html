@@ -14,12 +14,14 @@
 <body>
     <div class="heroSection">
         <nav class="navLinks">
-            <a>Victor Nguyen</a>
             <span class="navSectionLinks">
+                <a href="https://www.linkedin.com/in/victor-n-684486266/"><img class="social_icon" src="{{url_for('static', filename='linkedin.png')}}"/></a>
+                <a href="https://github.com/ghorus"><img class="social_icon" src="{{url_for('static', filename='github.png')}}"/></a>
+                <a href="https://www.instagram.com/seoulcaliii/"><img class="social_icon" src="{{url_for('static', filename='instagram.png')}}"/></a>
                 <a onClick="document.querySelector('.heroSection').scrollIntoView({ behavior: 'smooth'});">Home</a>
+                <a onClick="document.querySelector('.exp_section').scrollIntoView({ behavior: 'smooth'});">Experience</a>
                 <a onClick="document.querySelector('.portfolioContainer').scrollIntoView({ behavior: 'smooth'});">Portfolio</a>
                 <a onClick="document.querySelector('.aboutMainContainer').scrollIntoView({ behavior: 'smooth'});">About</a>
-                <a onClick="document.querySelector('.getInTouchContainer').scrollIntoView({ behavior: 'smooth'});">Contact</a>
         </span>
        </nav>
        <div class="heroMainContainer">
@@ -29,7 +31,7 @@
                    <p class="heroTextEmphasize">Victor <span class="lastNameText">Nguyen</span></p>
                    <p class="heroText">a web developer.</p>
                </div>
-               <button class="hireButton" onClick="document.querySelector('.getInTouchContainer').scrollIntoView({ behavior: 'smooth'});">Hire Me</button>
+               <!-- <button class="hireButton" onClick="document.querySelector('.getInTouchContainer').scrollIntoView({ behavior: 'smooth'});">Hire Me</button> -->
                <a class="viewPortfolioLink" onClick="document.querySelector('.portfolioContainer').scrollIntoView({ behavior: 'smooth'});">View My Portfolio</a>
            </section>
            <section class="meContainer">
@@ -51,6 +53,38 @@
         <img class="languageLogos" src="{{url_for('static', filename='postgresql.png')}}">
         <img class="languageLogos" src="{{url_for('static', filename='python_logo.png')}}">
         <img class="languageLogos" src="{{url_for('static', filename='react_logo.png')}}">
+    </section>
+    <section class="expertise_sections"></section>
+        <div class="expertise_section">
+            <h3 class="header">Services</h3>
+            <div class="skills">
+                <button class="blue_button">Full Stack Web Development</button>
+                <button class="blue_button">Software Applications</button>
+                <button class="blue_button">Web Design</button>
+                <button class="blue_button">Web Hosting</button>
+            </div>
+        </div>
+        <div class="expertise_section">
+            <h3 class="header">Features</h3>
+            <div class="skills">
+                <button class="blue_button">Web Sockets</button>
+                <button class="blue_button">Database Management</button>
+                <button class="blue_button">Automation Testing</button>
+                <button class="blue_button">Version Control</button>
+                <button class="blue_button">User Authorization</button>
+                <button class="blue_button">Landing Page</button>
+                <button class="blue_button">Responsive, Accessible Web Applications</button>
+                <button class="blue_button">Clear Documentation</button>
+                <button class="blue_button">Scalable, High Performing Software</button>
+            </div>
+        </div>
+        <div class="expertise_section">
+            <h3 class="header">Soft Skills</h3>
+            <div class="skills">
+                <button class="blue_button">Oral & Written Communication</button>
+                <button class="blue_button">Problem Solving</button>
+            </div>
+        </div>
     </section>
     <section class="exp_section">
         <div class="exp_container">
@@ -84,6 +118,15 @@
     <section class="portfolioContainer">
         <h1>Portfolio</h1>
         <div class="projects">
+            <a href="{{url_for('game')}}">
+                <div class="project">
+                    <div class="projectInfo">
+                        <h2>"All Downhill From Here" Video Game</h2>
+                        <p>A website about a completed 2D-shooter game I personally developed where I formulated the story, characters, dialogues, game mechanics, and more. (Personal Project)
+                    </div>
+                    <img class="projectImage" src="{{url_for('static', filename='website_game.png')}}">
+                </div>
+            </a>
             <a href="https://one-word-story-game.onrender.com/">
                 <div class="project">
                     <div class="projectInfo">
@@ -92,6 +135,15 @@
                             build stories one word at a time using Web sockets for real-time communication. (Personal Project, Currently on Free Plan(Long Loading Time))
                     </div>
                     <img class="projectImage" src="{{url_for('static', filename='website_wws.png')}}">
+                </div>
+            </a>
+            <a href="https://ghorus.github.io/skew-page/">
+                <div class="project">
+                    <div class="projectInfo">
+                        <h2>Canva App: Skew Page &lpar;In Progress&rpar;</h2>
+                        <p>Created an app for the Canva website that 3D rotates a page design using Three.js. (Personal Project)
+                    </div>
+                    <img class="projectImage" src="{{url_for('static', filename='skew_page.png')}}">
                 </div>
             </a>
             <a href="{{url_for('restaurant')}}">
@@ -103,20 +155,11 @@
                     <img class="projectImage" src="{{url_for('static', filename='website_restaurant.png')}}">
                 </div>
             </a>
-            <a href="{{url_for('game')}}">
-                <div class="project">
-                    <div class="projectInfo">
-                        <h2>Back-End: 2D-Shooter Game</h2>
-                        <p>A website about a completed 2D-shooter game I personally developed where I formulated the story, characters, dialogues, game mechanics, and more. (Personal Project)
-                    </div>
-                    <img class="projectImage" src="{{url_for('static', filename='website_game.png')}}">
-                </div>
-            </a>
             <a href="{{url_for('digitalbrand')}}">
                 <div class="project">
                     <div class="projectInfo">
-                        <h2>Front-End: Fictional Digital Brand Website</h2>
-                        <p>The landing page for a made-up digital branding website. (Personal Project)</p>
+                        <h2>Front-End: Digital Branding</h2>
+                        <p>The landing page for a digital branding website. (Personal Project)</p>
                     </div>
                     <img class="projectImage" src="{{url_for('static', filename='website_digital.png')}}">
                 </div>
@@ -125,7 +168,7 @@
                 <div class="project">
                     <div class="projectInfo">
                         <h2>Front-End: Fictional Podcast Website</h2>
-                        <p>The landing page for a made-up podcast company website. (Personal Project)</p>
+                        <p>The landing page for a podcast company website. (Personal Project)</p>
                     </div>
                     <img class="projectImage" src="{{url_for('static', filename='website_podcast.png')}}">
                 </div>
@@ -133,8 +176,8 @@
             <a href="{{url_for('healthcare')}}">
                 <div class="project">
                     <div class="projectInfo">
-                        <h2>Front-End: Fictional Healthcare Website</h2>
-                        <p>The landing page for a made-up healthcare website. (Personal Project)</p>
+                        <h2>Front-End: VN Health</h2>
+                        <p>The landing page for a healthcare website. (Personal Project)</p>
                     </div>
                     <img class="projectImage" src="{{url_for('static', filename='website_healthcare.png')}}">
                 </div>
@@ -142,8 +185,8 @@
             <a href="{{url_for('swePackage')}}">
                 <div class="project">
                     <div class="projectInfo">
-                        <h2>Front-End: Fictional Coding Education Website</h2>
-                        <p>The landing page for a made-up educational website. (Personal Project)</p>
+                        <h2>Front-End: Coding Education Application</h2>
+                        <p>The landing page for a educational website. (Personal Project)</p>
                     </div>
                     <img class="projectImage" src="{{url_for('static', filename='website_swePackage.png')}}">
                 </div>

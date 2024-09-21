@@ -1,23 +1,3 @@
-//email//
-function sendEmail(){
-    Email.send({
-        SecureToken : "0e7e1a5b-7e41-40d0-ba41-7e97504d129b ",
-        To : 'nguyen.victor4@gmail.com',
-        From : "nguyen.victor4@gmail.com",
-        Subject : document.getElementById("name").value + " " + document.getElementById("email").value,
-        Body : document.getElementById("message").value 
-    }).then(
-        message => alert(message)
-        );}
-//message input/
-const typingImage = document.querySelector(".typingImage")
-window.addEventListener("click",function(){
-    if(document.activeElement.className=="messageInput"){
-        typingImage.style.scale="1"
-    }
-    else{typingImage.style.scale="0"}
-})
-        
 //scroll animations//
 let prevScrollPos = window.pageYOffset;
 window.addEventListener('scroll', function() {
