@@ -1,3 +1,7 @@
+a{
+    text-decoration: none;
+    color:#6888fc;
+}
 .aboutDescription{font-size:19px;margin:5px 0px 0px 0px;}
 .aboutDescriptionContainer{display:grid;grid-template-columns: 300px 300px;}
 .aboutMainContainer{align-items: center;display: flex;justify-content: space-around;margin:100px 0px;}
@@ -9,7 +13,6 @@
     border: 1px solid white;
     border-radius: 60px;
     color:white;
-    font-size: 20px;
     margin:5px 5px 5px 0px;
     padding:7px 20px;
 }
@@ -99,7 +102,7 @@ html{scrollbar-width:thin;}
 }
 .navLinks{align-items: center;background-color:#4770FF;color:white; display: flex;height:70px; justify-content: center; position:fixed;transition: 0.2s ease-in-out; width:100vw;z-index: 2;}
 .navSectionLinks{margin:0px 60px 0px 0px;display:flex;align-items: center;}
-.navSectionLinks a{margin:0px 0px 0px 20px;transition:0.2s;}
+.navSectionLinks a{margin:0px 0px 0px 20px;transition:0.2s;color:white;}
 .navSectionLinks a:hover{color:#92a9ff;cursor: pointer;}
 .portfolioContainer{margin:150px 0px;text-align: center;}
 .professionalPicture{border-radius: 10px;height:400px;}
