@@ -9,13 +9,22 @@ body {
     height:100vh;
     margin:0px;
     max-width: 100%;
-    overflow: hidden;
     width:100vw;}
-.catLoadingImage{height:300px;}
-.catLoadingContainer{align-items: center; background-color: rgb(40, 40, 40);display: flex; height:100vh;justify-content: center; position:fixed;max-width: 100%; width:100vw;z-index: 2;}
-.getInTouchContainer{align-items: center;background-color: #ffffff; display: flex;flex-direction: column;padding:100px 0px;}
+.exp_section{
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+}
+.exp_container{
+    width:800px;
+}
+.exp_list{
+    display: flex;
+    flex-direction: column;
+    gap:20px;
+}
 .heroMainContainer{align-items: center;;display: flex;height: 800px;justify-content: center;}
-.heroTextsContainer{animation:intro-in 1s;animation-delay: 2.8s;color:white;margin:0px 350px 0px 0px;}
+.heroTextsContainer{color:white;margin:0px 350px 0px 0px;}
 .heroSection{background-image: url('darkblue_wallpaper.jpg');height:950px;max-width:100%;width: 100vw;}
 .heroText{font-size:35px;}
 .heroTexts{font-size:70px;font-weight: bold;margin:0px 0px 20px 0px;}
@@ -54,7 +63,7 @@ html{cursor: url('mouse.png'), auto;scrollbar-width:thin;}
 }
 .languageLogosText{text-align: center;}
 .lastNameText{color:#7694FF;}
-.meContainer{animation:intro-in 1s;animation-delay: 2.8s; display: flex;position:relative;}
+.meContainer{ display: flex;position:relative;}
 .mePerksContainer{position:absolute;top:125px;left:-200px;}
 .mePerksContainer p{
     align-items: center;
@@ -70,24 +79,7 @@ html{cursor: url('mouse.png'), auto;scrollbar-width:thin;}
     margin:0px 0px 10px 0px;
     width:270px;
 }
-.messageGif{align-items: center; display: flex;}
-.messageInput{height:200px;width:620px;display: flex;padding:10px 0px 0px 10px;}
-.nameEmailInput{height:30px;width:300px;padding:0px 0px 0px 10px;}
-.nameEmailInput,.messageInput{border: 1px solid black; border-radius: 10px;font-family: 'Roboto Flex', sans-serif;font-size:16px;}
-.nameEmailInputContainer{display: grid;grid-template-columns: 320px 320px;}
-.navLinks{
-    background-color: #0028bb;
-    color: white;
-    display: flex;
-    font-size: 20px;
-    font-weight: bold;
-    justify-content: space-between; 
-    overflow: hidden;
-    padding:20px 20px;
-    position: fixed;
-    transition: 0.3s linear; 
-    width:100vw;
-    z-index: 1;}
+
 .navSectionLinks{margin:0px 60px 0px 0px}
 .navSectionLinks a{margin:0px 0px 0px 20px;transition:0.2s;}
 .navSectionLinks a:hover{color:#92a9ff;cursor: pointer;}

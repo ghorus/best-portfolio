@@ -45,14 +45,3 @@ const obs= new IntersectionObserver((e) =>{
 projs.forEach(proj => {
     obs.observe(proj)
 })
-//window load//
-const cat = document.querySelector(".catLoadingContainer")
-const body = document.querySelector("body")
-window.addEventListener("load",function(){
-    setTimeout(unloadCat,100)
-})
-function unloadCat(){
-    cat.style.display = "none";
-    body.style.overflow = "initial"
-}
-

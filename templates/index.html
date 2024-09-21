@@ -12,7 +12,6 @@
     <title>Victor Nguyen</title>
 </head>
 <body>
-    <div class="catLoadingContainer"><img class="catLoadingImage" src="{{url_for('static', filename='catLoading.gif')}}"></div>
     <div class="heroSection">
         <nav class="navLinks">
             <a>Victor Nguyen</a>
@@ -53,18 +52,46 @@
         <img class="languageLogos" src="{{url_for('static', filename='python_logo.png')}}">
         <img class="languageLogos" src="{{url_for('static', filename='react_logo.png')}}">
     </section>
+    <section class="exp_section">
+        <div class="exp_container">
+            <div>
+                <h3 class="header">Data Annotation</h3>
+                <h4 class="italics">AI Coding Trainer</h4>
+                <div>12/2023 – Present</div>
+            </div>
+            <div>
+                <ul class="exp_list">
+                    <li>Overviewed coding prompts to train AI, focusing on writing structure, organization, coherence, overall 
+                        writing quality, code correctness, and conciseness.</li>
+                    <li>Assessed highly customized coding prompts tailored to AI’s learning needs, ensuring alignment with 
+                        project objectives and desired outcomes.</li>
+                    <li>Collaborated with AI developers to specify on coding prompt methodologies, incorporating analytical insights 
+                        to enhance AI learning outcomes.</li>
+                    <li>Analyzed coding prompts that spanned over many technologies, like Golang, Vue.js, PHP, React, Laravel, Flask, SQL, 
+                        PostgreSQL, Python, Java, C++, C+, Kotlin, Lua, Unity, git, yarn, npm, node.js, bash, React Native, Android Studio, 
+                        JSON, YAML, Google Developer tools, Google extensions, Figma plugins, APIs, Jira, and Microsoft Excel</li>
+                    <li>Adhered to detailed documentation to ensure AI models received quality data, all within tight deadlines.</li>
+                    <li>Monitored and annotated AI-generated coding errors, enhanced coding standards, identified AI response trends, and researched 
+                        and analyzed coding solutions for proper data feeding to AI.</li>
+                    <li> Resolved bugs for code blocks that spanned over various areas such as automation testing, web scraping, data queries, data 
+                        visualization, API data fetching, audio-to-text transcriptions, UI creation, web design principles, website responsiveness and 
+                        accessibility, database management, mobile applications, games, 3D animation, CSV and PDF file creation, caching, and full-stack web applications 
+                        with user authentication and Web Sockets.</li>
+                </ul>
+            </div>
+        </div>
+    </section>
     <section class="portfolioContainer">
         <h1>Portfolio</h1>
         <div class="projects">
-            <a href="https://food-v6q5.onrender.com/">
+            <a href="https://one-word-story-game.onrender.com/">
                 <div class="project">
                     <div class="projectInfo">
-                        <h2>Full-Stack: Food Review Website</h2>
-                        <p>Users can: explore,post,and like food reviews,
-                            play adlib games with other people and post for likes,
-                            search for food based on location,name, and more. (Personal Project)
+                        <h2>Full-Stack: One Word Story Collaboration</h2>
+                        <p>Created an interactive game allowing users to collaboratively 
+                            build stories one word at a time using Web sockets for real-time communication. (Personal Project, Currently on Free Plan(Long Loading Time))
                     </div>
-                    <img class="projectImage" src="{{url_for('static', filename='foodinqui.png')}}">
+                    <img class="projectImage" src="{{url_for('static', filename='website_wws.png')}}">
                 </div>
             </a>
             <a href="{{url_for('restaurant')}}">
@@ -121,12 +148,6 @@
                     <img class="projectImage" src="{{url_for('static', filename='website_swePackage.png')}}">
                 </div>
             </a>
-            <!-- <div class="project"></div>
-            <div class="project"></div>
-            <div class="project"></div>
-            <div class="project"></div>
-            <div class="project"></div>
-            <div class="project"></div> -->
         </div>
     </section>
     <section class="aboutMainContainer">
@@ -161,23 +182,6 @@
         </div>
     </section>
     <hr>
-    <section class="getInTouchContainer">
-        <form onsubmit="sendEmail();reset();return false" class="email_form">
-            <h1>Get in Touch</h1>
-            <div class="nameEmailInputContainer">
-                <input class="nameEmailInput" id="name" placeholder="Name*">
-                <input class="nameEmailInput" id="email" placeholder="Email">
-            </div>
-            <div class="messageContainer">
-                <div class="messageGif">
-                    <h3>Message</h3>
-                    <img class="typingImage" src="{{url_for('static', filename='typing.gif')}}">
-                </div>
-                <textarea class="messageInput" id="message" placeholder="Type your message here*"></textarea>
-            </div>
-            <button class="hireButton" type="submit">Send</button>
-        </form>
-    </section>
     <script src="https://smtpjs.com/v3/smtp.js"></script>
     <script src="{{url_for('static', filename='index.js')}}"></script>
 </body>
