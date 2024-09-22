@@ -26,6 +26,7 @@ body {
     align-items: center;
     display: flex;
     flex-direction: column;
+    margin:50px 0px;
 }
 .exp_container{
     width:800px;
