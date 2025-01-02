@@ -35,6 +35,11 @@ def restaurant():
 def swePackage():
     return render_template('swePackage.html')
 
+#Articles
+@app.route("/breakingTheCycle")
+def breakingTheCycle():
+    return render_template('articles/breakingthecycle.html')
+
 if __name__ == "__main__":
     app.run(debug=True)
     print('yeah')
