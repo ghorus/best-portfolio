@@ -40,6 +40,14 @@ def swePackage():
 def breakingTheCycle():
     return render_template('articles/breakingthecycle.html')
 
+@app.route("/booksChangedMyLife")
+def booksChangedMyLife():
+    return render_template('articles/booksChangedMyLife.html')
+
+@app.route("/startupStruggles")
+def startupStruggles():
+    return render_template('articles/startupStruggles.html')
+
 if __name__ == "__main__":
     app.run(debug=True)
     print('yeah')
